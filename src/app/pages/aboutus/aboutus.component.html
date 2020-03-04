@@ -1,0 +1,19 @@
+<div class="about-container mb-50">
+
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/About-us.png" class="title-img" alt="">
+    <h1 class="page-title">Who We Are</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item "><a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a></li>
+        <li class="breadcrumb-item active"><a onclick="clickNavigation('/ve-chung-toi')" [routerLink]="['/ve-chung-toi']">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <app-aboutus-timeline id="aboutus-mission"></app-aboutus-timeline>
+
+  <app-aboutus-stories id="aboutus-vision"></app-aboutus-stories>
+
+  <app-aboutus-mission></app-aboutus-mission>
+</div>

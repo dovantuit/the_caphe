@@ -1,0 +1,79 @@
+
+
+$min-width: 320px;
+$col-xl-min-width: 1200px;
+$col-lg-1-min-width: 1024px;
+$col-lg-min-width: 992px;
+$col-md-min-width: 768px;
+$col-sm-min-width: 576px;
+
+$main-bg-color: #3E3E3E;
+$left-slide: #6C8196;
+$thin-font: "ProximaNova";
+$main-font: "Playfair Display SC";
+// $foot-font: "Times New Roman", Times, serif;
+// $thin-font: SimonsonThin ;
+// $main-font1:SimonsonBold !important;
+
+$main-color: #6C8196;
+$main-color-hover: #24ae5d;
+$white: #ffffff;
+$slategray: #6c8196;
+$lightslategray: #758696;
+
+
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $col-lg-min-width - 1) {
+      @content;
+    }
+  } @else if $media == all-screens {
+    @media only screen and (min-width: $col-lg-min-width) {
+      @content;
+    }
+  }
+  @if $media == all-screens-sm {
+    @media only screen and (max-width: $col-lg-1-min-width - 1) {
+      @content;
+    }
+  } @else if $media == medium-screens {
+    @media only screen and (min-width: $col-lg-min-width + 1) and (max-width: $col-xl-min-width - 1) {
+      @content;
+    }
+  } @else if $media == wide-screens {
+    @media only screen and (min-width: $col-xl-min-width) {
+      @content;
+    }
+  }
+}
+
+// use: @include respond-to($media) { @content }
+
+
+$XS: 480px;
+$SM: 768px;
+$MD: 1024px;
+$XL: 1170px;
+
+// media queries
+
+@mixin responsive($canvas) {
+  @if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<div class="shipping-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <!-- <img src="../../../assets/images/title/Coffee-Culture.svg" class="title-img" alt=""> -->
+    <h1 class="page-title">Shipping & Return</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/shipping-return')" [routerLink]="['/shipping-return']">Shipping & Return</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="shippingInfo">
+    <div class="container">
+      <div class="title m-auto">
+        <h5 class="text-uppercase font-weight-bold mb-2">{{'page-shipping.general.header' | translate}}</h5>
+        <div [innerHTML]="shippingInfo.description"></div>
+      </div>
+
+    </div>
+
+    <div class="container mt-100">
+      <div class="content">
+        <div class="row mb-50" *ngFor="let item of shippingInfo.shippingInfo">
+          <div class="col-lg-3 col-12">
+            {{item.method}}
+          </div>
+          <div class="col-lg-8 offset-lg-1 col-12">
+            <div *ngFor="let itemm of item.description.split('<enter>')">
+              {{itemm}}
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="note pt-lg-4">
+        <span class="font-weight-bold mr-2" style="font-size: 18px">{{'page-shipping.note.note' | translate}}</span>
+        <span style="font-style:italic">{{shippingInfo.shippingNote}}</span>
+      </div>
+    </div>
+  </div>

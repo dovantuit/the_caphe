@@ -1,0 +1,20 @@
+<div class="ourcustomer-say-card">
+  <div class="text-center col-12 title m-auto ">
+    <img class="title-img pt-5" src="../../../../assets/images/title/Testimonial.png" />
+    <h1>Our Customers Say</h1>
+  </div>
+  <div class="owl-carousel owl-theme owl-home " id="owl-home" *ngIf="data">
+    <div class="item text-center row" *ngFor="let item of data">
+      <div class="col-12 col-lg-5 mt-auto text-center">
+        <img class="img-av w-100" [src]="item.thumbnail !== null ? 'https://www.thehillcoffee.com.vn/assets/uploads/' + item.thumbnail: '../../../../assets/images/custome3.png'"
+        />
+      </div>
+      <div class="col-12 col-lg-6 mb-auto mt-auto ">
+        <p class="mx-auto mb-3">{{item.ourCustomer[0].comment}}</p>
+        <img class="m-auto img-author" src="../../../../assets/images/h7.png" />
+        <p class="mx-auto mb-3 author">{{item.ourCustomer[0].name}}</p>
+        <p class="mx-auto mb-3">{{item.ourCustomer[0].companyName}}/{{item.ourCustomer[0].position}}</p>
+      </div>
+    </div>
+  </div>
+</div>

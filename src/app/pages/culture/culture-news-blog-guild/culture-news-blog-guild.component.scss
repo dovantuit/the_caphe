@@ -1,0 +1,61 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+
+    .culture-guild-container{
+        .title{
+            p{
+                @include responsive(MD){
+                    width: 100% !important;
+                }
+            }
+        }
+        .main{
+            .text{
+                @include responsive(MD){
+                    text-align: center;
+                }
+                h3.title{
+                    @include responsive(MD){
+                        margin-left: 0%;
+                    }
+                    margin-left: 10%;
+                    text-transform: uppercase;
+                    @include font-thehill($main-font,'','',bold);
+                }
+                    ul.infomation{
+                        li{
+                            font-size: 14px;
+                           .name{
+                               text-transform: uppercase;
+                               @include font-thehill($main-font,16px,'',600);
+                           } 
+                        }
+                    }
+                
+            }
+        }
+
+        .more{
+            .title{
+                text-align: left;
+                margin-left: 5%;
+                @include font-thehill($main-font,25px,'',bold);
+                @include responsive(MD){
+                    margin-left: 0;;
+                    text-align: center;
+                }
+            }
+            .item{
+                cursor: pointer;
+                .name{
+                    @include font-thehill($main-font,17px,'','');
+                }
+            
+            }
+        }
+        iframe{
+            min-height: 300px
+        }
+    }

@@ -1,0 +1,27 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host {
+
+  .row {
+    margin-bottom: 10px;
+    
+    .logo {
+      width: 150px;
+      height: 100px;
+      text-align: center;
+      // background: url('../../../../assets/images/logo/blacklogo.svg') no-repeat center;
+    }
+
+    .footer-desc {
+        @include font-thehill($thin-font, 14px, $main-bg-color, 500)
+    }
+
+
+    .footer-desc{
+      @include responsive(SM){
+        padding: 20px !important;
+      }
+    }
+  }
+}

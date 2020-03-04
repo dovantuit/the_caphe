@@ -1,0 +1,20 @@
+<div class="leave-a-comment mt-5 mb-100">
+  <h4 class="title">Leave a comment</h4>
+  <div class="form-message mt-5 mb-5">
+    <form class="form-group">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <input type="text" [(ngModel)]="userName" name="userName" class="form-control mb-5" placeholder="Name *">
+          <input type="text" [(ngModel)]="userEmail" name="userEmail" class="form-control mb-5" placeholder="Email *">
+        </div>
+        <div class="col-lg-6 col-12">
+          <textarea [(ngModel)]="userComment" name="userComment" id="" class="form-control" cols="30" rows="4" placeholder="Comment *"></textarea>
+        </div>
+        <div class="col">
+            <button class="btn-main mb-50 mt-5" (click)="postReply()">SUBMIT</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

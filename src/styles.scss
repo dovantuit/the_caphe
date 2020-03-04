@@ -1,0 +1,567 @@
+/* You can add global styles to this file, and also import other style files */
+// http://meyerweb.com/eric/tools/css/reset/
+//  v2.0 | 20110126
+//  License: none (public domain)
+
+@import "./styles/mixins";
+@import "./styles/variables";
+@import "./styles/responsive";
+
+// @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../src/assets/fonts/PlayfairDisplaySC-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../src/assets/fonts/Proxima-Nova-Thin.otf');
+    font-size: 13px !important;
+
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    @include font-thehill($thin-font, '', '', '')
+}
+
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    padding-right: 0 !important;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+.modal-content {
+    z-index: 1;
+}
+
+.img-border {
+    border: 1px solid $main-color;
+}
+
+.page-title {
+    @include font-thehill($main-font, 50px, '', bold);
+
+    @include responsive(XS) {
+        font-size: 32px;
+    }
+}
+
+
+
+.breadcrumb {
+    display: inline-flex !important;
+    background-color: unset !important;
+
+    a {
+        color: black;
+        @include font-thehill('Playfair Display', '', '', '');
+
+        &:hover {
+            color: #c9ac7c;
+        }
+    }
+
+    .active a {
+        color: #c9ac7c;
+    }
+}
+
+.pbt-50 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+
+    @include responsive(XS) {
+        margin-bottom: 25px;
+    }
+}
+
+.mt-50 {
+    margin-top: 50px;
+
+    @include responsive(XS) {
+        margin-top: 25px;
+    }
+}
+
+.mbt-50 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    @include responsive(XS) {
+        margin-bottom: 25px;
+        margin-top: 25px
+    }
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+
+    @include responsive(XS) {
+        margin-bottom: 50px;
+    }
+}
+
+.mt-100 {
+    margin-top: 100px;
+
+    @include responsive(XS) {
+        margin-top: 50px;
+    }
+}
+
+.img-avatar {
+    border-radius: 50%;
+    height: 7vw;
+    width: 7vw;
+
+    @include responsive(MD) {
+        height: 12vw;
+        width: 12vw;
+    }
+
+    @include responsive(XS) {
+        height: 17vw;
+        width: 17vw;
+    }
+}
+
+.btn-main {
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 8px 25px;
+    position: relative;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 5px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $main-color;
+        background-color: white;
+        z-index: -1;
+    }
+
+
+}
+
+.owl-carousel {
+
+    &.owl-share .owl-item {
+        padding: 0 1%;
+    }
+
+    &.owl-service,&.owl-business {
+        .owl-stage-outer {
+            box-shadow: 0 0 30px #888;
+        }
+        .owl-item img {
+            max-height: unset !important;
+        }
+        .owl-dot{
+            margin-top: 20px;
+        }
+        .owl-nav button.owl-next {
+            right: -5.5%;
+            @include responsive(MD){
+                right:0;
+            }
+        }
+        .owl-nav button.owl-prev {
+            left: -5.5%;
+            @include responsive(MD){
+                left:0;
+            }
+        }
+    }
+    &.owl-home{
+        .owl-nav button.owl-next {
+            right: 1%;
+            @include responsive(MD){
+                right:0;
+            }
+        }
+        .owl-nav button.owl-prev {
+            left: 1%;
+            @include responsive(MD){
+                left:0;
+            }
+        }
+    }
+
+    &.owl-product .owl-item img {
+        max-height: unset !important;
+    }
+
+    &:hover {
+        .owl-nav {
+            opacity: 1;
+        }
+
+    }
+
+    .owl-nav {
+        @include responsive(MD){
+            opacity: 1;
+        }
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.4s;
+
+        button.owl-next,
+        button.owl-prev {
+            position: absolute;
+            transform: translate(0%, -50%);
+
+            span {
+                font-size: 120px;
+                color: #c9ac7c;
+            }
+
+            &:hover {
+                background: transparent !important;
+                color: #c9ac7c;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+     
+
+        button.owl-next {
+            right: 0;
+          
+        }
+
+        button.owl-prev {
+            left: 0;
+         
+        }
+
+    }
+}
+
+
+
+
+.form-message {
+    padding-left: 5%;
+
+    @include responsive(SM) {
+        padding-left: 0;
+    }
+
+    input,
+    textarea {
+        border: none;
+        border-radius: unset;
+        border-bottom: 1px solid black;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 transparent;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    textarea {
+        height: 72% !important;
+        resize: none;
+    }
+
+    .btn-main {
+        @include responsive(SM) {
+            float: right;
+        }
+    }
+}
+
+
+.nav-pagination {
+    ul.pagination {
+
+        display: inline-block;
+
+        li {
+            display: inline;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            margin: 0px 2px;
+            cursor: pointer;
+
+            a {
+                color: black;
+            }
+
+            &.active {
+                a {
+                    color: #c9ac7c;
+                    font-weight: 700;
+                }
+
+            }
+
+            &:hover {
+                a {
+                    color: #c9ac7c;
+                    text-decoration: none;
+                }
+
+            }
+
+
+            &:nth-child(1) {
+                margin-right: 10px;
+                border: none;
+            }
+
+            &:last-child {
+                margin-left: 10px;
+                border: none;
+            }
+        }
+    }
+
+
+}
+
+.title-img,.culture-detail-container.blog-detail  img.title-img.img-t {
+    width: 21vw !important;
+
+    @include responsive(SM) {
+        width: 60vw !important;
+    }
+
+    @include responsive(MD) {
+        width: 45vw !important;
+    }
+
+    @include responsive(XS) {
+        width: 100% !important;
+    }
+}
+
+
+.timepicker {
+    input.bs-timepicker-field {
+        border: 1px solid black !important;
+        border-radius: unset !important;
+    }
+}
+
+#owl-product-menu.owl-carousel{
+    button.owl-prev {
+        left: -5%;
+        @include  responsive(XS){
+            left: -9%;
+        }
+        @include  responsive(MD){
+            left: -7%;
+        }
+    }
+    button.owl-next {
+        right: -5%;
+        @include  responsive(XS){
+            right: -9%;
+        }
+        @include  responsive(MD){
+            right: -7%;
+        }
+    }
+    .owl-nav {
+        top: 30%;
+        @include responsive(MD){
+            opacity: 1;
+            top: 25%;
+        }
+        @include responsive(SM){
+            top: 30%;
+        }
+    }
+
+    &.owl-drag .owl-item{
+        padding:0 30px;
+        @include responsive(SM){
+           padding:2% !important;
+        }
+        @include responsive(MD){
+            padding:0 15px;
+        }
+        img{
+            padding:1%;
+        }
+        .item.active {
+            img{
+                box-shadow: -4px 5px 4px 1px $slategray;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+    .owl-dots{
+        // margin-top: -10px;
+        // @include responsive(MD){
+        //     margin-top: 0;
+        // }
+    }
+}

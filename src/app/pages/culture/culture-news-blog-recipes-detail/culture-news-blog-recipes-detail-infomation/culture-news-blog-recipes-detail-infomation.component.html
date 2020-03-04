@@ -1,0 +1,49 @@
+<div class="row infomation mb-50">
+    <div class="col-lg-6 col-12 image">
+      <img class="w-100 img-border" src="{{HOST_IMG}}{{recipeInfo.firstImage}}" alt="">
+    </div>
+    <div class="col-lg-6 col-12 text">
+      <div class="ulli">
+        <ul>
+          <li class="mb-2">
+            <div class="row">
+              <div class="col-lg-5 col-3 name">{{'page-recipe-detail.recipeType' | translate}}</div>
+              <div class="col-lg-7 col-9 info">{{recipeInfo.recipeType}}</div>
+            </div>
+          </li>
+          <!-- <li class="mb-2">
+            <div class="row">
+              <div class="col-lg-3 col-3 name">Course:</div>
+              <div class="col-lg-9 col-9 info">{{data.course}}</div>
+            </div>
+          </li> -->
+          <li class="mb-2">
+            <div class="row">
+              <div class="col-lg-5 col-3 name">{{'page-recipe-detail.category' | translate}}</div>
+              <div class="col-lg-7 col-9 info">{{data.category}}</div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="row">
+              <div class="col-lg-5 col-3 name">{{'page-recipe-detail.specialDiet' | translate}}</div>
+              <div class="col-lg-7 col-9 info">{{data.specialDiet}}</div>
+            </div>
+          </li>
+          <li class="mb-2">
+            <div class="row">
+              <div class="col-lg-5 col-3 name">{{'page-recipe-detail.cuisine' | translate}}</div>
+              <div class="col-lg-7 col-9 info">{{recipeInfo.cuisine}}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p [innerHTML]="data.description"></p>
+      <div class="ulli ar text-center w-75 m-auto">
+        <ul>
+          <!-- <li class="mb-1" *ngFor="let item of recipeInfo.list.split('&lt;enter>')">
+            <i class="fa fa-angle-double-right mr-1"></i>{{item}}
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>

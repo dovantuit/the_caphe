@@ -1,0 +1,18 @@
+<div class="container pbt-50 m-auto">
+  <ol class="timeline">
+    <li class="pb-50" *ngFor="let item of listData">
+      <h5 class="title">{{ item.name}}</h5>
+      <p class="content" [innerHTML]="item.description"></p>
+      <div class="image text-right">
+        <div class="row">
+          <div class="col-lg-6 col-12 mb-4">
+            <img src="{{HOST_IMG}}{{item.bannerUrl}}"  class="w-100" alt="">
+          </div>
+          <div class="col-lg-6 col-12 mb-4">
+            <img src="{{HOST_IMG}}{{item.thumbnail}}"  class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>

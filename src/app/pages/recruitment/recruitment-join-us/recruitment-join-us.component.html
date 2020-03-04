@@ -1,0 +1,96 @@
+<div class="aboutus-career-joinus">
+  <div class="container ml-auto mx-auto text-center pt-50">
+    <img src="../../../../assets/images/title/Join-us.png" class="title-img" alt="" style="width: 150px;">
+    <h1 class="page-title">Available Positions</h1>
+
+    <div class="row tags mt-5 mb-5">
+      <div class="col-lg-4 col-6 mb-4" *ngFor="let item of listJobs" (click)="selectedClass(item)"><span
+          [class.active]="item === selected">{{item.name}}</span></div>
+      <!-- <div class="col-lg-4 col-6 mb-4"><span>PURCHASING</span></div>
+      <div class="col-lg-4 col-6 mb-4"><span>ACCOUNTING</span></div>
+      <div class="col-lg-4 col-6 mb-4"><span>BRAND & MARKETING</span></div>
+      <div class="col-lg-4 col-6 mb-4"><span class="active">FINANCE</span></div>
+      <div class="col-lg-4 col-6 mb-4"><span class="">WHOLESALE</span></div> -->
+    </div>
+
+    <div class="row main mt-5 mb-5">
+      <div class="col-lg-3 col-12 left">
+        <ul class="tabs">
+          <!-- <li class="active">POSITION 1</li>
+          <li>POSITION 2</li>
+          <li>POSITION 3</li>
+          <li>POSITION 4</li> -->
+          <li *ngFor="let item of listPosition" (click)="getPositionDetail(item.id)">{{item.name}}</li>
+        </ul>
+      </div>
+      <div class="col-lg-9 col-12 m-auto text-left mb-5 mt-3 right" *ngIf="positionDetail">
+        <div class="item">
+          <div class="infomation">
+            <div class="row mt-3">
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Job number: </div>
+                    <div class="col-7 des">{{positionDetail.jobNumber}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Date posted </div>
+                    <div class="col-7 des">{{positionDetail.datePosted}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Travel </div>
+                    <div class="col-7 des">{{positionDetail.travel}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Profession </div>
+                    <div class="col-7 des">{{positionDetail.profession}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Role type </div>
+                    <div class="col-7 des">{{positionDetail.roleType}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 mb-3">
+                <div class="item-infomation m-auto">
+                  <div class="row">
+                    <div class="col-5 name">Employment type </div>
+                    <div class="col-7 des">{{positionDetail.employmentType}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="description mb-3 mt-3">
+              <div [innerHTML]="description"></div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <p class="text-center mx-auto mt-3 check">
+      <input type="checkbox" [(ngModel)]="checked" name="checked" value="Bike"> I have read and understood Recruittee's privacy
+      policy<br>
+    </p>
+  </div>
+</div>

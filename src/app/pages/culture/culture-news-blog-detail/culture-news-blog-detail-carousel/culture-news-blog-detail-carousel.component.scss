@@ -1,0 +1,51 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+:host{
+    .carousel-news-blog-detail{
+        width: 90%;
+        color: black;
+        @include responsive(XS){
+            width: 100%;
+        }
+
+        .carousel-item{
+            padding: 2%;
+           
+
+        }
+
+        .custom-control-prev, .custom-control-next{
+            color: black;
+            i{
+                padding:10px 15px;
+                border: 1px solid grey;
+                font-weight: 600;
+            }
+        }
+
+        
+
+       
+    }
+
+
+    .row{    
+        box-shadow: 0px 1px 1px grey;
+        padding: 2%;
+        margin-bottom: 30px;
+        .name{
+            text-transform: uppercase;
+            @include font-thehill($main-font,18px,'',bold);
+        }
+        .info{
+            @include font-thehill($thin-font,14px,'','');
+        }
+    }
+
+    .img-avatar{
+        height: 100px !important;
+        width: 100px !important;
+    }
+}

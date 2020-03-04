@@ -1,0 +1,116 @@
+<div class="policy-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/Payment-Methods.png" class="title-img" alt="">
+    <h1 class="page-title">Payment Method</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/phuong-thuc-thanh-toan')" [routerLink]="['/phuong-thuc-thanh-toan']">Payment Medthod</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div *ngIf="paymentInfo">
+  <div class="container">
+    <div class="title">
+      <!-- {{'page-payment.general.header' | translate}}
+      <div class="text-left">
+        {{'page-payment.general.point1' | translate}}
+        <br>{{'page-payment.general.point2' | translate}}
+      </div> -->
+      <div [innerHTML]="paymentInfo.description"></div>
+    </div>
+  </div>
+
+  <div class="container mt-100">
+    <div class="content">
+      <div class="row mb-50" *ngFor="let item of paymentInfo.paymentInfo">
+        <div class="col-lg-3 col-12">
+          <span style="font-weight:900">{{item.method}}</span>
+        </div>
+        <div class="col-lg-8 offset-lg-1 col-12">
+          <p *ngFor="let item of  item.description.split('<enter>')">
+            {{item}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-100">
+    <div class="main-exm mb-3">
+      <div class="info-bank mb-5">
+        <h5 class="text-center mb-5 text-uppercase font-weight-bold">{{'page-payment.bank.header' | translate}}</h5>
+        <div class="row mb-4">
+          <div class="col-lg-3 col-12">{{'page-payment.bank.name-title' | translate}}</div>
+          <div class="col-lg-9 col-12">{{'page-payment.bank.name-input' | translate}}</div>
+        </div>
+        <div class="row mb-4" *ngFor="let item of paymentInfo.paymentAccount">
+            <div class="col-lg-3 col-12">{{'page-payment.list-bank.name-title' | translate}} </div>
+            <div class="col-lg-9 col-12">{{item.bankName}}  </div>
+            <div class="col-lg-3  col-12">{{'page-payment.list-bank.number-title' | translate}} </div>
+            <div class="col-lg-9 col-12">{{item.bankNumber}}</div>
+            <br>
+            <br>
+        </div>
+        <!-- <div class="row mb-4">
+            <div class="col-lg-3 col-12">{{'page-payment.list-bank.name-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item2.name-input' | translate}}</div>
+            <div class="col-lg-3  col-12">{{'page-payment.list-bank.number-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item2.number-input' | translate}}</div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-12">{{'page-payment.list-bank.name-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item3.name-input' | translate}}</div>
+            <div class="col-lg-3  col-12">{{'page-payment.list-bank.number-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item3.number-input' | translate}}</div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-12">{{'page-payment.list-bank.name-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item4.name-input' | translate}}</div>
+            <div class="col-lg-3  col-12">{{'page-payment.list-bank.number-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item4.number-input' | translate}}</div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-3 col-12">{{'page-payment.list-bank.name-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item5.name-input' | translate}}</div>
+            <div class="col-lg-3  col-12">{{'page-payment.list-bank.number-title' | translate}}</div>
+            <div class="col-lg-9 col-12">{{'page-payment.list-bank.bank-item5.number-input' | translate}}</div>
+        </div> -->
+   
+      </div>
+
+      <div class="exm mt-3">
+        <h5 class="mb-3 text-uppercase font-weight-bold" style="text-decoration: underline;     font-style: italic;">{{'page-payment.example.header' | translate}}</h5>
+        <div class="row mb-3">
+          <div class="col-lg-4 col-12">{{'page-payment.example.name-title' | translate}}</div>
+          <div class="col-lg-8 col-12">{{'page-payment.example.name-input' | translate}}</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-lg-4 col-12">{{'page-payment.example.bank-title' | translate}}</div>
+            <div class="col-lg-8 col-12">{{'page-payment.example.bank-input' | translate}}</div>
+          </div>
+        <div class="row mb-3">
+          <div class="col-lg-4 col-12">{{'page-payment.example.number-title' | translate}}</div>
+          <div class="col-lg-8 col-12">0261 003 453 999</div>
+        </div>
+      
+        <div class="row mb-3">
+          <div class="col-lg-4 col-12">{{'page-payment.example.branch-title' | translate}}</div>
+          <div class="col-lg-8 col-12">{{'page-payment.example.branch-input' | translate}}</div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-4 col-12">{{'page-payment.example.content-title' | translate}}</div>
+          <div class="col-lg-8 col-12">{{'page-payment.example.content-input' | translate}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>

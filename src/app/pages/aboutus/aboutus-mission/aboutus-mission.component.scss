@@ -1,0 +1,28 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+
+.aboutus-mission{
+    img{
+        width: 22vw;
+        @include responsive(SM){
+            width: 60vw;
+        }
+    }
+    li{
+        margin-bottom: 20px;
+        i{
+            margin-right: 10px;
+
+            @include responsive(XS){
+                margin-right: 5px;
+            }
+        }
+
+    }
+        .about-title{
+            @include font-thehill($main-font,2.5em,'',bold);
+        }
+    
+}

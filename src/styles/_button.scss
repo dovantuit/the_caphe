@@ -1,0 +1,74 @@
+@import "/variables";
+@import "/mixins";
+
+
+button, a.next {
+  border-radius: 185px 185px 185px 185px;
+  width: 209px;
+  height: 50px;
+  padding: 10px 20px;
+  border: 2px solid #6C8196;
+
+  &.back {
+    margin-right: 35px;
+    background-color: #ffffff;
+    border: 1px solid #E2E2E2;
+    color: #000000;
+
+    &:focus {
+      outline: 0 auto #ffffff;
+    }
+  }
+
+  &.next {
+    margin-left: 35px;
+    background-color: #6C8196;
+    color: #ffffff;
+
+    &:focus {
+      outline: 0 auto #ffffff;
+    }
+  }
+}
+
+.p3g-button-add {
+  background-color: #ffffff;
+  @include font-p3g($main-font, 12px, #54453B, bold);
+  letter-spacing: 2px;
+  border-color: #ffffff;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  .fa-plus {
+    margin-right: 10px;
+    color: #6C8196;
+  }
+}
+
+@media all and (max-width: $col-md-min-width) {
+  button, a.next {
+    &.back {
+      margin-right: 0px;
+      background-color: #ffffff;
+      border: 1px solid #E2E2E2;
+      color: #000000;
+
+      &:focus {
+        outline: 0 auto #ffffff;
+      }
+    }
+
+    &.next {
+      margin-top: 10px;
+      margin-left: 0;
+      background-color: #6C8196;
+      color: #ffffff;
+
+      &:focus {
+        outline: 0 auto #ffffff;
+      }
+    }
+  }
+}

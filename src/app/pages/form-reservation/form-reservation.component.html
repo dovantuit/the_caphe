@@ -1,0 +1,294 @@
+<div class="container">
+  <h1>{{'page-reservation.title' | translate}}</h1>
+  <form class="form-group form-message m-auto" style="margin-top: 30px" (submit)="onSubmit(formReservation)"
+    #formReservation="ngForm">
+    <div class="first-info">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">{{'form.full-name' | translate}}</label>
+        <div class="col-sm-10 below">
+          <input [(ngModel)]="fullName" name="fullName" required type="text"
+            class="form-control-plaintext form-input-reservation">
+          <span
+            *ngIf="formReservation.controls.fullName?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">{{'form.address' | translate}}</label>
+        <div class="col-sm-10 below">
+          <input [(ngModel)]="address" name="address" required type="text" class="form-control"
+            class="form-control-plaintext form-input-reservation">
+          <span
+            *ngIf="formReservation.controls.address?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">{{'form.email' | translate}}</label>
+        <div class="col-sm-10 below">
+          <input [(ngModel)]="email" name="email" required type="text" class="form-control"
+            class="form-control-plaintext form-input-reservation" [email]="true">
+          <span
+            *ngIf="formReservation.controls.email?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+          <span *ngIf="formReservation.controls.email?.errors?.email && isSubmit">Email không đúng định dạng</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">{{'form.phone' | translate}}</label>
+        <div class="col-sm-10 below">
+          <input [(ngModel)]="phone" name="phone" required type="text" class="form-control"
+            class="form-control-plaintext form-input-reservation">
+          <span
+            *ngIf="formReservation.controls.phone?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-6 col-12">
+          <div class="row">
+            <label class="col-sm-4 col-form-label">{{'form.district' | translate}}</label>
+            <div class="col-sm-8">
+              <div class="select-box">
+                <label for="select-box1" class="label select-box1">
+                  <span *ngIf="!district" class="label-desc">Choose your disctrict</span>
+                  <span *ngIf="district">{{district}}</span>
+                </label>
+                <select id="select-box1" class="select" name="district" [(ngModel)]="district">
+                  <option value="Quận 1">Quận 1</option>
+                  <option value="Quận 2">Quận 2</option>
+                  <option value="Quận 3">Quận 3</option>
+                  <option value="Quận 4">Quận 4</option>
+                  <option value="Quận 5">Quận 5</option>
+                  <option value="Quận 6">Quận 6</option>
+                  <option value="Quận 7">Quận 7</option>
+                  <option value="Quận 8">Quận 8</option>
+                  <option value="Quận 9">Quận 9</option>
+                  <option value="Quận 10">Quận 10</option>
+                  <option value="Quận 11">Quận 11</option>
+                  <option value="Quận 12">Quận 12</option>
+                  <option value="Quận Thủ Đức">Quận Thủ Đức</option>
+                  <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                  <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                  <option value="Quận Tân Bình">Quận Tân Bình</option>
+                  <option value="Quận Tân Phú">Quận Tân Phú</option>
+                  <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                  <option value="Quận Bình Tân">Quận Bình Tân</option>
+                  <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                </select>
+              </div>
+              <div class="row below">
+                <span class *ngIf="!formReservation.controls.district?.value && isSubmit">Vui lòng chọn thông tin</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">{{'form.date' | translate}}</label>
+            <div class="col-sm-8 below">
+              <span style="font-size:18px;" *ngIf="undate">
+                <input [disabled]="true" type="text" class="form-control-plaintext form-input-reservation"
+                  placeholder="{{undate | date}}">
+              </span>
+              <!-- <input [(ngModel)]="date" name="date" required type="text" bsDatepicker class="form-control-plaintext form-input-reservation"> -->
+              <span style="font-size:18px;" *ngIf="!undate">
+                <input [disabled]="true" type="text" class="form-control-plaintext form-input-reservation"
+                  placeholder="Use calendar">
+              </span>
+              <span
+                *ngIf="formReservation.controls.date?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label label-time">{{'form.time' | translate}}</label>
+            <div class="col-sm-8 below">
+              <div class="row" style="justify-content: center; align-items: center;">
+                <div class="col-lg-5 col-12 mb-3 timepicker">
+                  <timepicker [(ngModel)]="timeStart" name="timeStart" required [showMeridian]="false"></timepicker>
+                  <span class
+                    *ngIf="formReservation.controls.timeStart?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+
+                </div>
+                <div class="col-lg-2 col-12 mb-3">To</div>
+                <div class="col-lg-5 col-12 mb-3 timepicker">
+                  <timepicker [(ngModel)]="timeEnd" name="timeEnd" required [showMeridian]="false"></timepicker>
+                  <span class
+                    *ngIf="formReservation.controls.timeEnd?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+                </div>
+              </div>
+              <!-- 
+              <input data-provide="datepicker" [(ngModel)]="time" name="time" required type="text" class="form-control" class="form-control-plaintext form-input-reservation"> -->
+              <span
+                *ngIf="formReservation.controls.time?.errors?.required && isSubmit">{{ 'validation' | translate}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 text-center">
+          <bs-datepicker-inline [bsConfig]="{ customTodayClass: 'now' }" [(bsValue)]="undate"></bs-datepicker-inline>
+        </div>
+      </div>
+    </div>
+    <div class="second-info">
+      <div class="form-row" style="margin-bottom: 30px">
+        <div class="col-md-8 col-12 below">
+          <p class="italic-text">{{'page-reservation.moreInfo' | translate}}</p>
+          <span class *ngIf="!formReservation.controls.optIn?.value && isSubmit">{{ 'validation' | translate}}</span>
+
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="row">
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input [(ngModel)]="optIn" name="optIn" type="radio" class="form-check-input" value="yes">
+                  {{'page-reservation.yes' | translate}}
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input [(ngModel)]="optIn" name="optIn" type="radio" class="form-check-input" value="no">
+                  {{'page-reservation.no' | translate}}
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row" *ngIf="optIn === 'yes'">
+        <div class="col-md-8 col-12 below">
+          <ul>
+            <li (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+
+              <div class="row">
+                <div class="col-4">
+                  {{'page-reservation.salesPerMonth' | translate}}
+                  <span class
+                    *ngIf="!formReservation.controls.targetAudiences?.value && isSubmit">{{ 'validation' | translate}}</span>
+                </div>
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check below">
+                        <input [(ngModel)]="salesVolume" name="salesVolume" required type="text" style="width: 50px;">
+                        kg
+                        <span *ngIf="formReservation.controls.salesVolume?.errors?.required && isSubmit">
+                          <br>{{ 'validation' | translate}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <div class="row">
+                <div class="col-4">
+                  {{'page-reservation.targetAudiences' | translate}}
+                  <span class
+                    *ngIf="!formReservation.controls.targetAudiences?.value && isSubmit">{{ 'validation' | translate}}</span>
+                </div>
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check below">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="targetAudiences" name="targetAudiences" required type="radio"
+                            class="form-check-input" value="{{'page-reservation.salesOption1' | translate}}">
+                          {{'page-reservation.salesOption1' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="targetAudiences" name="targetAudiences" type="radio"
+                            class="form-check-input" value="{{'page-reservation.salesOption2' | translate}}">
+                          {{'page-reservation.salesOption2' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="targetAudiences" name="targetAudiences" type="radio"
+                            class="form-check-input"
+                            value="{{'page-reservation.salesOption3' | translate}}">{{'page-reservation.salesOption3' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <div class="row">
+                <div class="col-4">
+                    {{ 'page-reservation.businessScale' | translate}}
+                  <span class
+                    *ngIf="!formReservation.controls.businessScale?.value && isSubmit">{{ 'validation' | translate}}</span>
+                </div>
+                <div class="col-8">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="businessScale" name="businessScale" type="radio" class="form-check-input"
+                            value="Single"> {{'page-reservation.scaleOption1' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                    <!-- <div class="col-6">
+                      <p>{{'page-reservation.scaleOption1-1' | translate}}</p>
+                    </div> -->
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="businessScale" name="businessScale" type="radio" class="form-check-input"
+                            value="System/Chain"> {{'page-reservation.scaleOption2' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                    <!-- <div class="col-6">
+                      <p>{{'page-reservation.scaleOption2-1' | translate}}</p>
+                    </div> -->
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input [(ngModel)]="businessScale" name="businessScale" type="radio" class="form-check-input"
+                            value="Hotel/Restaurant"> {{'page-reservation.scaleOption3' | translate}}
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <!-- <p>(15 to 20 years old)</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 d-md-block d-none">
+          <img src="{{imgUrl}}" alt="">
+        </div>
+      </div>
+      <div class="form-group row" *ngIf="optIn === 'yes'">
+        <label class="col-sm-2 col-form-label">{{'page-reservation.other' | translate}}</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="others" name="others" type="text" class="form-control"
+            class="form-control-plaintext form-input-reservation">
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-12 text-center">
+        <button class="btn-main mb-50 mt-5 " type="submit">Book now</button>
+      </div>
+    </div>
+  </form>
+</div>

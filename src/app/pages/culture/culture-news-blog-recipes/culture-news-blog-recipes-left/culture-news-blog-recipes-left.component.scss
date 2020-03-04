@@ -1,0 +1,26 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+.recipes-item{
+    cursor: pointer;
+    .new-recipes{
+  
+        color:black;
+        box-shadow: 0 0 20px #888;
+    
+        h4,p{
+            @include font-thehill($main-font,30px,black,900);
+            @include responsive(XS){
+                font-size: 20px;
+            }
+        }
+        p{
+    font-size: 14px;
+    font-weight: normal;
+    @include responsive(XS){
+        font-size: 10px;
+    }
+        }
+    }
+}

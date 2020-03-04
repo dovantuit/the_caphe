@@ -1,0 +1,43 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+:host{
+    .note{
+        font-style: italic;
+        @include font-thehill($thin-font,14px,grey,'');
+    }
+    .form-message{
+        padding: 0px 10px;
+        textarea{
+            height: 30% !important;
+            resize: none;
+        }
+        .input-file{
+            input[type=file]::-webkit-file-upload-button {
+                color:black;
+                background: grey;
+                border-radius: 5px;
+                text-align: right;
+     
+                border: none;
+                float: right; 
+            }
+            input[type=file]::-webkit-textfield-decoration-container{
+                border:1px soild black;
+                margin-right: 5%;
+                color: red;
+            }
+            .file{
+                border-bottom: none;
+            }
+
+            
+        }
+      
+        @include responsive(SM){
+          width: unset;
+          padding-left:5%;
+        }
+      }
+}

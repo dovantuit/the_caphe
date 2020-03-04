@@ -1,0 +1,13 @@
+<div class="list-recipes">
+  <div class="row">
+    <div class="col-lg-6 col-12 mb-5 recipes-item" *ngFor="let item of recipes">
+      <a routerLink="/cong-thuc/{{item.id}}">
+        <div class="new-recipes text-center">
+          <img class="w-100 mb-5 img-border" src="{{HOST_IMG}}{{item.thumbnail}}" alt="">
+          <h4 class="mb-3 mt-lg-3">{{item.name}}</h4>
+          <p class="text-left ml-3 mr-3 pb-3" [innerHTML]="item.description" *ngIf="item.description"></p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>     

@@ -1,0 +1,31 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+.sitemap-container {
+    .site-map {
+        .title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: "Playfair Display SC";
+            cursor: pointer;
+            &:focus{
+                outline:none;
+            }
+        }
+
+        a {
+            color: black;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .row{
+            margin-bottom: 70px;
+            @include responsive(XS){
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+.row:first-child {
+    border-top: 1px solid $main-bg-color;
+}
+
+.social-block {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+
+   
+    .social-button {
+        margin: 0 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+        img{
+          width: 30px;
+          @include responsive(XS){
+            margin-bottom: 5px;
+          }
+        }
+    }
+}

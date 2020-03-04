@@ -1,0 +1,12 @@
+<div class="carousel-section mt-5 mb-50">
+  <h4 class="title">{{'page-recipe-detail.relatedPost' | translate}}</h4>
+
+<div class="owl-carousel owl-theme mt-5 owl-recipes" id="owl-recipes">
+  <div class="item" *ngFor="let item of data">
+    <a href="/cong-thuc/{{item.id}}">
+      <img class="w-100 img-border" src="{{HOST_IMG}}{{item.thumbnail}}" alt="">
+    </a>
+  </div>
+</div>
+
+</div>

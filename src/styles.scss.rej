@@ -1,0 +1,16 @@
+diff a/src/styles.scss b/src/styles.scss	(rejected hunks)
+@@ -31,10 +31,10 @@
+ 
+ @font-face {
+   font-family: 'ProximaNova';
+-   src: url('/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot');
+-   src: url('/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot?iefix') format('eot'),
+-        url('/fonts/proximanova_bold/ProximaNova-Bold-webfont.woff') format('woff'),
+-        url('/fonts/proximanova_bold/ProximaNova-Bold-webfont.ttf') format('truetype');
++   src: url('/assets/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot');
++   src: url('/assets/fonts/proximanova_bold/ProximaNova-Bold-webfont.eot?iefix') format('eot'),
++        url('/assets/fonts/proximanova_bold/ProximaNova-Bold-webfont.woff') format('woff'),
++        url('/assets/fonts/proximanova_bold/ProximaNova-Bold-webfont.ttf') format('truetype');
+   font-weight: bold;
+    font-style: normal;
+ }

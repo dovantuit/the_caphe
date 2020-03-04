@@ -1,0 +1,76 @@
+<div class="products-container mb-50">
+  <!-- data-spy="scroll" data-target=".item" data-offset="100" -->
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/Product.png" class="title-img" alt="">
+    <h1 class="page-title">Discover Our Product</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/san-pham/ca-phe-hat')" [routerLink]="['/san-pham/ca-phe-hat']">Product</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container pbt-50 products-header" id="products" #menu>
+    <div class="row">
+      <div class="col-lg-6 col-12 d-block d-lg-none mb-5">
+        <!-- <img src="../../../assets/images/products/banner.jpg" class="w-100" alt=""> -->
+        <img src="../../../assets/images/new/sanpham.jpg" class="w-100" alt="">
+        <!-- <div style="width: 100%; border: 1px solid black; height: 400px; background: #f4f4f4"></div> -->
+      </div>
+      <div class="col-lg-6 col-12 m-auto">
+        <div class="main">
+          <p class="mb-5">{{ 'page-products.general.description1' | translate}}</p>
+          <!-- <ul>
+            <li *ngFor="let item of menus" [class.active]="selected === item" (click)="selectedMenu(item)">
+              <img src="{{HOST_IMG}}{{item.thumbnail}}" height="150px" width="150px" alt="">
+              <p class="p1" style="text-align: center;margin-top: 30px">{{item.name}}</p>
+            </li>
+          </ul> -->
+          <div style="padding:0 20px">
+            <div class="owl-carousel owl-theme" id="owl-product-menu">
+              <div class="item" [class.active]="selected === item" (click)="selectedMenu(item)" *ngFor="let item of menus" style="cursor: pointer !important">
+                <img src="{{HOST_IMG}}{{item.thumbnail}}" height="150px" width="150px" alt="">
+                <p class="p1" style="text-align: center;margin-top: 30px">{{item.name}}</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 d-none d-lg-block">
+        <!-- <img src="../../../assets/images/products/banner.jpg" class="w-100" alt=""> -->
+        <img src="../../../assets/images/new/sanpham.jpg" class="w-100" alt="">
+        <!-- <div style="width: 100%; border: 1px solid black; height: 400px; background: #f4f4f4"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="products-more" style="padding-top: 30px" #productsMore>
+    <div class="container">
+
+      <div class="owl-carousel owl-theme owl-product" id="owl-menu-{{i+1}}" *ngFor="let item of menus , let i = index"
+        [hidden]="item.id !== menuId">
+        <div class="item" *ngFor="let data of item.items" (click)="displayItem(data)">
+          <div class="text-center">
+            <a>
+              <img src="{{HOST_IMG}}{{data.thumbnail}}" alt="">
+            </a>
+            <h6 class="mt-3  ">{{data.name}}</h6>
+            <!-- <h6 class="mt-3">{{data.productInfo[0].name}}</h6> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="firstItem">
+    <app-products-main [groupImg]="dataImg" [recipeNutrition]="firstItem.recipeNutrition" [displayItem]="firstItem"
+      id="main" [productType]="selected.id">
+    </app-products-main>
+  </div>
+
+
+</div>

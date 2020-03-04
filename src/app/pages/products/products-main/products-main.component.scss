@@ -1,0 +1,105 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+.validation{
+    color:red;
+}
+.products-main{
+   
+   
+    img.img-main{
+        padding: 5%;
+        
+    }
+    .group-img{
+        img{
+            padding: 5%;
+            cursor: pointer;
+            // width: 90px !important;
+            // height: 90px;
+            max-height:90px;
+        }
+    }
+    .text{
+        @include font-thehill($thin-font, '', '', '');
+        margin-top: -22%;
+        @include responsive(SM){
+            margin-top: 40px !important;
+        }
+       h3{
+        @include font-thehill($main-font,'','',bold);
+       }
+
+       .infomation{
+           margin-bottom: 50px;
+           @include responsive(MD){
+               margin-bottom: 10px;
+           }
+           .row{
+               margin-bottom: 10px;
+
+           }
+       }
+    }
+}
+.products-description{
+
+    .table-product-description{
+        td:nth-child(1),th:nth-child(1){
+         border-right: 1px solid #dee2e6;
+        }
+     
+        th{
+            width: 50%;
+            font-size: 24px;
+            @include font-thehill($main-font, '', '', '');
+        }
+     
+        td{
+            @include font-thehill($thin-font, '', '', '');
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 10px;
+                    .row{
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        @include responsive(SM){
+            display: none;
+          }
+       
+     }
+
+     .progress{
+        height: 7px;
+        margin-top: 10px;
+        border-radius: 0;
+           .progress-bar{
+    background-color:#c6a673;
+           }
+       }
+
+       .nav-products-description{
+        border-bottom: 1px solid black;
+        
+            li{
+                
+                a{
+                    color: black;
+                    padding: 12px 12px 3px 12px;
+                    &.active{
+                        border: 1px solid black;
+                        border-bottom: none;
+                        font-style: italic;
+                    }
+                    
+                }
+               
+            }
+
+       }
+}

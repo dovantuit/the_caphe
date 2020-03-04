@@ -1,0 +1,39 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+
+.infomation{
+    .image{
+        img{
+            // padding: 5%;
+            border:1px solid black;
+        }
+        @include responsive(SM){
+            padding: 10%;
+        }
+    }
+    
+    
+                 .ulli{
+                    @include responsive(XS){
+                        width: 100% !important;
+                    }
+                    p{
+                        @include font-thehill($main-font,15px,black,'');
+                    }
+                     .name{
+                        @include font-thehill($main-font,15px,black,'');
+                     }
+                     .info{
+                        padding-left: 5px;
+                        font-style:italic;
+                        @include font-thehill($thin-font,15px,'','');
+                        @include responsive(SM){
+                            @include font-thehill($main-font,15px,'','');
+                        }
+                     }
+    
+                 }
+             }
+            

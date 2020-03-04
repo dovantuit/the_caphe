@@ -1,0 +1,287 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+.main-content {
+    .table-item {
+        border: 1px solid black;
+
+        &:nth-child(1) {
+            padding-left: 0 !important;
+        }
+
+        &:nth-child(2) {
+            border-left: none;
+            border-right: none;
+        }
+
+        p {
+            margin-bottom: 0;
+            padding: 2% 0;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            span {
+                text-transform: none;
+                @include font-thehill($thin-font, 14px, '', '900');
+            }
+        }
+    }
+
+    .content {
+        .title {
+            @include font-thehill($main-font, 22px, black, '');
+        }
+
+        .btn-main {
+            padding: 8px 32px;
+        }
+
+        .item {
+            font-size: 15px;
+
+            p {
+                margin-bottom: 0 !important;
+            }
+
+            .group-p {
+                p {
+                    @include font-thehill($main-font, '', gray, '');
+                    
+                    span {
+                        font-weight: unset;
+                    }
+                }
+            }
+
+            p {
+                @include font-thehill($main-font, '', gray, '');
+
+                span {
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+
+
+        }
+
+        .ulli {
+            ul {
+                counter-reset: count;
+
+                li {
+                    // position: relative;
+                    // display: flex;
+                    margin-bottom: 20px;
+
+                    @include responsive(XS) {
+                        margin-bottom: 25px;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    div {
+
+
+                        div.count {
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            background: black;
+                            border-radius: 50%;
+                            float: left;
+                            margin-right: 15px;
+                            position: relative;
+
+                            p {
+
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+
+                        }
+
+                        div.text {
+                            margin-left: 7%;
+                        }
+                    }
+
+
+                    // &::before{
+                    //     counter-increment: count;
+                    //     content: counter(count);
+                    //     background-color: black;
+                    //     font-weight:bold;
+                    //     color: white;
+                    //     border-radius: 50%;
+                    //     display: table;
+                    //     padding: 5px 14px;
+                    //     margin-right: 5%;
+                    // }
+                }
+            }
+
+            p.tips {
+                font-style: italic;
+                @include font-thehill($thin-font, 16px, '', '');
+
+                span {
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .content-mobile {
+        background: #e5e5e5;
+
+        .item-ingredients,
+        .item-nutrition,
+        .item-directions {
+            position: relative;
+
+            .title {
+                text-transform: uppercase;
+                @include font-thehill($thin-font, 22px, black, bold);
+            }
+
+            i {
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 30px;
+            }
+
+            .ulli {
+                ul {
+                    li {
+                        position: relative;
+                        margin-bottom: 3rem !important;
+                        // @include responsive(XS){
+                        //     margin-bottom: 5% !important;
+                        // }
+
+                        // &:last-child{
+                        //     margin-bottom: 50px;
+                        // }
+                        p {
+                            position: absolute;
+                            top: 0;
+                            left: 8%;
+                            margin-bottom: 0;
+
+                            @include responsive(XS) {
+                                left: 12%;
+                                margin-bottom: 10%;
+                            }
+                        }
+                       
+
+                    }
+                }
+            }
+        }
+
+        &::after {
+            border-radius: 7px;
+            border-bottom: solid grey;
+            border-width: 2px 2px 4px;
+            bottom: -4px;
+            content: "";
+            left: -1.5px;
+            position: absolute;
+            right: -1.5px;
+            top: -2px;
+            z-index: 1;
+        }
+
+
+        tr {
+            border: none;
+
+        }
+
+        th {
+            border: none;
+            @include font-thehill($main-font, 18px, black, 900);
+        }
+
+        td {
+            border: none;
+            padding: 0.5rem;
+
+            &:nth-child(3) {
+                text-align: center
+            }
+        }
+
+        .item-ingredients {
+            .ulli {
+                li {
+
+                    // margin-bottom: 5rem !important;
+                    &::before {
+                        content: "\f00c";
+                        font-weight: bold;
+                        color: grey;
+                        margin-right: 5%;
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .item-directions {
+            .ulli {
+                ul {
+                    counter-reset: count;
+
+                    li {
+                        margin-bottom: 5rem !important;
+
+                        &:last-child {
+                            margin-bottom: 10rem !important;
+                            ;
+                        }
+                        div {
+
+
+                            div.count {
+                                width: 30px;
+                                height: 30px;
+                                color: white;
+                                background: grey;
+                                border-radius: 50%;
+                                
+                                margin-right: 15px;
+                                position: relative;
+    
+                                p {
+    
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+    
+                            }
+    
+                            div.text {
+                                margin-left: 7%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}

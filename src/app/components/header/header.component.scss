@@ -1,0 +1,224 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+:host {
+    .lang-row{
+        @include responsive(SM){
+            display: none !important;
+        }
+    }
+
+    .mobile-title {
+        font-family: 'Playfair Display SC' !important;
+        display: inline-block !important;
+    }
+    .dropdown-item {
+        white-space: unset;
+    }
+    .hide{
+        display: none;
+    }
+    .fixed{
+        display: block;
+    }
+    nav {
+
+        // padding: 45px 100px 0 100px;
+        @include transition(all .3s ease);
+        background-color: white;
+        transform: translateY(0);
+
+        .nav_lang{
+            @include font-thehill($main-font, 0.9em, $main-bg-color, 100);
+            text-transform: uppercase;
+            padding-left:0px !important;
+            display:none;
+            // @include responsive(SM){
+            //     display:contents;
+            // }
+            @media screen and (max-width: 768px){
+                display:contents !important;
+                // background-color:blue;
+            }
+
+        }
+
+
+        // &.hide {
+        //     transition: 0.5s;
+        //     transform: translateY(-120%);
+        // }
+
+
+        // &.fixed {
+        //     height: 6vw;
+        //     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+        //     @include responsive(SM) {
+        //         height: unset;
+        //         padding: 0 1rem;
+        //     }
+
+        //     position: fixed;
+        //     top: 0;
+        //     z-index: 998;
+        //     width: 100%;
+        //     @include transition(all .3s ease);
+        //     background-color: white;
+        // }
+
+        &.stricky {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 7vw;
+            left: 0;
+            background: white;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
+            @include responsive(SM) {
+                height: auto;
+            }
+            @include responsive(MD) {
+            }
+
+
+        }
+
+        .logo {
+            width: 150px;
+            height: 100px;
+            background: url('../../../assets/images/logo/blacklogo.svg') no-repeat center;
+
+            @include responsive(SM) {
+                width: 120px;
+                height: 80px;
+            }
+
+            @include responsive(XS) {
+                height: 60px;
+            }
+        }
+
+        .nav-item {
+            cursor: pointer;
+        }
+
+        .header-router {
+
+            ul {
+                border-bottom: 1px solid $main-bg-color;
+
+                @include responsive(SM) {
+                    border-bottom: none;
+                }
+            }
+
+            li {
+                margin-right: 10px;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                @include font-thehill($main-font, 0.9em, $main-bg-color, 100);
+
+                text-transform: uppercase;
+            }
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            background: url('../../../assets/images/menu.svg') center no-repeat;
+        }
+
+        .nav-item:hover {
+            .nav-link {
+                color: black;
+                // font-weight: 550;
+                // font-family: $main-font1;
+            }
+        }
+
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                .dropdown-menu {
+                    display: block;
+                }
+            }
+
+            .dropdown-menu {
+                z-index: 1000;
+                // border-top: none;
+                top: 35px;
+                border-top: 1px solid;
+
+                @include responsive(SM) {
+                    margin-bottom: 15px;
+                    top: 0;
+                    border-top: none;
+                }
+
+                a:hover {
+                    // font-family: $main-font1;
+                    // font-weight: 900;
+                    // font-weight: 550;
+                    background: transparent;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+
+    .back-to-top {
+        position: fixed;
+        right: 38.5px;
+        cursor: pointer;
+        bottom: 100px;
+        background: black;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        opacity: 0;
+        z-index: 999;
+
+        &.active {
+            opacity: 1;
+            color: black !important;
+        }
+
+        a {
+            height: 32px;
+            width: 32px;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+
+
+
+
+    .active {
+        font-weight: bold !important;
+        // @include font-thehill($main-font1, '', '', '');
+        color: black !important;
+    }
+}

@@ -1,0 +1,51 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+
+.shipping-container {
+    .title {
+        width: 90%;
+
+        @include responsive(SM) {
+            width: 100%;
+        }
+
+        span {
+            text-align: left;
+        }
+        div{
+            @include responsive(SM) {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .note{
+        width: 75%;
+        margin:auto;
+        @include responsive(SM) {
+            width: 100%;
+        }
+    }
+
+    .content {
+        width: 90%;
+        margin: auto;
+
+        @include responsive(SM) {
+            width: 100%;
+        }
+
+        .col-lg-3.col-12 {
+            font-weight: 900;
+
+            @include responsive(SM) {
+                font-size: 20px;
+            }
+        }
+
+       
+    }
+   
+}

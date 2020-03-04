@@ -1,0 +1,20 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+:host{
+    .aboutus-career-first {
+        img{
+            @include responsive(SM){
+                width: 80% !important;
+            }
+            // padding: 5%;
+            border:1px solid black;
+        }
+        .main{
+            @include responsive(SM){
+                text-align: center;
+            }
+        }
+    }
+}

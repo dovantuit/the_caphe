@@ -1,0 +1,10 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+    .leave-a-comment{
+        .title{
+            text-transform: uppercase;
+            @include font-thehill($main-font,'','',bold);
+        }
+    }

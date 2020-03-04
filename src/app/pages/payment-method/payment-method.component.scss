@@ -1,0 +1,116 @@
+@import "../../../styles/responsive";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.policy-container {
+    .title {
+        width: 90%;
+        margin: auto;
+
+        @include responsive(SM) {
+            width: 100%;
+        }
+
+        span {
+            text-align: left;
+        }
+
+        div {
+            @include responsive(SM) {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .content {
+        width: 90%;
+        margin: auto;
+
+        @include responsive(SM) {
+            width: 100%;
+        }
+
+        .col-lg-3.col-12 {
+            font-weight: bold;
+
+            @include responsive(SM) {
+                font-size: 20px;
+            }
+
+            span {
+                font-weight: 100;
+
+                @include responsive(SM) {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        // .col-lg-8 {
+        //     span {
+        //         text-decoration: underline;
+        //         margin-right: 5px;
+        //     }
+        // }
+    }
+
+    .main-exm {
+        width: 70%;
+        margin: auto;
+
+        @include responsive(SM) {
+            width: 100%;
+        }
+
+        .col-lg-3,.col-lg-4 {
+            text-align: right;
+
+            @include responsive(SM) {
+                text-align: center !important;
+            }
+        }
+
+        .col-lg-9,.col-lg-8 {
+            font-weight: bold;
+
+            @include responsive(SM) {
+                text-align: center !important;
+            }
+        }
+
+
+        .info-bank {
+            padding: 5%;
+            box-shadow: -8px 10px 8px 3px $slategray;
+
+            @include responsive(SM) {
+                border: 1px solid;
+                box-shadow: unset;
+            }
+
+            .list-bank {
+                ul {
+                    width: 100%;
+                    margin: auto;
+                    li {
+                        div {
+                            p{
+                                margin-bottom: 3px;
+                            }
+                            div.text {
+                                
+                                span.info,.col-lg-8{
+                                    font-weight:bold;
+                                }
+                                margin-left: 3%;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+
+     
+    }
+}

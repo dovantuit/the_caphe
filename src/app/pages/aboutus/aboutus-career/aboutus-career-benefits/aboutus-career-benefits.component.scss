@@ -1,0 +1,31 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+:host{
+    .aboutus-stories{
+        box-shadow: 0 0 30px #888;
+        img{
+            // padding: 5%;
+            border:1px solid black;
+            &.img-text{
+                padding: 0;
+                border: none;
+            }
+        }
+        .row-benefits{
+            .ulli{
+                color:grey;
+                .benefits-title{
+                    text-transform: uppercase;
+                    @include font-thehill($main-font, 20px, black, bold);
+                }
+                &:last-child{
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+       
+    }
+    
+}

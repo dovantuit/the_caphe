@@ -1,0 +1,149 @@
+<div class="row d-none d-lg-flex">
+  <div class="col-lg-3">
+    <div class="wrapper" style="padding-left: 70px">
+      <div  class="title">{{'footer.aboutus.title' | translate}}</div>
+      <ul>
+        <li>
+          <a  onclick="clickNavigation('/ve-chung-toi#aboutus-mission')" href="/ve-chung-toi#aboutus-mission">{{'footer.aboutus.missons' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/ve-chung-toi#aboutus-vision')" href="/ve-chung-toi#aboutus-vision">{{'footer.aboutus.coreValue' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/san-pham/ca-phe-hat')" [routerLink]="['/san-pham/ca-phe-hat']">{{'footer.aboutus.cleanCoffee' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/doanh-nghiep/xuat-khau')" [routerLink]="['/doanh-nghiep/xuat-khau']">{{'footer.aboutus.exportation' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/doanh-nghiep/ban-si')" [routerLink]="['/doanh-nghiep/ban-si']">{{'footer.aboutus.wholesale' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/tuyen-dung')" [routerLink]="['/tuyen-dung']">{{'footer.aboutus.career' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-2">
+    <div class="wrapper">
+      <div class="title">{{'footer.community.title' | translate}}</div>
+      <ul>
+        <li>
+          <a onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">{{'footer.community.knowledge' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/tin-tuc')" [routerLink]="['/tin-tuc']">{{'footer.community.newsUpdate' | translate}}</a>
+        </li>
+
+        <li>
+          <a onclick="clickNavigation('/huong-dan')" [routerLink]="['/huong-dan']">{{'footer.community.brewGuide' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/cong-thuc')" [routerLink]="['/cong-thuc']">{{'footer.community.recipe' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="wrapper" style="padding-left: 30px">
+      <div class="title">{{'footer.support.title' | translate}}</div>
+      <ul>
+        <li>
+          <a onclick="clickNavigation('/dich-vu')" [routerLink]="['/dich-vu']">{{'footer.support.customerServices' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/shipping-and-return')" [routerLink]="['/shipping-and-return']">{{'footer.support.shippingReturns' | translate}}</a>
+        </li>
+        <li>
+          <a onclick="clickNavigation('/phuong-thuc-thanh-toan')" [routerLink]="['/phuong-thuc-thanh-toan']">{{'footer.support.paymentMethods' | translate}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="wrapper">
+      <div class="title">{{'footer.contact.title' | translate}}</div>
+      <ul>
+        <li>
+          <a>{{'footer.contact.address' | translate}}</a>
+        </li>
+        <li>
+          <a href="tel:02837406789">{{'footer.contact.phone' | translate}} 028 - 3740 6789</a>
+        </li>
+        <li>
+          <a>{{'footer.contact.fax' | translate}} 028 - 3740 6788</a>
+        </li>
+        <li>
+          <a>Email: info@thehillcoffee.com.vn</a>
+        </li>
+      </ul>
+    </div>
+    <a class="tem" target="_blank" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=51616">
+      <img src="../../../../assets/images/tem.png" width="100%">
+    </a>
+  </div>
+</div>
+<div class="row d-block d-lg-none" id="accordianId">
+  <div class="col-12">
+    <div class="dropdown border-top">
+      <button class="btn btn-primary-outline dropdown-toggle w-100 text-left" data-toggle="collapse" data-target="#dropdownAboutUs"
+        data-parent="#accordianId" aria-expanded="false" aria-controls="dropdownAboutUs">
+        <div class="mobile-title">{{'footer.aboutus.title' | translate}}</div>
+      </button>
+      <div class="collapse" id="dropdownAboutUs" aria-labelledby="dropdownAboutUs" data-parent="#accordianId">
+        <a class="dropdown-item" onclick="clickNavigation('/ve-chung-toi#aboutus-mission')" href="/ve-chung-toi#aboutus-mission">{{'footer.aboutus.missons' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/san-pham/ca-phe-hat')" [routerLink]="[ '/san-pham/ca-phe-hat' ]">{{'footer.aboutus.coreValue' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/ve-chung-toi#aboutus-vision')" href="/ve-chung-toi#aboutus-vision">{{'footer.aboutus.cleanCoffee' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/doanh-nghiep/xuat-khau')" [routerLink]="['/doanh-nghiep/xuat-khau']">{{'footer.aboutus.exportation' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/doanh-nghiep/ban-si')" [routerLink]="['/doanh-nghiep/ban-si']">{{'footer.aboutus.wholesale' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/tuyen-dung')" [routerLink]="['/tuyen-dung']">{{'footer.aboutus.career' | translate}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="dropdown border-top">
+      <button class="btn btn-primary-outline dropdown-toggle w-100 text-left" data-toggle="collapse" data-target="#dropdownCommunity"
+        data-parent="#accordianId" aria-expanded="false" aria-controls="dropdownCommunity">
+        <div class="mobile-title">{{'footer.community.title' | translate}}</div>
+      </button>
+      <div class="collapse" id="dropdownCommunity" aria-labelledby="dropdownCommunity" data-parent="#accordianId">
+        <a class="dropdown-item" onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">{{'footer.community.knowledge' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/tin-tuc')" [routerLink]="['/tin-tuc']">{{'footer.community.newsUpdate' | translate}}</a>
+
+        <a class="dropdown-item" onclick="clickNavigation('/huong-dan')" [routerLink]="['/huong-dan']">{{'footer.community.brewGuide' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/cong-thuc')" [routerLink]="['/cong-thuc']">{{'footer.community.recipe' | translate}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="dropdown border-top">
+      <button class="btn btn-primary-outline dropdown-toggle w-100 text-left" data-toggle="collapse" data-target="#dropdownSupport"
+        data-parent="#accordianId" aria-expanded="false" aria-controls="dropdownSupport">
+        <div class="mobile-title"> {{'footer.support.title' | translate}}</div>
+      </button>
+      <div class="collapse" id="dropdownSupport" aria-labelledby="dropdownSupport" data-parent="#accordianId">
+        <a class="dropdown-item" onclick="clickNavigation('/dich-vu')" [routerLink]="['/dich-vu']">{{'footer.support.customerServices' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/shipping-and-return')" [routerLink]="['/shipping-and-return']">{{'footer.support.shippingReturns' | translate}}</a>
+        <a class="dropdown-item" onclick="clickNavigation('/phuong-thuc-thanh-toan')" [routerLink]="['/phuong-thuc-thanh-toan']">{{'footer.support.paymentMethods' | translate}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="dropdown border-top border-bottom">
+      <button class="btn btn-primary-outline dropdown-toggle w-100 text-left" data-toggle="collapse" data-target="#dropdownContact"
+        data-parent="#accordianId" aria-expanded="false" aria-controls="dropdownContact">
+        <div class="mobile-title"> {{'footer.contact.title' | translate}}</div>
+      </button>
+      <div class="collapse" id="dropdownContact" aria-labelledby="dropdownContact" data-parent="#accordianId">
+        <a class="dropdown-item">{{'footer.contact.address' | translate}}
+          <!-- <br/> District 2, HCMC</a> --> </a>
+        <a class="dropdown-item" href="tel:02837406789">{{'footer.contact.phone' | translate}} 028 - 3740 6789</a>
+        <a class="dropdown-item">{{'footer.contact.fax' | translate}} 028 - 3740 6788</a>
+        <a class="dropdown-item">Email: info@thehillcoffee.com.vn</a>
+      </div>
+    </div>
+  </div>
+  <a class="tem mt-3" target="_blank" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=51616">
+    <img class="mx-auto" src="../../../../assets/images/tem.png" width="30%">
+  </a>
+</div>

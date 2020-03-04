@@ -1,0 +1,52 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+    .description{
+        img{
+            // padding: 5%;
+            border:1px solid black;
+        }
+
+        .table-description{
+            tr{
+                border:none;
+            }
+            th{
+                border: none;
+                @include font-thehill($main-font,18px,black,900);
+            }
+            td{
+                border: none;
+                padding: 0.5rem;
+                &.n{
+                    @include font-thehill($thin-font,16px,'','');
+                }
+                &.g{
+                    font-weight: 600;
+                    color:black;
+                }
+            }
+            .progress{
+                height: 5px;
+                margin-top: 12px;
+                border-radius: 0;
+                   .progress-bar{
+            background-color:#c6a673;
+                   }
+            }
+        }
+        p{
+            font-style: italic;
+            @include font-thehill($thin-font,14px,'','');
+        }
+
+        .title-description{
+            @include font-thehill($main-font,30px,black,900);
+        }
+       }
+
+
+
+
+

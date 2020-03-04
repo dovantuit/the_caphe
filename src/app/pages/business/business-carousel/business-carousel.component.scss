@@ -1,0 +1,96 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive";
+
+:host {
+    h1 {
+        @include font-thehill($main-font, 2.5em, '', bold);
+        font-style: italic;
+    }
+
+    .row {
+        padding: 2%;
+        // box-shadow: 0px 5px 5px grey;
+        min-height: 500px
+    }
+
+    .row-input {
+        width: 90%;
+        font-size: 13px;
+        margin: auto;
+        @include responsive(XS){
+            padding-top: 0 !important;
+        }
+
+        .title {
+            margin-bottom: 0;
+            @include font-thehill($main-font, 3em, '', 600);
+
+            @include responsive(XS) {
+                font-size: 20px;
+                text-align: center !important;
+            }
+        }
+
+        p {
+            margin-left: 13px;
+
+            margin-bottom: 0;
+            @include font-thehill($thin-font, 13px, grey, '')
+        }
+
+        .form-control {
+            font-size: 13px !important;
+        }
+
+        .form-message {
+            padding-left: 0 !important;
+
+            span {
+                @include font-thehill($thin-font, 12px, red, '');
+                margin-left: 13px;
+                float: left;
+            }
+
+            .list-check {
+                color: grey;
+
+                .form-check {
+                    margin-left: 12%;
+
+                    @include responsive(SM) {
+                        margin-left: 0;
+                    }
+                    @include responsive(XS) {
+                        margin-left:5%;
+                    }
+
+                    .form-check-input {
+                        margin-top: 3px;
+                    }
+                }
+            }
+
+            @include responsive(SM) {
+                padding-left: 5%;
+            }
+        }
+
+
+    }
+
+    .modal-content {
+        position: relative;
+
+        .close {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+
+            @include responsive(SM) {
+                top: 1%;
+                right: 4%;
+            }
+        }
+    }
+}

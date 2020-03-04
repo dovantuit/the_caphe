@@ -1,0 +1,21 @@
+<div class="aboutus-stories pbt-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-5 mt-5">
+        <div class=" text-center ml-auto mx-auto title ">
+          <img src="../../../../assets/images/title/Vision.png" alt="" class="vision-img">
+          <h3 class="about-title">What We Do</h3>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 text-center mt-5">
+        <div class="row">
+          <div class="col-lg-6 col-6 mb-5" *ngFor="let item of listData">
+            <img class="img-circle" src="{{HOST_IMG}}{{item.thumbnail}}"  alt="">
+            <div class="text" [innerHTML]="item.description"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

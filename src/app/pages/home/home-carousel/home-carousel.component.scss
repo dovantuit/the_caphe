@@ -1,0 +1,94 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive";
+
+.ourcustomer-say-card{
+    background-image: url(../../../../assets/images/h2.png);
+    background-size: cover;
+    background-position: center;
+    h1 {
+        font-family: "Playfair Display SC";
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+
+    .owl-carousel.owl-theme {
+
+        &::after{
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            content:'';
+        }
+        position: relative;
+
+        img{
+            max-height: unset !important;
+        }
+        .over{
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+        }
+
+        .item{
+            position: relative;
+         
+           
+            // img.img-av{
+            //     width: 100%;
+                
+            //     @include responsive(XS){
+            //         width: 70%;
+            //          margin: auto;
+            //     }
+            //     @include responsive(SM){
+            //         width: 45%;
+            //          margin: auto;
+            //     }
+            // }
+            
+            .col-lg-6 {
+                text-align: center;
+                p {
+                    @include font-thehill($thin-font,
+                    1.2em,
+                    $white,
+                    lighter);
+                    font-style: italic;
+                    line-height: 1.4em;
+                    @include responsive(XS){
+                        width: 90%;
+                        font-size: 1em;
+                    }
+                }
+                .author {
+                    font-style: normal;
+                    @include font-thehill($main-font,
+                    1.4em,
+                    $white,
+                    bold);
+                    margin-bottom: 0;
+                    @include responsive(SM){
+                        font-size: 1em;
+                    }
+                }
+                img.img-author {
+                    margin-top: 15px;
+                    width: 6%;
+                    @include responsive(SM){
+                        width: 7%;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+

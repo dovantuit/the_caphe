@@ -1,0 +1,524 @@
+{
+    "navbar": {
+        "about-us": "Về chúng tôi",
+        "product": "Sản phẩm",
+        "coffee-culture": "Văn hóa cà phê",
+        "services": "Dịch Vụ",
+        "business": "Đối tác",
+        "events": "Sự kiện",
+        "contact": "Liên hệ"
+    },
+    "footer": {
+        "aboutus": {
+            "title": "Về Chúng Tôi",
+            "missons": "Sứ Mệnh",
+            "cleanCoffee": "Cà Phê Sạch",
+            "coreValue": "Tầm Nhìn Định Hướng",
+            "exportation": "Xuất Khẩu",
+            "wholesale": "Phân Phối Sỉ",
+            "career": "Cơ Hội Nghề Nghiệp"
+        },
+        "community": {
+            "title": "Cộng đồng",
+            "newsUpdate": "Cập Nhật Thông Tin",
+            "knowledge": "Kiến Thức Cà Phê",
+            "brewGuide": "Hướng Dẫn Pha Chế",
+            "recipe": "Công Thức Pha Chế"
+        },
+        "support": {
+            "title": "Hỗ Trợ",
+            "customerServices": "Dịch Vụ Khách Hàng",
+            "shippingReturns": "Vận Chuyển & Đổi Trả",
+            "paymentMethods": "Phương Thức Thanh Toán"
+        },
+        "contact": {
+            "title": "Liên Hệ",
+            "address": "Số 8, Tầng 8, Cantavil Premier, Đường Song Hành, Phường An Phú, Quận 2, TP.HCM",
+            "phone": "Điện Thoại:",
+            "fax": "Fax:",
+            "email": "info@thehillcoffee.com.vn"
+        },
+        "sub":{
+            "policy":"Chính sách bảo mật",
+            "site":"Site Map"
+        },
+        "description": "Ra đời năm 2015, The Hill Vietnam mang sứ mệnh cung cấp nguồn cà phê sạch, đồng thời trở thành trợ lý đắc lực của những người có chung niềm đam mê cà phê."
+    },
+    "page-aboutus": {
+        "whoWeAre": {
+            "title1": "The Hill Vietnam được thành lập",
+            "description1": "Với mong muốn đưa nền văn hóa cà phê sạch đến với người tiêu dùng Việt Nam, The Hill Vietnam đã được thành lập. Giống với các đối thủ, The Hill Vietnam cung cấp cà phê. Khác với các đối thủ, The Hill Vietnam  không chạy theo giấc mơ trở thành nhà cung cấp cà phê lớn nhất. Từ những ngày đầu thành lập, The Hill Vietnam đã đặt cho mình mục tiêu trở thành người trợ lý, người đồng hành và hơn hết là một người bạn có thể giúp những ai đam mê cà phê hiện thực hóa giấc mơ của bản thân mình.",
+            "title2": "The Hill Vietnam gia nhập thị trường cà phê hạt",
+            "description2": "Sau thời gian dài tìm hiểu, phát triển sản phẩm cũng như lắng nghe tâm tư nguyện vọng của các chủ quán cà phê, The Hill Vietnam đã chính thức cho ra mắt sáu loại sản phẩm cà phê hạt để phục vụ nhu cầu của thị trường. Đây là một trong những thời điểm quan trọng đánh dấu bước chuyển mình của The Hill Vietnam.",
+            "title3": "The Hill Vietnam phát triển hệ thống quản lý 4.0",
+            "description3": "Hiểu rõ tầm quan trọng của việc áp dụng công nghệ, The Hill Vietnam tự hào là nhà cung cấp nguyên liệu cà phê đầu tiên trong ngành tích hợp công nghệ 4.0 để cung cấp nguồn nguyên liệu chất lượng cao đến tay khách hàng với sự tiện lợi nhanh chóng và giá thành tốt nhất. Đồng thời, với việc triển khai mọi hoạt động phát triển theo mô hình F2C (Factory to Customers), chúng tôi đem lại nhiều giá trị lợi ích hơn cho khách hàng với chất lượng sản phẩm đảm bảo và giá cả hợp lý."
+        },
+        "whatWeDo": {
+            "description1": "Cung cấp nguồn cà phê hạt đa dạng, phù hợp với tất cả nhu cầu của khách hàng",
+            "description2": "Cung cấp nhiều dịch vụ để tăng sự tiện lợi cho khách hàng, tiêu biểu là dịch vụ cá nhân hóa khẩu vị",
+            "description3": "Sử dụng công nghệ 4.0 để tương tác nhằm tiết kiệm thời gian và chi phí cho khách hàng",
+            "description4": "Gia công và xuất khẩu cà phê đến các nước trên thế giới"
+        },
+        "ourPromises": {
+            "description1": "Chỉ khi các đối tác thành công thì The Hill Vietnam mới thành công",
+            "description2": "Luôn luôn tìm cách cải tiến sản phẩm, thực hiện đúng cam kết về chất lượng",
+            "description3": "Có trách nhiệm với khách hàng cũng như từng nhân viên của công ty"
+        },
+        "openIntro": {
+            "description1": "Chào bạn – những chủ quán đang tìm nguồn cung cấp cà phê, những người có niềm đam mê với cà phê và tất cả mọi người,",
+            "description2": "Chúng tôi biết bạn đang tìm muốn tìm hiểu về The Hill Vietnam và chúng tôi rất mừng vì điều đó. Nhưng hãy để chúng tôi làm rõ điều này: tất cả mọi thứ sẽ là về bạn. Chúng tôi đã xây dựng website này như một ngôi nhà – nơi mà chúng tôi mong sẽ được cùng bạn đi hết mọi ngõ ngách để khám phá thế giới đẹp đẽ và đa chiều phức tạp của cà phê."
+        }
+    },
+    "page-products": {
+        "general": {
+            "description1": "Từ những hạt cà phê tuyển chọn từ vùng cao nguyên Buôn Ma Thuột, Brazil và Ethiopia - những vùng đất sản xuất cà phê hàng đầu thế giới, chúng tôi đã không ngừng nghiên cứu và phát triển để cho ra đời những dòng sản phẩm phù hợp với từng đối tượng khách hàng."
+        },
+        "product": {
+            "description": "Giới thiệu",
+            "ingredients": "Thành phần"
+        },
+        "productInfo": {
+            "quantity": "Số lượng:",
+            "weight": "Khối lượng:",
+            "expiry": "Hạn sử dụng:",
+            "brand":"Thương hiệu:",
+            "price":"Giá:",
+            "origin":"Xuất xứ:"
+        }
+    },
+    "page-culture": {
+        "knowledge": {
+            "description1": "Qua những bài viết ở chuyên mục này, The Hill Vietnam mong muốn được chia sẻ với bạn những câu chuyện và sự thật thú vị về cà phê. Hiểu về cà phê cũng chính là cách để thể hiện tình yêu với cà phê. Hãy để cà phê không chỉ đơn thuần là một loại thức uống mà là một trải nghiệm đích thực."
+        },
+        "shareWithUs": {
+            "title1": "Cà phê đóng vai trò quan trọng như thế nào trong cuộc sống của bạn?",
+            "description1": "Đối với The Hill Vietnam, thưởng thức cà phê cũng là một cách để trải nghiệm cuộc sống, và trải nghiệm thì cần được chia sẻ. Đừng ngần ngại chia sẻ câu chuyện về cà phê của bạn với chúng tôi, và với mọi người. Chúng sẽ là nguồn cảm hứng cho The Hill Vietnam nói riêng, và cho cộng đồng những người yêu cà phê nói chung để không ngừng duy trì văn hóa cà phê và đóng góp cho sự phát triển bền vững của thị trường cà phê nước nhà."
+        },
+        "blog": {
+            "title1": "Cà phê đóng vai trò quan trọng như thế nào trong cuộc sống của bạn?",
+            "description": "Những câu chuyện về cà phê sẽ mang đến những phút giây thư thái và góc nhìn mới mẻ.",
+            "recent": "GẦN ĐÂY",
+            "category": "CHUYÊN MỤC",
+            "archives": "LƯU TRỮ"
+        },
+        "recipe": {
+            "title1": "Cà phê đóng vai trò quan trọng như thế nào trong cuộc sống của bạn?",
+            "description": "Những công thức pha chế thức uống cơ bản, có thể áp dụng ngay tại nhà.",
+            "recent": "GẦN ĐÂY",
+            "category": "CHUYÊN MỤC",
+            "specialDiet": "CHẾ ĐỘ ĐẶC BIỆT",
+            "course": "course"
+        },
+        "experiences": {
+            "description1": "Khi con người luôn sáng tạo, tìm tòi để cho ra những loại thức uống khác nhau được pha chế từ cà phê. Thì mỗi loại thức uống ấy đều mang lại nét đẹp tinh tế riêng biệt trong tổng hòa bức tranh đầy màu sắc của một quốc gia nói riêng và thế giới nói chung."
+        },
+        "brewBar": {
+            "description1": "Đến với chuyên mục này, chuyên viên cà phê của The Hill sẽ mang lại cho bạn những góc nhìn chân thực nhất qua các video clip hướng dẫn pha chế từng loại thức uống. Dù bạn yêu thích pha chế cà phê, hay chỉ đơn giản là tò mò và muốn tìm hiểu cách làm của một loại đồ uống, chuyên mục này đều rất thích hợp để bạn khám phá."
+        }
+    },
+    "page-brewBar": {
+        "description": "Đến với chuyên mục này, chuyên viên cà phê của The Hill sẽ mang lại cho bạn những góc nhìn chân thực nhất qua các video clip hướng dẫn pha chế từng loại thức uống. Dù bạn yêu thích pha chế cà phê, hay chỉ đơn giản là tò mò và muốn tìm hiểu cách làm của một loại đồ uống, chuyên mục này đều rất thích hợp để bạn khám phá.",
+        "date": "Ngày đăng:",
+        "moreMethod": "Phương pháp khác"
+    },
+    "page-sharWithUs": {
+        "description": "Đối với The Hill Vietnam, thưởng thức cà phê cũng là một cách để trải nghiệm cuộc sống, và trải nghiệm thì cần được chia sẻ. Đừng ngần ngại chia sẻ câu chuyện về cà phê của bạn với chúng tôi, và với mọi người. Chúng sẽ là nguồn cảm hứng cho The Hill Vietnam nói riêng, và cho cộng đồng những người yêu cà phê nói chung để không ngừng duy trì văn hóa cà phê và đóng góp cho sự phát triển bền vững của thị trường cà phê nước nhà."
+    },
+    "page-recipe-detail": {
+        "postedBy": "Đăng bởi:",
+        "recipeType": "THỨC UỐNG:",
+        "category": "CHUYÊN MỤC:",
+        "specialDiet": "CHẾ ĐỘ ĐẶC BIỆT:",
+        "cuisine": "PHONG CÁCH ẨM THỰC:",
+        "yield": "KHẨU PHẦN:",
+        "time": "THỜI GIAN:",
+        "difficulty": "ĐỘ KHÓ:",
+        "ingredients": "Thành phần",
+        "equipment": "Công cụ",
+        "direction": "Hướng dẫn",
+        "nutrition": "Giá trị dinh dưỡng",
+        "nutrient": "Thành phần dinh dưỡng",
+        "relatedPost": "Bài viết liên quan",
+        "comment": "Bình luận",
+        "no-comment": "Chưa có bình luận nào",
+        "leaveComment": "Để lại bình luận"
+    },
+    "page-services": {
+        "general": {
+            "description1": "Bên cạnh việc không ngừng đầu tư chất lượng sản phẩm, The Hill Vietnam mang đến khách hàng của mình những dịch vụ thiết thực để hỗ trợ tốt nhất có thể cho mọi hoạt động hướng đến sự phát triển lâu dài.",
+            "description2": "Dựa trên nền tảng công nghệ AI (Artificial Intelligence) - Trí tuệ nhân tạo, chúng tôi áp dụng vào mô hình của công ty để nhằm gia tăng tối đa sự tiện ích cũng như đáp ứng tốt nhu cầu của khách hàng.",
+            "description3": "The Hill Vietnam sẽ tích hợp tất cả sản phẩm dịch vụ thông qua ứng dụng tải về trên điện thoại. Với sáu dịch vụ chính: Đào tạo nhân viên, Cung cấp nguyên liệu 4.0, Tư vấn, Điều chế hương vị, Cung cấp thiết bị giá ưu đãi. Bên cạnh đó, chúng tôi cố gắng tận dụng lợi thế công nghệ để khách hàng có thể dễ dàng cập nhật thông tin và đặc biệt là tối ưu hóa mô hình kinh doanh, tối đa hóa lợi nhuận.",
+            "description4": "The Hill Vietnam hy vọng mang đến sự hài lòng đặc biệt đối với bạn."
+        },
+        "barista": {
+            "name": "Đào Tạo Nhân Viên",
+            "description1": "Tất cả những chủ quán đang sử dụng sản phẩm của The Hill Vietnam sẽ được miễn phí đăng ký dịch vụ huấn luyện nhân viên của mình thông qua ứng dụng cũng như trang web của The Hill Vietnam. Đội ngũ chuyên gia từ The Hill Vietnam sẽ hướng dẫn nhân viên của quán từ quy trình phục vụ khách hàng cho đến các kĩ năng pha chế căn bản khi sử dụng sản phẩm của The Hill Vietnam để mỗi nhân viên có thể phục vụ khách hàng của quán một cách tốt nhất."
+        },
+        "management": {
+            "name": "Hệ Thống Quản Lý 4.0",
+            "description1": "Hiểu rõ nhu cầu của chủ quán trong việc kiểm soát nguồn nguyên liệu, The Hill Vietnam cung cấp hệ thống quản lý nguyên liệu hoàn toàn miễn phí. Với hệ thống 4.0, chủ quán có thể chủ động đặt hàng, kiểm soát đơn hàng và tracking đơn hàng trong quá trình vận chuyển. Bên cạnh đó, hệ thống còn cung cấp lịch sử mua hàng để chủ quán có thể dễ dàng nắm được số liệu mà không cần phải tốn quá nhiều thời gian lưu vào sổ sách. Hệ thống quản lý sẽ được tích hợp trong ứng dụng của The Hill Vietnam và đồng thời được lưu lại trong lịch sử đặt hàng của chủ quán trên trang web."
+        },
+        "consultant": {
+            "name": "Tư Vấn Chuyên Môn",
+            "description1": "Ở thời điểm hiện tại, số lượng quán cà phê ở Việt Nam vẫn đang ngày càng gia tăng. Tuy nhiên, bên cạnh đó, số lượng quán cà phê phải đóng cửa cũng không phải là nhỏ. Nguyên nhân phần lớn khiến các quán cà phê phải đóng cửa sau một thời gian là do các chủ quán không có kế hoạch phát triển rõ ràng. Tất cả các yếu tố như ý tưởng, địa điểm, đối tượng khách hàng, phong cách quán và nhà cung cấp nguyên liệu sẽ ảnh hưởng rất lớn đến sự thành bại của các quán cà phê. The Hill Vietnam sẽ cung cấp dịch vụ tư vấn cho khách hàng về tất cả mọi yếu tố liên quan để bạn có được một kế hoạch phát triển vững chắc và lâu dài."
+        },
+        "customize": {
+            "name": "Cá Nhân Hóa Khẩu Vị",
+            "description1": "The Hill Vietnam tự hào là nhà cung cấp cà phê đầu tiên tại Việt Nam áp dụng hệ thống cá nhân hóa khẩu vị vào dây chuyền sản xuất. Hiểu rõ các dòng sản phẩm phổ thông sẽ khó có thể đáp ứng được đầy đủ mong muốn của chủ quán, dịch vụ “Cá Nhân Hóa Khẩu Vị” sẽ cho phép chủ quán tạo ra được dòng cà phê hạt phù hợp với khẩu vị khách hàng của quán. The Hill Vietnam sẽ lưu lại mẫu vào thư viện và tự động ghi nhớ cho lần đặt hàng sau khi chủ quán đặt hàng qua ứng dụng hoặc trang web của The Hill Vietnam."
+        },
+        "material": {
+            "name": "Nguyên Liệu Pha Chế",
+            "description1": "Nhằm tiết kiệm chi phí cho các chủ quán, The Hill Vietnam đã liên kết với các nhà cung cấp nguyên liệu trong ngành F&B và cho ra đời dịch vụ “Nguyên Liệu Pha Chế”. Khi sử dụng nguồn nguyên liệu cà phê của The Hill Vietnam, chủ quán sẽ đồng thời được nhân viên The Hill Vietnam cài đặt ứng dụng vào điện thoại để trực tiếp sử dụng dịch vụ “Nguyên Liệu Pha Chế”. Khi mua nguyên liệu qua ứng dụng của The Hill Vietnam, chủ quán sẽ nhận được những ưu đãi đặc biệt so với việc nhập nguyên liệu từ nguồn khác. Nguyên liệu pha chế sẽ bao gồm đường, sữa, syrup,... và các loại nguyên liệu khác."
+        },
+        "device": {
+            "name": "Máy Móc Thiết Bị",
+            "description1": "Để pha một ly cà phê chất lượng thì bên cạnh việc đảm bảo nguyên liệu phải tốt thì các loại máy hỗ trợ trong việc pha chế cũng quan trọng không kém. Tuy nhiên, giá thành cho một chiếc máy chất lượng sẽ là một chi phí không hề nhỏ trong khi chủ quán còn phải giải quyết nhiều chi phí khác. Hiểu được vấn đề đó, The Hill Vietnam có mức giá mua các loại máy hỗ trợ pha chế ưu đãi dành cho các chủ quán đang sử dụng nguồn nguyên liệu cà phê của The Hill Vietnam. Chủ quán có thể tải ứng dụng của The Hill Vietnam và sử dụng dịch vụ “Máy Móc Thiết Bị” ngay lập tức."
+        },
+        "description": "Bên cạnh việc không ngừng đầu tư chất lượng sản phẩm, The Hill Vietnam mang đến khách hàng của mình những dịch vụ thiết thực để hỗ trợ tốt nhất có thể cho mọi hoạt động hướng đến sự phát triển lâu dài."
+    },
+    "page-business": {
+        "general": {
+            "description1": "Hiện nay, nhu cầu và thói quen sử dụng cà phê trên thế giới ngày càng tăng lên. Cà phê được đánh giá luôn có tín hiệu tăng trưởng bền vững và là thức uống phổ biến khắp mọi châu lục. Công ty chúng tôi đặt nhà máy tại Việt Nam để sản xuất nguồn nguyên liệu, kết hợp với việc áp dụng công nghệ sản xuất hiện đại, cùng đội ngũ nghiên cứu có trình độ chuyên môn cao, tạo ra những dòng cà phê chất lượng cao với mức giá tốt bao gồm các dòng cà phê hạt và cà phê hòa tan. Bên cạnh đó, chúng tôi sẵn sàng đáp ứng được những đơn hàng riêng biệt tùy theo yêu cầu của khách hàng cũng như từng thị trường riêng với mức giá cạnh tranh đảm bảo nhất.",
+            "description2": "Với quan niệm hợp tác cùng phát triển, The Hill Vietnam luôn tìm kiếm những đối tác cả trong và ngoài nước. Để biết thêm thông tin chi tiết về chi phí cũng như các chính sách hợp tác, xin vui lòng liên hệ trực tiếp với chúng tôi.",
+            "description3": "The Hill Vietnam trân trọng tất cả những cơ hội hợp tác để trở thành đối tác với bạn. "
+        },
+        "interior": {
+            "name": "Khách Hàng Trong Nước"
+        },
+        "coffeeBar": {
+            "name": "Quán Cà Phê",
+            "description": "Hai yếu tố có tác động mạnh nhất đến sự thành công của việc kinh doanh quán cà phê chính là chất lượng sản phẩm và chất lượng dịch vụ khách hàng. Đến với The Hill Vietnam, chúng tôi cam kết cung cấp sản phẩm hạt cà phê có chất lượng tốt với mức giá cạnh tranh nhất trên thị trường cho các quán cà phê, quán rượu,... Ngoài ra, với đội ngũ chuyên gia trong lĩnh vực kinh doanh cà phê, chúng tôi còn có những dịch vụ hỗ trợ (hệ thống quản lý 4.0, tư vấn chuyên môn, hướng dẫn pha chế,...) nhằm tối ưu hóa hiệu suất kinh doanh cho quán. ",
+            "description1": "Bạn đang có nhu cầu mở quán cà phê.",
+            "description2": "Bạn là chủ quán và đang có nhu cầu tìm một nguồn cung cấp sản phẩm uy tín, chất lượng.",
+            "description3": "Bạn muốn áp dụng hệ thống công nghệ 4.0 để tiếm kiệm thời giản cũng như tăng hiệu quả trong việc quản lý thu mua và nguyên liệu.",
+            "description4": "Bạn muốn biến giấc mơ của mình thành hiện thực.",
+            "description5": "Hãy liên hệ với chúng tôi, chúng tôi sẽ hiện thực hóa những mong muốn của bạn."
+        },
+        "specialtyGrocery": {
+            "name": "Chuỗi Cà Phê",
+            "description": "The Hill Vietnam tìm kiếm cơ hội hợp tác với các chuỗi cà phê trên thị trường. Nếu bạn đang là chủ sở hữu chuỗi cà phê mong muốn nhận tìm được một nguồn cung cấp nguyên liệu chất lượng với nhiều chính sách ưu đãi khi nhập số lượng lớn, The Hill Vietnam chính là một đối tác lý tưởng. Ngoài ra, việc áp dụng hệ thống quản lý 4.0 từ chúng tôi sẽ giúp bạn tiết kiệm tối đa thời gian cũng như tăng hiệu quả trong việc quản lý, thu mua nguyên liệu.",
+            "description1": "Bạn đang sở hữu các chuỗi cà phê.",
+            "description2": "Bạn muốn được nhận giá ưu đãi khi nhập số lượng lớn nguyên liệu nhưng vẫn đảm bảo chất lượng.",
+            "description3": "Bạn muốn áp dụng hệ thống công nghệ 4.0 để tiếm kiệm thời giản cũng như tăng hiệu quả trong việc quản lý thu mua và nguyên liệu.",
+            "description4": "Bạn muốn mở rộng hệ thống cửa hàng để cạnh tranh với các đối thủ khác.",
+            "description5": "Hãy liên hệ với chúng tôi, chúng tôi chính là hậu phương vững chãi mà bạn vẫn luôn tìm kiếm."
+        },
+        "restaurantHotel": {
+            "name": "Nhà Hàng & Khách Sạn",
+            "description1": "Với nhiều năm kinh nghiệm trong việc cung cấp nguyên liệu cà phê cho các hệ thống nhà hàng và khách sạn, The Hill Vietnam hiểu rõ nhu cầu của các đối tác khi tìm kiếm nguồn nguyên liệu cho nhà hàng và khách sạn của mình. Với cam kết về chất lượng sản phẩm cũng như dịch vụ khách hàng, The Hill Vietnam chính là đối tác cung cấp nguyên liệu mà các chủ nhà hàng, khách sạn đang tìm kiếm."
+        },
+        "international": {
+            "name": "Khách Hàng Quốc Tế"
+        },
+        "distributor": {
+            "name": "Nhà Phân Phối",
+            "description": "The Hill Vietnam có nhà máy đặt tại Việt Nam – nơi có sản lượng xuất khẩu cà phê lớn thứ hai thế giới làm nguồn nguyên liệu, kết hợp với việc áp dụng những thiết bị và công nghệ sản xuất hiện đại cùng đội ngũ nghiên cứu có trình độ chuyên môn cao về cà phê. Bên cạnh đó, The Hill Vietnam có thể đáp ứng được những đơn hàng riêng biệt về chất lượng tuỳ theo nhu cầu của từng thị trường với chi phí hợp lý nhất.",
+            "description1": "The Hill Vietnam có nhà máy đặt tại Việt Nam làm nguồn nguyên liệu – nơi có sản lượng xuất khẩu cà phê lớn thứ hai thế giới làm nguồn nguyên liệu kết hợp với việc áp dụng những thiết bị và công nghệ sản xuất hiện đại cùng đội ngũ nghiên cứu có trình độ chuyên môn sâu về cà phê. Bên cạnh đó, The Hill Vietnam cũng có thể đáp ứng được những đơn hàng riêng biệt về chất lượng tuỳ theo yêu cầu của khách hàng cũng như từng thị trường riêng với mức giá cạnh tranh nhất thị trường."
+        },
+        "retailer": {
+            "name": "Nhà Bán Lẻ",
+            "description": "Với nhiều năm kinh nghiệm trong việc hợp tác với nhiều nhà bán lẻ trên khắp thế giới, The Hill Vietnam chính là sự lựa chọn đáng tin cậy cho các đối tác nước ngoài. Nhà máy của The Hill Vietnam được đặt tại Việt Nam, quốc gia có sản lượng xuất khẩu cà phê đứng thứ hai trên thế giới giúp các đối tác có thể yên tâm trong việc đảm bảo nguồn cung nguyên liệu. Bên cạnh đó, với dịch vụ cá nhân hóa khẩu vị, The Hill Vietnam mang lại cho các đối tác đa dạng lựa chọn, nhằm đáp ứng tốt nhất nhu cầu của từng đối tượng khách hàng.",
+            "description1": "Với nhiều năm kinh nghiệm trong việc phục vụ nhiều Nhà Bán Lẻ trên khắp thế giới, The Hill Vietnam chính là sự lựa chọn đáng tin cậy cho các đối tác nước ngoài.",
+            "description2": "Nhà máy của The Hill Vietnam được đặt ngay tại Việt Nam – nơi có sản lượng xuất khẩu cà phê đứng thứ hai trên thế giới giúp các đối tác có thể yên tâm trong việc đảm bảo nguồn cung nguyên liệu.",
+            "description3": "Bên cạnh đó, The Hill Vietnam với dịch vụ cá nhân hóa khẩu vị có thể giúp các đối tác thay tùy chình khẩu vị của cà phê để phù hợp với từng đối tượng khách hàng."
+        },
+        "other": {
+            "name": "Khác",
+            "description1": "Hãy liên hệ với chúng tôi để có thêm thông tin."
+        }
+    },
+    "page-contact": {
+        "description": "Đừng ngần ngại liên hệ với chúng tôi nếu bạn cần bất kỳ sự hỗ trợ nào. Chúng tôi sẽ trả lời trong thời gian ngắn nhất.",
+        "general": {
+            "office-addressName": "Văn phòng đại diện",
+            "office-address1": "Số 8, Tầng 8, Cantavil Premier, Đường Song Hành, Phường An Phú, Quận 2, TP.HCM",
+            "factory-addressName": "Địa chỉ nhà máy",
+            "factory-address1": "Số 2, Đường 3A, KCN Biên Hòa 2, P.Long Bình Tân",
+            "factory-address2": "TP. Biên Hòa, Đồng Nai",
+            "fax": "028 - 3740 6788",
+            "phone": "028 - 3740 6789",
+            "website": "www.thehillcoffee.com.vn",
+            "email": "info@thehillcoffee.com.vn",
+            "facebook": "https://www.facebook.com/thehillvietnamcoffee"
+        }
+    },
+    "page-reservation": {
+        "title": "Đặt lịch hẹn",
+        "moreInfo": "Vui lòng trả lời khảo sát để được tư vấn cụ thể hơn (Không bắt buộc)",
+        "yes": "Có",
+        "no": "Không",
+        "salesPerMonth": "Khối lượng bán ra mỗi tháng:",
+        "salesOption1": "Từ 15 - 20",
+        "salesOption2": "Từ 20 - 40",
+        "salesOption3": "Trên 40",
+        "targetAudiences": "Đối tượng khách hàng",
+        "businessScale": "Quy mô kinh doanh:",
+        "scaleOption1": "Quán cà phê",
+        "scaleOption1-1": "1 đến 2 cửa hàng",
+        "scaleOption2-1": "Từ 3 cửa hàng trở lên",
+        "scaleOption2": "Hệ thống chuỗi quán cà phê",
+        "scaleOption3": "Nhà hàng & Khách sạn",
+        "other": "Khác:"
+    },
+    "page-recruitment": {
+        "description": "The Hill Vietnam không ngừng tìm kiếm những cá nhân có năng lực và tố chất phù hợp để gia nhập đội ngũ của mình. Với tinh thần nhiệt huyết, hoài bão và tình yêu bất tận với cà phê, chúng tôi luôn chào đón những ứng viên có chung niềm đam mê để cùng phát triển trên con đường sự nghiệp.",
+        "benefit": {
+            "description": "The Hill Vietnam luôn có những chính sách đầy hấp dẫn dành cho các bạn yêu thích sự năng động và được trải nghiệm trong một môi trường sáng tạo:",
+            "benefit1": "Được hưởng đầy đủ các chính sách bảo hiểm theo quy định của nhà nước",
+            "benefit2": "Được tham gia các khóa đào tạo nâng cao kĩ năng và kiến thức",
+            "benefit3": "Được trang bị đầy đủ đồng phục, dụng cụ và thiết bị liên quan đến công việc",
+            "benefit4": "Được gặp gỡ các barista tài năng cũng như các chủ hệ thống cà phê lớn để học hỏi thêm kinh nghiệm",
+            "benefit5": "Mức lương cạnh tranh và hấp dẫn, có chính sách thưởng đạt và vượt chỉ tiêu",
+            "benefit6": "Được xem xét tăng lương 6 tháng/ lần",
+            "benefit7": "Được tham gia các hoạt động ngoại khóa định hình của công ty.",
+            "benefit8": "Có cơ hội thăng tiến trong công việc"
+        },
+        "readDescription": "Tôi đã đọc phần mô tả công việc và muốn ứng tuyển vị trí này",
+        "description1": "Vui lòng điền những mục sau",
+        "readDescription2": "Tôi đã đọc và hiểu chính sách bảo mật của Recruitee",
+        "acceptCVFile": "Định dạng file: PDF, DOC, DOCX, JPG and PNG",
+        "coverLetter": "Thư giới thiệu",
+        "jobInfo": {
+            "id": "ID",
+            "age": "Độ tuổi",
+            "roleType": "Vị trí",
+            "datePosted": "Ngày đăng",
+            "profession": "Bộ phận",
+            "employmentType": "Hình thức làm việc"
+        }
+    },
+    "form": {
+        "title": "Thông tin liên hệ",
+        "note": "Vui lòng điền các mục dưới đây",
+        "full-name": "Họ và tên*:",
+        "firstName": "Tên*",
+        "lastName": "Họ*",
+        "address": "Địa chỉ*",
+        "email": "Email*",
+        "phone": "Điện thoại*",
+        "phone1": "Điện thoại",
+        "district": "Quận*",
+        "date": "Ngày*",
+        "time": "Thời gian*",
+        "company": "Tên đơn vị*",
+        "expectedMonthly": "Khối lượng ước tính:",
+        "comment": "Ý kiến khác",
+        "message": "Lời nhắn*",
+        "youAre": {
+            "title": "Bạn là:",
+            "dealer": "Đại lý",
+            "broker": "Nhà môi giới",
+            "importer": "Nhà nhập khẩu",
+            "consumer": "Khách hàng cá nhân"
+        }
+    },
+    "page-shipping": {
+        "general": {
+            "header": "CHÍNH SÁCH VẬN CHUYỂN CHUNG",
+            "point1": " - Giao hàng toàn quốc.",
+            "point2": " - Miễn phí vận chuyển nội thành TP.HCM với đơn hàng tối thiểu 10kg.",
+            "point3": " - Giảm 50% phí vận chuyển toàn quốc (gồm ngoại thành TP.HCM và các khu vực còn lại trên cả nước) cho đơn hàng tối thiểu 30kg.",
+            "point4": " - Miễn phí vận chuyển dành cho nhà phân phối với đơn hàng từ 100kg trở lên."
+        },
+        "hcmc": {
+            "header": "1. Đối với khách hàng nội thành TP.HCM",
+            "point1": " - The Hill Vietnam cam kết giao hàng tận tay đến cho quý khách",
+            "point2": " - The Hill Vietnam sẽ hỗ trợ giao hàng hình thức COD cho quý khách, hoặc quý khách có thể chuyển khoản trước",
+            "point3": " - Đối với đơn hàng từ 10kg, quý khách sẽ nhận được hàng trong vòng 12 – 24h giờ làm việc",
+            "point4": " - Đối với đơn hàng nhỏ hơn, vui lòng chờ ghép tuyến (thông thường trong vòng 2 – 3 ngày làm việc)",
+            "note-head": "Lưu ý:",
+            "note-desc": "Chúng tôi có hỗ trợ giao hàng gấp trong vòng 2 – 3 tiếng (có tính phí tuỳ theo khu vực."
+        },
+        "overseas": {
+            "header": "2. Đối với khách hàng ngoại thành và các tỉnh trên toàn quốc",
+            "point1": "Chúng tôi chỉ tiến hành gửi hàng đi sau khi nhận được thanh toán từ phía quý khách. Vì vậy để nhanh chóng nhận được hàng, quý khách vui lòng tiến hành thủ tục chuyển khoản sớm nhất có thể.",
+            "point2": "Thời gian quý khách nhận được hàng từ 24 đến 48 giờ làm việc (tùy theo vùng miền). Chúng tôi sẽ chuyển hàng cho quý khách trong thời gian ngắn nhất ngay sau khi đã nhận được tiền.",
+            "point3": "Cước phí vận chuyển tính theo bảng giá của các đối tác vận chuyển – tùy theo vùng miền, quý khách sẽ trả phí trước hoặc trả phí sau khi nhận hàng."
+        },
+        "note": {
+            "note": "Lưu ý:",
+            "point1": " Chúng tôi hỗ trợ huỷ đơn hàng cho quý khách khi đơn hàng chưa bàn giao cho đơn vị vận chuyển (chúng tôi sẽ xác nhận thời gian giao hàng cho đơn vị vận chuyển trước cho quý khách). Trong trường hợp hàng đã giao cho đơn vị vận chuyển, chúng tôi không hỗ trợ huỷ đơn hàng và hoàn tiền cho quý khách vì bất cứ lý do nào."
+        }
+    },
+    "page-payment": {
+        "general": {
+            "header": "Khi quý khách mua sản phẩm của The Hill Vietnam, quý khách có thể thanh toán bằng các hình thức sau:",
+            "point1": " - Thanh toán bằng dịch vụ giao hàng nhận tiền (COD)",
+            "point2": " - Thanh toán thông qua ngân hàng (chuyển khoản, ATM, Internet Banking…)"
+        },
+        "cod": {
+            "header": "1. Hình thức thanh toán bằng COD",
+            "point1": "COD (dịch vụ giao hàng nhận tiền) là phương thức thanh toán bằng cách đưa tiền trực tiếp cho người vận chuyển ngay sau khi nhận được hàng. Trường hợp này, quý khách có thể phải tốn thêm phí chuyển tiền nếu đơn hàng của quý khách không thỏa mãn các điều kiện miễn phí vận chuyển."
+        },
+        "steps": {
+            "header": " - Các bước thanh toán bằng COD",
+            "point1-name": "Bước 1:",
+            "point1-input": "Khi gọi đặt hàng, quý khách vui lòng chọn hình thức thanh toán COD với nhân viên hỗ trợ.",
+            "point2-name": "Bước 2:",
+            "point2-input": "Nhân viên chăm sóc khách hàng sẽ xác nhận các thông tin cần thiết để lên đơn hàng cho quý khách. Đơn hàng sẽ được xử lý sau khi xác nhận xong.",
+            "point3-name": "Bước 3:",
+            "point3-input": "Sau khi kiểm tra và xác nhận tình trạng đơn hàng, chúng tôi sẽ tiến hành giao hàng đến quý khách.",
+            "point4-name": "Bước 4:",
+            "point4-input": "Quý khách vui lòng nhận hàng và thanh toán theo hoá đơn từ nhân viên giao hàng, quý khách có thể nhờ người nhận thay và thanh toán."
+        },
+        "payment": {
+            "header": "2. Hình thức thanh toán thông qua ngân hàng",
+            "point1": " - Sau khi quý khách đặt hàng theo các bước như hình thức thanh toán COD, quý khách chọn hình thức thanh toán qua ngân hàng, nhân viên chăm sóc khách hàng sẽ xác nhận và tiến hành giao hàng khi nhận được thanh toán.",
+            "point2": " - Quý khách có thể thanh toán bằng 3 cách: chuyển khoản thông qua mạng internet  (Internet Banking), chuyển khoản trực tiếp tại ngân hàng hoặc chuyển khoản qua ATM.",
+            "point3": " - Quý khách vui lòng điền tên đơn vị đặt hàng và mã số đơn hàng vào phần nội dung khi thực hiện việc chuyển khoản."
+        },
+        "bank": {
+            "header": "THÔNG TIN TÀI KHOẢN NGÂN HÀNG CỦA THE HILL VIETNAM",
+            "name-title": "Chủ tài khoản:",
+            "name-input": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "number-title": "Số tài khoản:",
+            "number-input": "0261 003 453 999",
+            "address-title": "Ngân hàng:",
+            "address-input1": "TMCP Công thương Việt Nam (Vietcombank)",
+            "address-input2": "Chi nhánh Thủ Thiêm, Quận 2"
+        },
+        "example": {
+            "header": "VÍ DỤ:",
+            "name-title": "Chủ tài khoản:",
+            "name-input": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "number-title": "Số tài khoản:",
+            "number-input": "0261 003 453 999",
+            "bank-title": "Ngân hàng:",
+            "bank-input": "TMCP Công thương Việt Nam (Vietcombank)",
+            "branch-title": "Chi nhánh:",
+            "branch-input": "Chi Nhánh Thủ Thiêm, Quận 2",
+            "content-title": "Nội dung:",
+            "content-input": "Quán café Mộc thanh toán cho đơn hàng [mã số đặt hàng]"
+        },
+        "list-bank": {
+            "header": "DANH SÁCH TÀI KHOẢN CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "number-title": "Số tài khoản:",
+            "name-title":"Ngân hàng:",
+            "bank-item1":{
+                "name-input":"TMCP Ngoại Thương Việt Nam (Vietcombank) – Chi Nhánh Thủ Thiêm, Quận 2.",
+                "number-input": "0261 003 453 999"
+            },
+            "bank-item2":{
+                "name-input":"TMCP Công Thương Việt Nam (Vietinbank) – Chi Nhánh Thủ Thiêm, Quận 2.",
+                "number-input": "1110 0017 7636"
+            },
+            "bank-item3":{
+                "name-input":"TMCP Quân Đội (MBBank) – Chi Nhánh An Phú, Quận 2.",
+                "number-input": "1511 1013 50008"
+            },
+            "bank-item4":{
+                "name-input":"TMCP Sài Gòn Thương Tín (Sacombank) – Chi Nhánh An Phú, Quận 2.",
+                "number-input": "0601 2500 8978"
+            },
+            "bank-item5":{
+                "name-input":"Nông Nghiệp và Phát Triển Nông Thôn Việt Nam (Agribank) – Chi Nhánh Đông Sài Gòn, Quận 2.",
+                "number-input": "6280 2010 18335"
+            }
+        }
+    },
+    "page-policy": {
+        "section1": {
+            "header": "1. Mục đích và phạm vi thu thập",
+            "point1": "Việc thu thập dữ liệu chủ yếu bao gồm họ tên, email, điện thoại, địa chỉ khách hàng trong mục liên hệ. Đây là các thông tin mà chúng tôi cần thành viên cung cấp bắt buộc khi gửi thông tin nhờ tư vấn hay muốn mua sản phẩm và để chúng tôi liên hệ xác nhận với khách hàng nhằm đảm bảo quyền lợi cho người tiêu dùng."
+        },
+        "section2": {
+            "header": "2. Phạm vi sử dụng thông tin",
+            "point1": "Các thành viên sẽ tự chịu trách nhiệm về bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ dưới thông tin mà mình cung cấp và hộp thư điện tử của mình. Ngoài ra, thành viên có trách nhiệm thông báo kịp thời cho chúng tôi về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật, lưu giữ tên đăng ký và mật khẩu của bên thứ ba để có biện pháp giải quyết phù hợp.",
+            "point2": "Chúng tôi sử dụng thông tin thành viên cung cấp để:",
+            "point3": "Liên hệ xác nhận đơn hàng và giao hàng cho thành viên khi nhận được yêu cầu từ thành viên. Gửi email tiếp thị, khuyến mãi về hàng hóa do chúng tôi bán.",
+            "point4": "Cung cấp thông tin về sản phẩm đến khách hàng nếu có yêu cầu từ khách hàng.",
+            "point5": "Gửi các thông báo về các hoạt động trên website.",
+            "point6": "Không sử dụng thông tin các nhân của người dùng ngoài mục đích xác nhận và liên hệ có liên quan đến giao dịch.",
+            "point7": "Khi có yêu cầu của cơ quan tư pháp bao gồm: Viện kiểm sát, Tòa án, Cơ quan Công an điều tra liên quan đến hành vi vi phạm luật nào đó của khách hàng."
+        },
+        "section3": {
+            "header": "3. Thời gian lưu trữ thông tin",
+            "point1": "Dữ liệu cá nhân của thành viên sẽ được lưu trữ cho đến khi có yêu cầu ban quản trị hủy bỏ. Còn lại trong mọi trường hợp thông tin cá nhân thành viên sẽ được bảo mật trên máy chủ của chúng tôi."
+        },
+        "section4": {
+            "header": "4. Những người hoặc tổ chức có thể được tiếp cận với thông tin đó",
+            "point1": "Chúng tôi sẽ không cung cấp thông tin cá nhân của bạn cho bất kì bên thứ 3 nào trừ một số hoạt động cần thiết dưới đây:",
+            "point2": "- Vấn đề pháp lý: Chúng tôi có thể tiết lộ thông tin các nhân nếu do luật pháp yêu cầu và việc tiết lộ như vậy là cần thiết một cách hợp lý để tuân thủ các quy trình pháp lý.",
+            "point3": "- Chuyển giao kinh doanh (nếu có): Trong trường hợp sát nhập, hợp nhất toàn bộ hay một phần với công ty khác, người mua sẽ có quyền truy cập thông tin được chúng tôi lưu trữ, duy trì trong đó bao gồm cả thông tin cá nhân.",
+            "point4": "- Các đối tác là bên cung cấp dịch vụ cho chúng tôi liên quan đến thực hiện đơn hàng và chỉ giới hạn thông tin trong phạm vi cần thiết cũng như áp dụng các quy định đảm bảo an ninh, bảo mật các thông tin cá nhân."
+        },
+        "section5": {
+            "header": "5. Địa chỉ của đơn vị thu thập và quản lý thông tin cá nhân",
+            "point1": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "point2": "Địa chỉ: Số 8, Tầng 8, Cantavil Premier, Đường Song Hành, Phường An Phú, Quận 2, TP.HCM",
+            "point3": "Địa thoại: 028 3740 6789",
+            "point4": "Email: info@thehillcoffee.com.vn"
+        },
+        "section6": {
+            "header": "6. Phương tiện và công cụ để người dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình.",
+            "point1": "Thành viên có quyền tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng cách liên hệ với ban quản trị website thực hiện việc này.",
+            "point2": "Thành viên có quyền gửi khiếu nại về nôi dung bảo mật thông tin đề nghị liên hệ Ban quản trị của website. Khi tiếp nhận những phản hồi này sẽ có một vài trường hợp pháp luật có quy định khác.",
+            "point3": "Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của thành viên khi không có sự cho phép đồng ý từ thành viên."
+        },
+        "section7": {
+            "header": "7. Cam kết bảo mật thông tin cá nhân khách hàng và cơ chế tiếp nhận và giải quyết khiếu nại của người tiêu dùng",
+            "point1": "Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dễ đến mất mát dữ liệu cá nhân thành viên, chúng tôi sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho thành viên được biết.",
+            "point2": "Bảo mật tuyết đối mọi thông tin giao dịch trực tuyến của thành viên bao gồm thông tin hóa đơn kế toán chứng từ số hóa.",
+            "point3": "Ban quản lý yêu cầu các cá nhân khi đăng ký/ mua hàng phải cung cấp đầy đủ thông tin các nhân có liên quan như: Họ tên, Địa chỉ, Số điện thoại và Email."
+        }
+    },
+    "validation": "Bắt buộc",
+    "page-sitemap": {
+        "aboutus": {
+            "header": "VỀ CHÚNG TÔI",
+            "item1": ""
+        },
+        "event": {
+            "header": "SỰ KIỆN",
+            "item1": ""
+        },
+        "career": {
+            "header": "TUYỂN DỤNG",
+            "item1": ""
+        },
+        "service": {
+            "header": "DỊCH VỤ",
+            "item1": ""
+        },
+        "privacyPolicy": {
+            "header": "CHÍNH SÁCH BẢO MẬT",
+            "item1": ""
+        },
+        "paymentMethod": {
+            "header": "PHƯƠNG THỨC THANH TOÁN",
+            "item1": ""
+        },
+        "shippingReturn": {
+            "header": "VẬN CHUYỂN & ĐỔI TRẢ",
+            "item1": ""
+        },
+        "product": {
+            "header": "SẢN PHẨM",
+            "item1": "Cà phê hạt",
+            "item2": "Cà phê hòa tan"
+        },
+        "business": {
+            "header": "DOANH NGHIỆP",
+            "item1": "Trong Nước",
+            "item2": "Ngoài Nước"
+        },
+        "culture": {
+            "header": "CỘNG ĐỒNG",
+            "item1": "Kiến Thức Cà Phê",
+            "item2": "Chia Sẻ",
+            "item5": "Hướng Dẫn Pha Chế",
+            "item4": "Cập Nhật Thông Tin",
+            "item3": "Công Thức Pha Chế"
+        }
+    },
+    "page-events":{
+        "general":{
+            "msg1":"Hiện tại chúng tôi chưa có sự kiện nào trong thời gian này.",
+            "msg2":"Hãy tiếp tục theo dõi để cập nhật!"
+        }
+    },
+    "loginInfo.history":"Lịch sử mua hàng",
+    "loginInfo.info":"Thông tin cá nhân",
+    "loginInfo.logOut":"Đăng xuất"
+    
+}

@@ -1,0 +1,79 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.timeline {
+    position: relative;
+
+    >li {
+        @include font-thehill($thin-font, '','','');
+        h5{
+            @include font-thehill($main-font, '','','');
+            color: black
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            background-color: #E7E7E7;
+            top: 130px;
+            bottom: -20px;
+            left: 32px;
+            @include responsive(SM){
+                left: 15px;
+                top: 100px;
+            }
+
+        }
+        &::after {
+            font-size: 25px;
+            text-align: center;
+            z-index: 10;
+            position: absolute;
+            width: 50px;
+            top: 50px;
+
+            left: 5px;
+            background: white;
+            @include responsive(SM){
+                left: -10px;
+                top: 50px;
+            }
+        }
+        &:nth-child(1)::after {
+            content: '2015';
+        }
+        &:nth-child(2)::after {
+            content: '2018';
+        }
+        &:nth-child(3)::after {
+            content: '2019';
+        }
+
+        padding: 10px 0 30px 20vw;
+        margin-left: 0px;
+        min-height: 70px;
+        position: relative;
+        background-color: white;
+        list-style: none;
+        
+        &:nth-last-child(1)::before {
+            width: 0px;
+        } 
+
+
+           &:nth-child(2)::before {
+         
+            @include responsive(SM){
+                top: 130px;
+            }
+        } 
+    }
+
+    .col-lg-6{
+        img{
+            width: 100%;
+        }
+    }
+}

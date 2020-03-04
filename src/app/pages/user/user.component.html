@@ -1,0 +1,42 @@
+<div class="user-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/About-us.png" class="title-img" alt="">
+    <h1 class="page-title">User</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/thong-tin-tai-khoan')" [routerLink]="['/thong-tin-tai-khoan']">User Info</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container main mbt-50">
+    <div class="card text-left shadow-lg">
+      <div class="card-body">
+        <h1 class="page-title text-center mb-4">Thông tin tài khoản</h1>
+        <form class="form-group form-message mt-3">
+          <label for="">Email:</label>
+          <input type="text" class="form-control" name="email" readonly [(ngModel)]="user.email">
+          <label for="">Họ tên:</label>
+          <input type="text" class="form-control" name="name" [readonly]="readonly" [(ngModel)]="user.name">
+          <label for="">Công ty:</label>
+          <input type="text" class="form-control" name="company" [readonly]="readonly" [(ngModel)]="user.company">
+          <label for="">Số điện thoại:</label>
+          <input type="text" class="form-control" name="phone" [readonly]="readonly" [(ngModel)]="user.phone">
+          <label for="">Địa chỉ:</label>
+          <input type="text" class="form-control" name="address" [readonly]="readonly" [(ngModel)]="user.address">
+
+          <!-- <button (click)="changeInfo()" *ngIf="readonly" class="btn-main mt-5">Thay đổi thông tin</button>
+          <div *ngIf="readonly === false" class="m-auto">
+            <button (click)="changeInfo()" class="btn-main">Hủy</button>
+            <br>
+            <button (click)="saveInfo()" class="btn-main">Lưu thay đổi</button>
+          </div> -->
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>

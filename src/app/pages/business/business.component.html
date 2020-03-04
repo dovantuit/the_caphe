@@ -1,0 +1,194 @@
+<div class="business-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/Cooperation.png" class="title-img" alt="">
+    <h1 class="page-title">Work With Us</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/kinh-doanh')" [routerLink]="['/kinh-doanh']">Business</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container pbt-50 business-header">
+      <div class="row">
+        <div class="col-lg-6 col-12 d-block d-lg-none mb-5">
+          <img class="w-100" src="../../../assets/images/new/doitac.jpeg" alt="">
+          <!-- <div style="width: 100%; border: 1px solid black; height: 500px;"></div> -->
+        </div>
+        <div class="col-lg-6 col-12 m-auto">
+          <div class="main">
+            <p class="mb-5 ">
+              {{'page-business.general.description1' | translate}}
+              <br>
+              <br> {{'page-business.general.description2' | translate}}
+              <br>
+              <br>
+            </p>
+            <ul>
+              <li *ngFor="let item of menus" [class.active]="selected === item" (click)="selectedMenu(item)">
+                <a>
+                  <img src="{{HOST_IMG}}{{item.thumbnail}}" height="150px" width="150px" alt="">
+                  <p class="p1 text-uppercase" style="text-align: center;margin-top: 30px">{{item.name}}</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-none d-lg-block">
+          <img class="w-100" src="../../../assets/images/new/doitac.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+    <div #business class="business-carousel">
+      <div class="owl-carousel owl-theme owl-business" id="owl-business-{{i+1}}"
+        *ngFor="let menu of menus, let i = index" [hidden]="menu.id !== menuId">
+        <div class="item" style="cursor: pointer !important;padding:  2%" *ngFor="let data of menu.items">
+          <div class="row  justify-content-center align-items-center">
+            <div class="col-lg-6 col-12 mb-5  align-items-center">
+              <img class="w-100" src="{{HOST_IMG}}{{data.thumbnail}}">
+            </div>
+            <div class="col-12 col-lg-6 text-center ">
+              <h1 class="my-5 mx-auto">{{data.name}}</h1>
+              <div class="mb-3 text-left">
+                <div [innerHTML]="data.description"></div>
+              </div>
+              <button class="btn-main mb-50 mt-5 d-none d-lg-block float-right" data-toggle="modal"
+                data-target=".bd-example-modal-lg" (click)="formPost(data.name)">Contact</button>
+              <button class="btn-main mb-50 mt-5 d-lg-none float-center" data-toggle="modal"
+                data-target=".bd-example-modal-lg" (click)="formPost(data.name)">Contact</button>
+            </div>
+          </div>
+          <!-- <div class="row  justify-content-center align-items-center" *ngIf="menu.id ===11">
+            <div class="col-12 col-lg-6 text-center ">
+              <h1 class="my-5 mx-auto">{{data.name}}</h1>
+              <div class="mb-3 text-left">
+                <div [innerHTML]="data.description"></div>
+              </div>
+              <button class="btn-main mb-50 mt-5 d-none d-lg-block float-left" data-toggle="modal"
+                data-target=".bd-example-modal-lg" (click)="formPost(data.name)">Contact</button>
+              <button class="btn-main mb-50 mt-5 d-lg-none float-center" data-toggle="modal"
+                data-target=".bd-example-modal-lg" (click)="formPost(data.name)">Contact</button>
+            </div>
+            <div class="col-lg-6 col-12 mb-5  align-items-center">
+              <img class="w-100" src="{{HOST_IMG}}{{data.thumbnail}}">
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-lg business-carousel" #openModal tabindex="-1" role="dialog"
+  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="row-input mt-5 pt-5">
+        <form class="form-group form-message m-auto" (submit)="onSubmit(formBusiness)" #formBusiness="ngForm">
+          <h3 class="title text-left">{{'form.title' | translate}}</h3>
+          <p class="text-left mb-">{{'form.note' | translate}}</p>
+          <div class="row">
+            <div class="col-lg-12 col-12  mb-5">
+              <input type="text" class="form-control" placeholder="{{'form.full-name' | translate}}"
+                [(ngModel)]="firstName" name="firstName" required>
+              <span
+                *ngIf="formBusiness.controls.firstName?.errors?.required && isSubmit">{{'validation' | translate}}</span>
+            </div>
+            <div class="col-lg-6 col-12  mb-5">
+              <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email" name="email"
+                [email]="true">
+              <span *ngIf="formBusiness.controls.email?.errors?.email && isSubmit">Email không đúng định dạng</span>
+            </div>
+            <div class="col-lg-6 col-12 mb-5">
+              <input type="text" class="form-control" placeholder="{{'form.company' | translate}}" [(ngModel)]="company"
+                name="company" required>
+              <span
+                *ngIf="formBusiness.controls.company?.errors?.required && isSubmit">{{'validation' | translate}}</span>
+            </div>
+            <div class="col-lg-6 col-12 mb-5">
+              <!-- <input *ngIf="display.display" type="text" class="form-control" placeholder="{{'form.phone' | translate}}" [(ngModel)]="phone"
+                name="phone" required> -->
+              <input type="text" class="form-control" placeholder="{{'form.phone1' | translate}}" [(ngModel)]="phone" name="phone">
+              <span
+                *ngIf="formBusiness.controls.phone?.errors?.required && isSubmit">{{'validation' | translate}}</span>
+            </div>
+            <div class="col-lg-12 col-12  mb-5">
+              <input type="text" class="form-control" placeholder="{{'form.address' | translate}}" [(ngModel)]="address"
+                name="address" required>
+              <span
+                *ngIf="formBusiness.controls.address?.errors?.required && isSubmit">{{'validation' | translate}}</span>
+            </div>
+            <div class="col-lg-6 col-12 list-check text-left">
+              <p class="text-left mb-4">{{'form.expectedMonthly' | translate}}</p>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" required class="form-check-input" name="monthlyWeight" [(ngModel)]="monthlyWeight"
+                    value="&lt; 20 kg"> &lt; 20 kg
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" required class="form-check-input" name="monthlyWeight" [(ngModel)]="monthlyWeight"
+                    value="20 - 50 kg"> 20 - 50 kg
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="radio" required class="form-check-input" name="monthlyWeight" [(ngModel)]="monthlyWeight"
+                    value=" > 50 kg"> > 50 kg
+                </label>
+              </div>
+              <span *ngIf="!formBusiness.controls.monthlyWeight?.value && isSubmit">{{'validation' | translate}}</span>
+            </div>
+            <div class="col-lg-6 col-12 list-check text-left" [hidden]="isHideType === true">
+              <ng-container>
+                <p class="text-left mb-4">{{'form.youAre.title' | translate}}</p>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="type" [(ngModel)]="type" value="Dealer">
+                    {{'form.youAre.dealer' | translate}}
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="type" [(ngModel)]="type" value="Broker">
+                    {{'form.youAre.broker' | translate}}
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="type" [(ngModel)]="type" value="Importer">
+                    {{'form.youAre.importer' | translate}}
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="type" [(ngModel)]="type" value="Consumer">
+                    {{'form.youAre.consumer' | translate}}
+                  </label>
+                </div>
+                <span *ngIf="!formBusiness.controls.type?.value && isSubmit">Vui lòng chọn thông tin</span>
+              </ng-container>
+            </div>
+            <div class="col-lg-12 col-12 mt-5">
+              <textarea name="" id="" class="form-control" cols="30" rows="4"
+                placeholder="{{'form.comment' | translate}}" [(ngModel)]="comment" name="comment"></textarea>
+            </div>
+            <div class="col-lg-12 col-12">
+              <button class="btn-main mb-50 mt-5 float-right" type="submit">SUBMIT</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

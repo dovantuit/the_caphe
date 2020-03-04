@@ -1,0 +1,123 @@
+@import "../../../styles/responsive";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+:host{
+    .aboutus-career-joinus {
+        img{
+            width: 10vw;
+            @include responsive(SM){
+                width: 20vw;
+            }
+        }
+       .tags{
+           text-transform: uppercase;
+           cursor: pointer;
+           span{
+               &.active{
+                background: #fafafa;
+                padding: 2%;
+                border-radius: 7%;
+                box-shadow: 0 0 5px #888;
+            }
+           }
+
+       }
+
+       .main{
+            .left,.right{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+               ul.tabs{
+                @include responsive(SM){
+                    margin-bottom: 0;
+                }
+                   li{
+                       @include responsive(SM){
+                           display: inline-block;
+                           border-bottom: none !important;
+                           width: 25%;
+                           border:1px solid black;
+                           &.active{
+                            border:2px solid black;
+                            border-right: 2px solid black !important;
+                           }
+                       }
+
+                       border:1px solid black;
+                       
+                       border-right: none;
+
+                       padding: 5%;
+                       cursor: pointer;
+                       text-transform: uppercase;
+
+                       &.active{
+                        border:2px solid black;
+                        border-right:none;
+                        &:last-child{
+                            border-bottom:2px solid black;
+                           }
+                       }
+
+                       &:last-child{
+                        border-bottom:1px solid black;
+                       }
+                   }
+               }
+               .item{
+                   padding: 0 5% 5% 5%;
+                   border: solid;
+                   @include responsive(SM){
+                    padding: 2%;
+                    overflow: hidden;
+                   }
+                   .description{
+                    .title{
+                     @include font-thehill($main-font,25px,'',bold);
+                    }
+                    li{
+                        padding-left: 3%;
+                        margin-bottom: 5px;
+                    }
+                }
+                .infomation{
+                   .col-lg-6.col-12::after{
+                    background-color: grey;
+                    height: 1px;
+                    width: 100%;
+                    content: "";
+                    position: absolute;
+                   }
+                    hr{
+                        border-top:1px solid;
+                    }
+                    .item-infomation{
+                       
+                        @include responsive(SM){
+                            width: 80%;
+                            
+                        }
+                        @include responsive(XS){
+                            width: 90%;
+                        }
+                            .name{
+                                @include font-thehill($main-font,13px,grey,'bold');
+                                padding-right: 0;
+                            }
+                            .des{
+                                @include font-thehill($thin-font,14px,'','');
+                            }
+                        
+                    }
+
+                }
+               }
+
+              
+       }
+
+    }
+}

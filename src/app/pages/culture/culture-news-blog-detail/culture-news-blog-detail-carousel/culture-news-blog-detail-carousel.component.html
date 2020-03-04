@@ -1,0 +1,71 @@
+<!-- <div id="carouselCultureNewsBlogDetail" class="carousel mx-auto mt-5 mb-5 slide carousel-news-blog-detail"
+  data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-lg-2 col-4">
+          <img class="w-100" src="../../../../../assets/images/6/4.png" alt="">
+        </div>
+        <div class="col-lg-10 col-8">
+          <h4 class="name mb-3">John smith</h4>
+          <p class="info mb-2">
+            There are many variations of passages of Lerem Ipsum available, but the majority of it have suffered
+            alteration in some form, by injected humour, or randomised need words which don't look event slightly
+            believable. You need to be sure there isn't anything embarrassing hidden in the middle of text
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-lg-2 col-4">
+          <img class="w-100" src="../../../../../assets/images/6/4.png" alt="">
+        </div>
+        <div class="col-lg-10 col-8">
+          <h4 class="name mb-3">John smith</h4>
+          <p class="info mb-2">
+            There are many variations of passages of Lerem Ipsum available, but the majority of it have suffered
+            alteration in some form, by injected humour, or randomised need words which don't look event slightly
+            believable. You need to be sure there isn't anything embarrassing hidden in the middle of text
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="custom-arrow text-center mt-3">
+    <a class="custom-control-prev mx-1" href="#carouselCultureNewsBlogDetail" role="button" data-slide="prev">
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <a class="custom-control-next mx-1" href="#carouselCultureNewsBlogDetail" role="button" data-slide="next">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</div> -->
+
+<!-- <div class="owl-carousel owl-theme" id="owl-blog">
+  <div class="item" *ngFor="let data of authors">
+    <div class="row">
+      <div class="col-lg-2 col-4">
+        <img class="img-avatar" [src]="data.thumbnail ? data.thumbnail : '../../../../../assets/images/6/4.png'" alt="">
+      </div>
+      <div class="col-lg-10 col-8">
+        <h4 class="name mb-3">{{data.name}}</h4>
+        <p class="info mb-2">
+         {{data.comment}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="row">
+  <div class="col-lg-2 col-4">
+    <img class="img-avatar" [src]="imgUrl ? imgUrl : '../../../../../assets/images/6/4.png'"
+      alt="">
+  </div>
+  <div class="col-lg-10 col-8">
+    <h4 class="name mb-3">{{authors[0].name}}</h4>
+    <p class="info mb-2">
+      {{authors[0].comment}}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+:host{
+  .social-block {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    @include responsive(XS){
+      margin-top: -30px;
+    }
+    .social-button {
+        margin: 0 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+        img{
+          width: 30px !important;
+          @include responsive(XS){
+            margin-bottom: 5px;
+          }
+        }
+        
+    }
+}
+  .contact-container{
+    .main{
+      position: relative;
+      .card{
+        z-index: 1;
+        width: 90%;
+        margin: auto;
+        margin-top: -30%;
+        @include responsive(SM){
+          margin-top: -15%;
+        }
+        @include responsive(XS){
+          width: 100%;
+        }
+        img{
+          width: 8%;
+          @include responsive(SM){
+            width: 10%;
+          }
+        }
+
+        .map{
+          @include responsive(SM){
+            padding-top: 3rem ;
+          }
+          position: relative;
+          .gmap-canvas{
+            position: absolute;
+            width: 90%;
+            // top:0;
+            bottom: 120px;
+            @include responsive(SM){
+              position: relative;
+              width: 100%;
+            }
+          }
+        }
+      
+        .infomation{
+          .icon-contact{
+            width: 30px;
+          }
+          .title{
+            @include font-thehill($main-font, 3em, '', 600);
+            @include responsive(SM){
+              font-size: 2.5em;
+            }
+          }
+          p{
+            margin-bottom: 0;
+            @include font-thehill($thin-font, '', '', '')
+          }
+          .social-button{
+            margin-left: 15px;
+          }
+        }
+
+        .row-input{
+          .form-message{
+            padding: 0px 10px;
+            width: 80%;
+            @include responsive(SM){
+              width: unset;
+              padding-left:5%;
+              input{
+                width: 60%;
+              }
+            }
+            @include responsive(XS){
+              input{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+   
+  }
+}
+
+  

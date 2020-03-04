@@ -1,0 +1,39 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host{
+    .aboutus-stories{
+        box-shadow: 0 0 30px #888;
+        img{
+            width: 9vw;
+            @include responsive(SM){
+                width: 15vw;
+            }
+        }
+        .row-benefits{
+            .ulli{
+                color:grey;
+                .benefits-title{
+                    text-transform: uppercase;
+                    @include font-thehill($main-font, 20px, black, bold);
+                }
+                &:last-child{
+                    margin-bottom: 0 !important;
+                }
+                i{
+                    margin-top: 4px;
+                }
+                li{
+                    display: inline-flex;
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
+        }
+       
+    }
+    
+}

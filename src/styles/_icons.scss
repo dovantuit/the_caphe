@@ -1,0 +1,125 @@
+.icon {
+  display: inline-block;
+  background: transparent no-repeat center center;
+  background-size: contain;
+
+  &.icon-delete {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/delete-button.png");
+  }
+
+  &.icon-duplicate {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/duplicate@2x.png");
+  }
+
+  &.icon-edit {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/pencil-edit-button.png");
+  }
+
+  &.icon-sort {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/sort-button.png");
+  }
+
+  &.icon-pre {
+    width: 22px;
+    height: 20px; //noinspection CssUnknownTarget
+
+    background-image: url("assets/images/icons/slide-left@2x.png");
+  }
+
+  &.icon-next {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/slide-right@2x.png");
+  }
+
+  &.icon-active {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/dropdown-activate-icon@2x.png");
+  }
+
+  &.icon-deactive {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/dropdown-deactivate-icon@2x.png");
+  }
+
+  &.icon-save {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/dropdown-upload.png");
+  }
+
+  &.icon-restore {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/dropdown-restore.png");
+  }
+
+  &.icon-setting {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/settings@2x.png");
+
+    &:hover {
+      //noinspection CssUnknownTarget
+      background-image: url("assets/images/icons/setting-hover.png");
+    }
+  }
+
+  &.icon-leave-class {
+    width: 22px;
+    height: 20px;
+    //noinspection CssUnknownTarget
+    background-image: url("assets/images/icons/back-button@2x.png");
+  }
+
+  .server-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/serve1.png") no-repeat center;
+  }
+
+  .client-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/pc-with-monitor-1.png") no-repeat center;
+  }
+
+  .router-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/router1.png") no-repeat center;
+  }
+
+  .database-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/database.png") no-repeat center;
+  }
+
+  .firewall-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/firewall.png") no-repeat center;
+  }
+
+  .default-mode {
+    //noinspection CssUnknownTarget
+    background: url("assets/images/icons/default-component.png") no-repeat center;
+  }
+}
+

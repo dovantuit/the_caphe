@@ -1,0 +1,143 @@
+@import "../../../styles/responsive";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+$primary : #225CFF;
+$gray : #C8CCD4;
+
+:host {
+    form {
+        font-size: 16px;
+
+        .label-time {
+            margin-top: 25px;
+
+            @include responsive(XS) {
+                margin-top: 0;
+            }
+        }
+
+        @include responsive(SM) {
+
+            .btn-main {
+                float: unset;
+
+            }
+        }
+
+        .first-info {
+            margin-left: 5% !important;
+            margin-right: 5% !important;
+
+            @include responsive(SM) {
+                margin-left: 0% !important;
+                margin-right: 0% !important;
+            }
+
+            .row {
+                margin-bottom: 40px;
+            }
+        }
+
+        .second-info {
+            font-size: 16px;
+
+            .italic-text {
+                font-style: italic;
+                font-size: 18px;
+            }
+
+            li {
+                margin-left: 20px;
+                list-style: initial;
+                margin-bottom: 40px;
+            }
+
+            img {
+                width: 80%;
+                border: 1px solid black
+            }
+        }
+
+        .form-input-reservation {
+            border: none;
+            outline: none;
+            border-bottom: 0.5px solid gray;
+        }
+
+        .select-box {
+            cursor: pointer;
+            position: relative;
+            max-width: 20em;
+            width: 100%;
+        }
+
+        .select,
+        .label {
+            color: #414141;
+            display: block;
+            font: 400 17px/2em "Source Sans Pro", sans-serif;
+        }
+
+        .select {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            padding: 5px 5px;
+            height: 40px;
+            opacity: 0;
+            background: none transparent;
+            border: 0 none;
+        }
+
+        .select-box1 {
+            background: #fff;
+            border: 1px solid black;
+        }
+
+        .label {
+            position: relative;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .open .label::after {
+            content: "▲";
+        }
+
+        .label::after {
+            content: "▼";
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px 15px;
+            border-left: 5px solid #fff;
+            background: black;
+            color: #fff;
+        }
+
+        .below span {
+            @include font-thehill($thin-font, 12px, red, '');
+            margin-left: 13px;
+            float: left;
+        }
+
+        .below .pstyle {
+            @include font-thehill($thin-font, 12px, red, '');
+            margin-left: 13px;
+            float: left;
+        }
+
+
+    }
+
+    .timepicker {
+        input.bs-timepicker-field {
+            border: 1px solid black !important;
+            border-radius: unset !important;
+        }
+    }
+
+
+
+}

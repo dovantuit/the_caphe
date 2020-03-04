@@ -1,0 +1,216 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host {
+    .culture-news-blog-container {
+
+        .recent-post,
+        .categories-post,
+        .tags-post,
+        .archives {
+            .title {
+                padding: 5px 20px;
+                @include font-thehill($main-font, 18px, '', bold);
+                text-transform: uppercase;
+                background: #fafafa;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 4px;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    position: absolute;
+                    background-color: black;
+                }
+            }
+
+            .list-post {
+                position: relative;
+                cursor: pointer;
+
+
+                .post-item {
+                    padding-left: 0;
+                    width: 100%;
+
+                    .item {
+
+                        font-size: 13px;
+                        color: #8a8a8a;
+                        width: 100%;
+
+                        position: absolute;
+                        bottom: 0;
+                        padding-right: 10%;
+
+                        @include responsive(XS) {
+                            font-size: 14px;
+                        }
+
+                        @include responsive(SM) {
+                            font-size: 16px;
+                            padding-right: 5%;
+                        }
+
+                        .title-post {
+                            color: black;
+                            font-weight: bold;
+                            @include font-thehill($main-font, '', '', '');
+
+                        }
+
+                        .author {
+                            float: left;
+                            @include font-thehill($thin-font, '', '', '');
+                        }
+
+                        .date {
+                            float: right;
+                            @include font-thehill($thin-font, '', '', '');
+                        }
+                    }
+
+                }
+
+                &::before {
+                    content: "";
+                    height: 1px;
+                    width: 89%;
+                    bottom: -12px;
+                    left: 15px;
+                    margin: auto;
+                    position: absolute;
+                    background-color: #8a8a8a;
+
+                    @include responsive(SM) {
+                        width: 95%;
+                    }
+
+                    @include responsive(XS) {
+                        width: 90%;
+                    }
+
+                }
+
+                &:last-child::before {
+                    height: 0px;
+                }
+
+            }
+
+
+            ul.ul-categories {
+                li {
+                    cursor: pointer;
+                    @include font-thehill($thin-font, 13px, '', '');
+                    position: relative;
+
+                    &.active {
+                        font-weight: bold;
+                        font-size: 15px;
+                    }
+
+                    .count {
+                        float: right;
+                    }
+
+                    &::before {
+                        content: "";
+                        height: 1px;
+                        width: 100%;
+                        bottom: -12px;
+                        left: 0;
+                        margin: auto;
+                        position: absolute;
+                        background-color: #e7e0e0;
+
+                    }
+
+                    &:last-child::before {
+                        height: 0px;
+                    }
+                }
+            }
+
+
+            ul.ul-tags {
+                li {
+                    display: inline-block;
+                    border: 1px solid #8a8a8a;
+                    padding: 3px;
+                    @include font-thehill($thin-font, 12px, #8a8a8a, '');
+                    margin: 3px;
+                    cursor: pointer;
+                }
+            }
+
+
+            .bs-datepicker-container {
+                padding: 0 !important;
+            }
+
+            .theme-green.bs-datepicker-head {
+                background-color: white;
+            }
+
+
+        }
+    }
+
+    .list-post {
+        .news-post {
+
+            .date {
+                .day {
+                    margin-bottom: -10px;
+                    @include font-thehill($main-font, 30px, black, 900);
+
+                    @include responsive(MD) {}
+
+                    @include responsive(XS) {
+                        margin-top: 14px;
+                    }
+                }
+
+                .month {
+                    @include font-thehill($main-font, 25px, black, 400);
+                }
+            }
+
+            .title {
+                @include font-thehill($main-font, 30px, black, 800);
+                cursor: pointer;
+
+                @include responsive(MD) {
+                    font-size: 25px;
+                }
+
+                @include responsive(XS) {
+                    font-size: 20px;
+                }
+            }
+
+            .author {
+                @include font-thehill($thin-font, 14px, '', '');
+            }
+
+            hr {
+                margin-top: 0;
+                margin-bottom: 0;
+                border-top: 2px solid black;
+            }
+
+            .content {
+                p {
+                    width: 90%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,523 @@
+{
+    "navbar": {
+        "about-us": "About Us",
+        "product": "Products",
+        "coffee-culture": "Coffee Culture",
+        "services": "Services",
+        "business": "Business",
+        "events": "Events",
+        "contact": "Contact"
+    },
+    "footer": {
+        "aboutus": {
+            "title": "About Us",
+            "missons": "Mission",
+            "cleanCoffee": "Products",
+            "coreValue": "Vision",
+            "exportation": "Exportation",
+            "wholesale": "Wholesale",
+            "career": "Career Opportunity"
+        },
+        "community": {
+            "title": "Community",
+            "newsUpdate": "Blog",
+            "knowledge": "Knowledge",
+            "brewGuide": "Brew Guide",
+            "recipe": "Recipe"
+        },
+        "support": {
+            "title": "Support",
+            "customerServices": "Customer Service",
+            "shippingReturns": "Shipping & Returns",
+            "paymentMethods": "Payment Methods"
+        },
+        "contact": {
+            "title": "Contact",
+            "address": "Room 8, Floor 8, Cantavil Premier, Song Hanh Street, An Phu Ward, District 2, Ho Chi Minh city",
+            "phone": "Tel:",
+            "fax": "Fax:",
+            "email": "info@thehillcoffee.com.vn"
+        },
+        "sub":{
+            "policy":"Privacy Policy",
+            "site":"Site Map"
+        },
+        "description": "Established in 2015, The Hill Vietnam aims to bring the best coffee beans to the community and becomes a capable assistant for coffee lovers."
+    },
+    "page-aboutus": {
+        "whoWeAre": {
+            "title1": "The Hill Vietnam was founded",
+            "description1": "Hoping to introduce fresh-roasted coffee to Vietnamese people, The Hill Vietnam was founded in 2015. Similar to our competitors, The Hill Vietnam also supplies coffee beans. Different from our competitors, The Hill Vietnam does not aim to be the biggest coffee suppliers. From the beginning, The Hill Vietnam sets the goal to be an assistant, a companion and most of all, a friend that can help coffee lover to achieve their dream.",
+            "title2": "The Hill Vietnam Entered The Coffee Bean Market",
+            "description2": "After carefully researching, developing and listening to the needs of many coffee shop owners, The Hill Vietnam launched six new lines of fresh-roasted coffee bean. This milestone was one of the most important change for The Hill Vietnam.",
+            "title3": "The Hill Vietnam Developed 4.0 Management System",
+            "description3": "Understanding that technology plays an important role in the future, The Hill Vietnam is proud to be the first coffee supplier to apply the 4.0 technology into its process. This adaption allow The Hill Vietnam to reduce processing time as well as the cost for coffee shop owners. At the same time, by using F2C (Factory to Consumers) business model, The Hill Vietnam is able to provide many benefits while still minimize the cost for coffee shop owners."
+        },
+        "whatWeDo": {
+            "description1": "Offering a variety of coffee beans that suit the need of customer",
+            "description2": "Providing many services to support our customers",
+            "description3": "Adapting 4.0 technology to save time and reduce cost",
+            "description4": "Manufacturing and exporting coffee to many countries all over the world"
+        },
+        "ourPromises": {
+            "description1": "The Hill Vietnam is only successful when our partner is successful",
+            "description2": "The Hill Vietnam always strives for the best quality and never settle for less",
+            "description3": "The Hill Vietnam is responsible for serving our customer and developing our employees"
+        },
+        "openIntro": {
+            "description1": "Hello coffee lover, coffee shop owner, and everyone else!",
+            "description2": "We wish you can know how happy we are when you vist our website to learn more about us.Let us make something clear, this website is all about you. We've built this website as a home where The Hill Vietnam and you can explore every corner to learn more about coffee together."
+        }
+    },
+    "page-products": {
+        "general": {
+            "description1": "Being carefully selected from the highlands of Brazil, Ethiopia, and Buon Ma Thuot, our coffee beans offer the best quality to customers. With great passion for coffee, we have constantly researched and developed to launch products that are suitable for every customer."
+        },
+        "product": {
+            "description": "Description",
+            "ingredients": "Ingredients"
+        },
+        "productInfo": {
+            "quantity": "Quantity:",
+            "weight": "Weight:",
+            "expiry": "Expiration:",
+            "brand":"Brand:",
+            "price":"Price:",
+            "origin":"Origin:"
+        }
+    },
+    "page-culture": {
+        "knowledge": {
+            "description1": "Through these following articles, The Hill Vietnam would love to share with you many interesting stories and facts about coffee from all over the world, and throughout history. Understanding coffee is also a way to express your love for it. Let coffee not just be a drink but a real experience."
+        },
+        "shareWithUs": {
+            "title1": "How important is coffee in your life?",
+            "description1": "For The Hill Vietnam, enjoying coffee is also a way to enjoy life, and those experiences need to be shared. Don't hesitate to share your coffee story with us, and with everyone. They will be the inspiration not only for The Hill Vietnam, but also for the community of coffee lovers to constantly maintain the coffee culture and contribute to the sustainable development of the coffee market."
+        },
+        "blog": {
+            "title1": "How important is coffee in your life?",
+            "description": "These inspiring coffee stories will put your mind at ease and help you gain some new perspectives.",
+            "recent": "RECENT POSTS",
+            "category": "CATEGORY",
+            "archives": "ARCHIVES"
+        },
+        "recipe": {
+            "title1": "How important is coffee in your life?",
+            "description": "This is where typical coffee brewing methods are provided, some of which could be done at home.",
+            "recent": "RECENT POSTS",
+            "category": "CATEGORY",
+            "specialDiet": "SPECIAL DIET",
+            "course": "COURSE"
+        },
+        "experiences": {
+            "description1": "Coffee lovers always try to create new drink from coffee. As a results, a colorful coffee world was created. Each of these drinks has its own character that reflects the culture of where it was created."
+        },
+        "brewBar": {
+            "description1": "In this category, The Hill Vietnam’s specialist will bring you the most realistic view through tutorials on brewing each drink. Whether you love to brew coffee, or simply be curious about how your favorite drink is made, this section is worth exploring."
+        }
+    },
+    "page-brewBar": {
+        "description": "In this category, The Hill Vietnam’s specialist will bring you the most realistic view through tutorials on brewing each drink. Whether you love to brew coffee, or simply be curious about how your favorite drink is made, this section is worth exploring.",
+        "date": "Date:",
+        "moreMethod": "Other Method"
+    },
+    "page-sharWithUs": {
+        "description": "For The Hill Vietnam, enjoying coffee is also a way to enjoy life, and those experiences need to be shared. Don't hesitate to share your coffee story with us, and with everyone. They will be the inspiration not only for The Hill Vietnam, but also for the community of coffee lovers to constantly maintain the coffee culture and contribute to the sustainable development of the coffee market."
+    },
+    "page-recipe-detail": {
+        "postedBy": "Posted by:",
+        "recipeType": "RECIPE TYPE:",
+        "category": "CATEGORY:",
+        "specialDiet": "SPECIAL DIET:",
+        "cuisine": "CUISINE:",
+        "yield": "YEILD:",
+        "time": "TIME:",
+        "difficulty": "DIFFICULTY:",
+        "ingredients": "INGREDIENTS",
+        "equipment": "EQUIPMENT",
+        "direction": "INSTRUCTION",
+        "nutrition": "NUTRITION",
+        "nutrient": "SPECIFIC",
+        "relatedPost": "RELATED POST",
+        "comment": "COMMENT SECTION",
+        "no-comment": "No comment at the moment",
+        "leaveComment": "LEAVE COMMENT"
+    },
+    "page-services": {
+        "general": {
+            "description1": "Beside striving to improve our products, The Hill Vietnam also offers many services to support our customers.",
+            "description2": "Based on AI (Artificial Intelligence) technology, The Hill Vietnam can improve internal process as well as external process to fulfill any demand of our custoemrs.",
+            "description3": "The Hill Vietnam integrate all of our products and services into The Hill Vietnam app. In addition, our app also provides customers the benefits of technology so customers can be successful.",
+            "description4": "The Hill Vietnam hopes to satisfy all of our customers."
+        },
+        "barista": {
+            "name": "Barista Training",
+            "description1": "Coffee shop owners who use The Hill Vietnam coffee beans will be able to register for our Barista Training service through our app and website for free. Coffee specialists from The Hill Vietnam will help training coffee shop owners’ employee from serving customers to enhancing barista skills."
+        },
+        "management": {
+            "name": "4.0 Management System",
+            "description1": "With The Hill Vietnam 4.0 Management System, coffee shop owners will be able to place and track orders through our app as well as on our website. In addition, owners can also access past orders to keep track on how much money was spent on ingredients. This service will help saving a lot of time for coffee shop owners."
+        },
+        "consultant": {
+            "name": "Cosultancy",
+            "description1": "Open a coffee shop is not something to be taken lightly. The most common reason for a coffee shop to close down is because the owner did not write out a specific plan as well as forget to analyze the risk that the coffee shop is going to face. Factors such as concept, location, target customers, competitors and financial situation should be discussed and analyzed carefully. Coffee shop owners who use The Hill Vietnam coffee beans will be able to use our Consultant service. We will assist you in mapping out a plan for success."
+        },
+        "customize": {
+            "name": "Customization",
+            "description1": "In addition to our main products, coffee shop owners who want to create a unique taste for their coffee can use our The Hill Vietnam Customize service. Our R&D department will collect coffee shop owner’s request, analyze, adjust the ratio of each coffee type and create the most suitable product for the owner. This customization will also be saved to The Hill Vietnam coffee library in case coffee shop owner wants use it again."
+        },
+        "material": {
+            "name": "Ingredient Supply",
+            "description1": "To reduce cost for coffee shop owners, The Hill Vietnam collaborates with many ingredient suppliers to create the Ingredient Supply service. Using this service, coffee shop owners will be able to buy ingredients for their coffee shop such as sugar, milk. syrup, etc. for a cheaper price. This service will be included in The Hill Vietnam app."
+        },
+        "device": {
+            "name": "Equipment Supply",
+            "description1": "In order to brew the best coffee, beside from the quality of the coffee beans, equipment also plays an important role. However, good coffee machines do cost coffee shop owners a lot of money. Using our Equipment Supply service, coffee shop owners will be able to purchase coffee equipment for a special price comparing to purchase it directly at the store."
+        },
+        "description": "Beside striving to improve our products, The Hill Vietnam also offers many services to support our customers."
+    },
+    "page-business": {
+        "general": {
+            "description1": "Recently, coffee consuming is increasing day by day. Coffee specialists have predicted that coffee will soon become one of the most popular drink in the world. Placing factory in Vietnam has given The Hill Vietnam an opportunity to access a large amount of quality coffee beans. In addition, by hiring many coffee specialists as well as adapting modern technology into our manufacturing process, The Hill Vietnam is capable of producing a variety of products including instant coffee and wholesale coffee beans. More importantly, The Hill Vietnam is ready to handle any customized order to fit the needs of our customers.",
+            "description2": "The Hill Vietnam is constantly looking for new opportunities to collaborate with both domestic and international business partners. To find more information about us, please fill out the contact form or give us a call. We’re always happy to assist.",
+            "description3": "The Hill Vietnam values every single opportunity to be your business partner. "
+        },
+        "interior": {
+            "name": "Domestic Partner"
+        },
+        "coffeeBar": {
+            "name": "Coffee Shop",
+            "description": "The most important factors for a coffee shop to be successful is to find a trustworthy coffee supplier. Not only does The Hill Vietnam offer a wide range of products to fit the needs of customers, we also have many services to assist coffee shop owners. Contact us, let us know your problem and The Hill Vietnam can offer you a most suitable solution. ",
+            "description1": "Bạn đang có nhu cầu mở quán cà phê.",
+            "description2": "Bạn là chủ quán và đang có nhu cầu tìm một nguồn cung cấp sản phẩm uy tín, chất lượng.",
+            "description3": "Bạn muốn áp dụng hệ thống công nghệ 4.0 để tiếm kiệm thời giản cũng như tăng hiệu quả trong việc quản lý thu mua và nguyên liệu.",
+            "description4": "Bạn muốn biến giấc mơ của mình thành hiện thực.",
+            "description5": "Hãy liên hệ với chúng tôi, chúng tôi sẽ hiện thực hóa những mong muốn của bạn."
+        },
+        "specialtyGrocery": {
+            "name": "Coffee Chain",
+            "description": "Small change can offer big impact. Understand that coffee chain needs a better management system to deal with controlling the ingredients, The Hill Vietnam has developed 4.0 Management System to handle this process. This system gives The Hill Vietnam more controls over ensuring ingredients quality as well as delivering orders on time for coffee chains.",
+            "description1": "Bạn đang sở hữu các chuỗi cà phê.",
+            "description2": "Bạn muốn được nhận giá ưu đãi khi nhập số lượng lớn nguyên liệu nhưng vẫn đảm bảo chất lượng.",
+            "description3": "Bạn muốn áp dụng hệ thống công nghệ 4.0 để tiếm kiệm thời giản cũng như tăng hiệu quả trong việc quản lý thu mua và nguyên liệu.",
+            "description4": "Bạn muốn mở rộng hệ thống cửa hàng để cạnh tranh với các đối thủ khác.",
+            "description5": "Hãy liên hệ với chúng tôi, chúng tôi chính là hậu phương vững chãi mà bạn vẫn luôn tìm kiếm."
+        },
+        "restaurantHotel": {
+            "name": "Restaurant & Hotel",
+            "description1": "With many years of experience in providing ingredients for restaurants and hotels, The Hill Vietnam fully understands the demands and can offer the most suitable solution for our partners. The Hill Vietnam can guarantee the quality of ingredients, ensure the transportation time and offer supportive customer services."
+        },
+        "international": {
+            "name": "International Partner"
+        },
+        "distributor": {
+            "name": "Distributor",
+            "description": "With factories in Vietnam, the world largest robusta exporter, The Hill Vietnam has access to a large amount of coffee and can fulfill any orders. In addition, our factory in Vietnam is also equipped with the most modern technology and equipment to ensure the quality of our products. In addition, The Hill Vietnam is currently the only coffee manufacturer in Vietnam that offers customization service.",
+            "description1": "The Hill Vietnam có nhà máy đặt tại Việt Nam làm nguồn nguyên liệu – nơi có sản lượng xuất khẩu cà phê lớn thứ hai thế giới làm nguồn nguyên liệu kết hợp với việc áp dụng những thiết bị và công nghệ sản xuất hiện đại cùng đội ngũ nghiên cứu có trình độ chuyên môn sâu về cà phê. Bên cạnh đó, The Hill Vietnam cũng có thể đáp ứng được những đơn hàng riêng biệt về chất lượng tuỳ theo yêu cầu của khách hàng cũng như từng thị trường riêng với mức giá cạnh tranh nhất thị trường."
+        },
+        "retailer": {
+            "name": "Retailer",
+            "description": "With many years of experience, The Hill Vietnam is the right choice for any international business partners. The Hill Vietnam can guarantee the quality of ingredients, ensure the transportation time and offer supportive customer services. In addition, The Hill Vietnam can also customize the ingredients to fit the tastes of customers from all over the world.",
+            "description1": "Với nhiều năm kinh nghiệm trong việc phục vụ nhiều Nhà Bán Lẻ trên khắp thế giới, The Hill Vietnam chính là sự lựa chọn đáng tin cậy cho các đối tác nước ngoài.",
+            "description2": "Nhà máy của The Hill Vietnam được đặt ngay tại Việt Nam – nơi có sản lượng xuất khẩu cà phê đứng thứ hai trên thế giới giúp các đối tác có thể yên tâm trong việc đảm bảo nguồn cung nguyên liệu.",
+            "description3": "Bên cạnh đó, The Hill Vietnam với dịch vụ cá nhân hóa khẩu vị có thể giúp các đối tác thay tùy chình khẩu vị của cà phê để phù hợp với từng đối tượng khách hàng."
+        },
+        "other": {
+            "name": "Others",
+            "description1": "Please contact us for additional information."
+        }
+    },
+    "page-contact": {
+        "description": "Please do not hesitate to contact us if you need any assistance. We well get back to you in 1 to 3 business days.",
+        "general": {
+            "office-addressName": "Office",
+            "office-address1": "Room 8, Floor 8, Cantavil Premier, Song Hanh Street, An Phu Ward, District 2, Ho Chi Minh city",
+            "factory-addressName": "Địa chỉ nhà máy",
+            "factory-address1": "Số 2, Đường 3A, KCN Biên Hòa 2, P.Long Bình Tân",
+            "factory-address2": "TP. Biên Hòa, Đồng Nai",
+            "fax": "028 - 3740 6788",
+            "phone": "028 - 3740 6789",
+            "website": "www.thehillcoffee.com.vn",
+            "email": "info@thehillcoffee.com.vn",
+            "facebook": "https://www.facebook.com/thehillvietnamcoffee"
+        }
+    },
+    "page-reservation": {
+        "title": "Booking Services",
+        "moreInfo": "Please answer these questions so we can better assist you (Optional)",
+        "yes": "Yes",
+        "no": "No",
+        "salesPerMonth": "Estimated selling quantity:",
+        "salesOption1": "From 15 to 20 years old",
+        "salesOption2": "From 20 to 40 years old",
+        "salesOption3": "Higher than 40 years old",
+        "targetAudiences": "Target Customers:",
+        "businessScale": "Business Model:",
+        "scaleOption1": "Coffee Shop",
+        "scaleOption1-1": "1 đến 2 cửa hàng",
+        "scaleOption2-1": "Từ 3 cửa hàng trở lên",
+        "scaleOption2": "Coffee Chain",
+        "scaleOption3": "Restaurant & Hotel",
+        "other": "Other:"
+    },
+    "page-recruitment": {
+        "description": "With the spirit of enthusiasm, ambition and endless love for coffee, The Hill Vietnam is constantly looking for those who also share the love to join our team.",
+        "benefit": {
+            "description": "The Hill Vietnam aims to maintain an attractive and supportive working environment for those who love working in the field of coffee:",
+            "benefit1": "Being provided with comprehensive insurance policy",
+            "benefit2": "Enrolling on training courses to improve skills and professional knowledge",
+            "benefit3": "Being fully equipped with uniforms, tools and equipment if required",
+            "benefit4": "Expanding social network by meeting coffee specialists and coffee shop owners",
+            "benefit5": "Receiving competitive salary and other reward policies tied to working performance",
+            "benefit6": "Being considered for salary increase every 6 months",
+            "benefit7": "Participating in team-building activities to foster organizational culture",
+            "benefit8": "Having chance for promotion if meet all the requirements"
+        },
+        "readDescription": "I have read the Job Description and would like to apply for this position",
+        "description1": "Please fill out these information",
+        "readDescription2": "Tôi đã đọc và hiểu chính sách bảo mật của Recruitee",
+        "acceptCVFile": "Accepted formats: PDF, DOC, DOCX, JPG and PNG",
+        "coverLetter": "Cover Letter",
+        "jobInfo": {
+            "id": "ID",
+            "age": "Age",
+            "roleType": "Position",
+            "datePosted": "Date Posted",
+            "profession": "Department",
+            "employmentType": "Employment Type"
+        }
+    },
+    "form": {
+        "title": "Contact Form",
+        "note": "Please fill out these information",
+        "full-name": "Full Name*:",
+        "firstName": "First Name*",
+        "lastName": "Last Name*",
+        "address": "Address*",
+        "email": "Email*",
+        "phone": "Phone Number*",
+        "phone1": "Phone Number",
+        "district": "District*",
+        "date": "Date*",
+        "time": "Time*",
+        "company": "Company*",
+        "expectedMonthly": "Estimated Buying Quantity:",
+        "comment": "Other Comment",
+        "message": "Message*",
+        "youAre": {
+            "title": "You are:",
+            "dealer": "Dealer",
+            "broker": "Broker",
+            "importer": "Importer",
+            "consumer": "Personal Customer"
+        }
+    },
+    "page-shipping": {
+        "general": {
+            "header": "OUR SHIPPING POLICY",
+            "point1": " - Domestic Shipping.",
+            "point2": " - Free ship in Ho Chi Minh city for a minumum order of 10 kg.",
+            "point3": " - 50% discount for shipping fee for other provinces within Vietnam for a minimum order of 30 kg.",
+            "point4": " - Free ship for any order more than 100 kg."
+        },
+        "hcmc": {
+            "header": "1. For order within Ho Chi Minh city",
+            "point1": " - The Hill Vietnam guarantees to deliver order to our customer",
+            "point2": " - Customer can either deposit the payment or use our COD (cash on delivery) service",
+            "point3": " - With order of more than 10 kg, customer will receive order in 12 hours to 24 hours",
+            "point4": " - With order of less than 10 kg, customer will receive order in 2 to 3 business days",
+            "note-head": "Notice:",
+            "note-desc": "We do offer express delivery, customer will receive order in 2 to 3 hours (additional fee based on location)."
+        },
+        "overseas": {
+            "header": "2. For order from other provinces within Vietnam",
+            "point1": "We only ship the order after the payment is received. To receive the order faster, please us your payment at your earliest convinience.",
+            "point2": "Estimated arrival time is ranging from 24 hours to 48 hours (based on location).",
+            "point3": "Shipping fee will be caculated by our Shipping Partners, customer can either pays upfront or right after the order is received."
+        },
+        "note": {
+            "note": "Notice:",
+            "point1": " We only accept canceled order if only the order has not been sent to our Shipping Partners (we will confirm delivery time before shipping the order). After the order has been shipped, cancelation is not accepted under any cirsumstance."
+        }
+    },
+    "page-payment": {
+        "general": {
+            "header": "The Hill Vietnam accepts the following payment methods:",
+            "point1": " - Cash On Delivery (COD)",
+            "point2": " - Bank Tranfers "
+        },
+        "cod": {
+            "header": "1. COD",
+            "point1": "Customer gives The Hill Vietnam the payment right after buyer receives the order."
+        },
+        "steps": {
+            "header": " - Steps for COD method",
+            "point1-name": "Step 1:",
+            "point1-input": "Choose COD payment method while placing order.",
+            "point2-name": "Step 2:",
+            "point2-input": "Customer service will contact to confirm all the information. Order will be processed after information is confirmed.",
+            "point3-name": "Step 3:",
+            "point3-input": "Order will be shipped after processing.",
+            "point4-name": "Step 4:",
+            "point4-input": "Customer will give the payment to The Hill Vietnam transporter after receiving the order."
+        },
+        "payment": {
+            "header": "2. Bank Tranfers",
+            "point1": " - The Hill Vietnam will ship the order right after the payment is received.",
+            "point2": " - Customer can pay by: using Internet Banking, transfering using bank or ATM.",
+            "point3": " - Customer must includes name, company name (if applicable), coffee shop name (if applicable) and order number."
+        },
+        "bank": {
+            "header": "THE HILL VIETNAM BANKING ACCOUNT INFORMATION",
+            "name-title": "Account Owner:",
+            "name-input": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "number-title": "Account Number:",
+            "number-input": "0261 003 453 999",
+            "address-title": "Bank:",
+            "address-input1": "TMCP Công thương Việt Nam (Vietcombank)",
+            "address-input2": "Chi nhánh Thủ Thiêm, Quận 2"
+        },
+        "example": {
+            "header": "EXAMPLE:",
+            "name-title": "Account Owner:",
+            "name-input": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "number-title": "Account Number:",
+            "number-input": "0261 003 453 999",
+            "bank-title": "Bank:",
+            "bank-input": "TMCP Ngoại Thương Việt Nam (Vietcombank)",
+            "branch-title": "Branch:",
+            "branch-input": "Chi Nhánh Thủ Thiêm, Quận 2",
+            "content-title": "Content:",
+            "content-input": "Moc coffee shop payment for order 9xxxxx"
+        },
+        "list-bank": {
+            "header": "LIST OF THE HILL VIETNAM BANKING ACCOUNTS",
+            "number-title": "Account Numbers:",
+            "name-title":"Bank:",
+            "bank-item1":{
+                "name-input":"TMCP Ngoại Thương Việt Nam (Vietcombank) – Chi Nhánh Thủ Thiêm, Quận 2.",
+                "number-input": "0261 003 453 999"
+            },
+            "bank-item2":{
+                "name-input":"TMCP Công Thương Việt Nam (Vietinbank) – Chi Nhánh Thủ Thiêm, Quận 2.",
+                "number-input": "1110 0017 7636"
+            },
+            "bank-item3":{
+                "name-input":"TMCP Quân Đội (MBBank) – Chi Nhánh An Phú, Quận 2.",
+                "number-input": "1511 1013 50008"
+            },
+            "bank-item4":{
+                "name-input":"TMCP Sài Gòn Thương Tín (Sacombank) – Chi Nhánh An Phú, Quận 2.",
+                "number-input": "0601 2500 8978"
+            },
+            "bank-item5":{
+                "name-input":"Nông Nghiệp và Phát Triển Nông Thôn Việt Nam (Agribank) – Chi Nhánh Đông Sài Gòn, Quận 2.",
+                "number-input": "6280 2010 18335"
+            }
+        }
+    },
+    "page-policy": {
+        "section1": {
+            "header": "1. Information We Collect",
+            "point1": "Some information we collect is provided when you use our services. This may include your first and last name, username, password, email address, postal address, phone number, financial account information such as a credit card number, birthday, demographic information (such as your gender), and any other information you give us. You may also permit us to access information directly from your device, such as information in the 'contacts list'. You may also provide us information about other people, including when you direct us to send a gift card or e-gift."
+        },
+        "section2": {
+            "header": "2. How We Use Your Information",
+            "point1": "We may use the information we collect about you in a variety of ways, including to:",
+            "point2": "Maintain, improve, and analyze our websites, mobile applications, ads, and the products and services we offer.",
+            "point3": "Process your purchases of or requests for products and services.",
+            "point4": "Communicate with you about orders, purchases, returns, services, accounts, programs, contests, and sweepstakes.",
+            "point5": "Respond to your customer service inquiries and requests for information.",
+            "point6": "Post your comments or statements on our websites.",
+            "point7": "Provide important product safety information and notice of product recalls."
+        },
+        "section3": {
+            "header": "3. How We Store Your Information",
+            "point1": "Your information will be stored on our webpage and will only be deleted if required by authority."
+        },
+        "section4": {
+            "header": "4. How We Share Your Information",
+            "point1": "We may share your information in the following circumstances:",
+            "point2": "When We Work with Service Providers – We may share your information with service providers that provide us with support services, such as credit card processing, website hosting, email and postal delivery, location mapping, product and service delivery, analytics services, or conducting academic research.",
+            "point3": "When We Work on Business Transactions – If we become involved with a merger or another situation involving the transfer of some or all of our business assets, we may share your information with business entities or people involved in the negotiation or transfer.",
+            "point4": "When Sharing Helps Us Protect Lawful Interests – We may disclose your information if we believe that the disclosure is required by law, if we believe that the disclosure is necessary to enforce our agreements or policies, or if we believe that the disclosure will help us protect the rights, property, or safety of The Hill Vietnam or our customers or partners."
+        },
+        "section5": {
+            "header": "5. Address of Colleting and Managing Information Company",
+            "point1": "CÔNG TY TNHH CÀ PHÊ THE HILL VIỆT NAM",
+            "point2": "Address: Room 8, Floor 8, Cantavil Premier, Song Hanh Street, An Phu Ward, District 2, Ho Chi Minh city",
+            "point3": "Tel: 028 3740 6789",
+            "point4": "Email: info@thehillcoffee.com.vn"
+        },
+        "section6": {
+            "header": "6. How to Manage Your Account Information",
+            "point1": "Upon request we will provide you with information about whether we hold any of your personal information.",
+            "point2": "You may access, correct, or remove your personal information by contacting The Hill Vietnam.",
+            "point3": "As required by law for taxes and other record keeping purposes, we are unable to completely delete an account."
+        },
+        "section7": {
+            "header": "7. How We Protect Your Information",
+            "point1": "The Hill Vietnam is responsible for the processing of personal data it receives, and subsequently transfers to a third party acting as an agent on its behalf, under the Privacy Shield Framework.",
+            "point2": "The Hill Vietnam is responsible for protecting every information of users.",
+            "point3": "In certain situations, The Hill Vietnam may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements."
+        }
+    },
+    "validation": "Required",
+    "page-sitemap": {
+        "aboutus": {
+            "header": "ABOUT US",
+            "item1": ""
+        },
+        "event": {
+            "header": "EVENTS",
+            "item1": ""
+        },
+        "career": {
+            "header": "CAREER",
+            "item1": ""
+        },
+        "service": {
+            "header": "SERVICES",
+            "item1": ""
+        },
+        "privacyPolicy": {
+            "header": "PRIVACY POLICY",
+            "item1": ""
+        },
+        "paymentMethod": {
+            "header": "PAYMENT METHOD",
+            "item1": ""
+        },
+        "shippingReturn": {
+            "header": "SHIPPING & RETURN",
+            "item1": ""
+        },
+        "product": {
+            "header": "PRODUCTS",
+            "item1": "Coffee Bean",
+            "item2": "Instant Coffee"
+        },
+        "business": {
+            "header": "BUSINESS",
+            "item1": "Domestic Partner",
+            "item2": "International Partner"
+        },
+        "culture": {
+            "header": "COMMUNITY",
+            "item1": "Coffee Knowledge",
+            "item2": "Share With Us",
+            "item5": "Brew Guide",
+            "item4": "Blog",
+            "item3": "Recipe"
+        }
+    },
+    "page-events":{
+        "general":{
+            "msg1":"We do not have any events at the moment.",
+            "msg2":"Please follow us on social media for more information."
+        }
+    },
+    "loginInfo.history":"History",
+    "loginInfo.info":"Profile",
+    "loginInfo.logOut":"Log out"
+}

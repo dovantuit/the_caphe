@@ -1,0 +1,16 @@
+@import "../../../styles/responsive";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+:host{
+.services-container{
+    .title{
+        p{
+            @include font-thehill($thin-font, '', '', '');
+            @include responsive(MD){
+                width: 100% !important;
+            }
+        }
+    }
+}
+}

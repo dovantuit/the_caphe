@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hill Vietnam Coffee</title>
+  <base href="/">
+  <meta name="keywords"
+    content="mở quán cafe,cà phê nguyên chất, kinh doanh cafe, mở quán cà phê,cà phê espresso, các loại cafe, bã cà phê,cafe take away,cafe rang xay,cafe espresso,kinh doanh quán cafe">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon"
+    href="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/66898407_616009015587897_6094510768563159040_n.png?_nc_cat=106&_nc_oc=AQmuijQtj3L_8o0m4G5WZGg-YnaZX6ZrB9KQEbZPiZ-ioQIR7OxaM_-Uz3gHpY9DC4s&_nc_ht=scontent.fsgn2-3.fna&oh=527a3a95ca811be2c414ebb7a1ae7825&oe=5DBCAE8F">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/angular-calendar.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css">  -->
+  <link rel="stylesheet" href="./assets/css/bs-datepicker.css">
+  <!-- <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" /> -->
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138989198-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-138989198-1');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '893440347689128');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=893440347689128&ev=PageView
+  &noscript=1" />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P9ZBS39');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+  <thehill-root></thehill-root>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+  <script src="./assets/js/main.js"></script>
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.js" />
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.green.min.css" />
+  <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.css" />
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+  <script src="./assets/js/app.js"></script>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v3.3'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="704540869686555" theme_color="#000000"
+    logged_in_greeting="Chào bạn - những người có cùng đam mê về cà phê với The Hill Vietnam. "
+    logged_out_greeting="Chào bạn - những người có cùng đam mê về cà phê với The Hill Vietnam. ">
+  </div>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P9ZBS39');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9ZBS39" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <script>
+    function clickNavigation(text) {
+      try {
+        gtag('event', `${text}`, {
+          'event_category': 'Navigation',
+          'event_label': `${text}`
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  </script>
+
+
+  <!-- <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script> -->
+  <script>
+  </script>
+
+</body>
+
+</html>

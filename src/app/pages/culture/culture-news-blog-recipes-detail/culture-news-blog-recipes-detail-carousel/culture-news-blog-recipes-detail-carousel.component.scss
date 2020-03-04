@@ -1,0 +1,71 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+:host{
+
+    .carousel-section{
+        .title{
+            text-transform: uppercase;
+            @include font-thehill($main-font,18px,'',bold);
+            margin-left: 6%;
+            @include responsive(SM){
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+        .carousel-news-blog-detail{
+            width: 90%;
+            color: black;
+            @include responsive(XS){
+                width: 100%;
+            }
+    
+            .carousel-item{
+                .row{    
+                    .item{
+                        padding: 4%;
+                        @include responsive(XS){
+                            padding: 6%;
+                        }
+                        img{
+                            // padding: 5%;
+                            border:1px solid black;
+                            box-shadow: 0px 0px 11px 0px grey;
+                        }
+                    }
+                  
+                }
+    
+            }
+            .custom-control-prev, .custom-control-next{
+                color: black;
+                i{
+                    padding:10px 15px;
+                    border: 1px solid grey;
+                    font-weight: 600;
+                }
+            }
+    
+            
+    
+           
+        }
+
+        .owl-carousel.owl-recipes{
+            .owl-nav,.owl-dots{
+                display: block !important;
+                .owl-prev,.owl-next{
+                    padding: 0px 15px;
+                    border: 1px solid grey;
+                    font-weight: 600;
+                    font-size: 25px;
+                    margin-top: 10px;
+                }
+            }
+        }
+     
+    }
+   
+}
+

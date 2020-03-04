@@ -1,0 +1,22 @@
+<div class="pb-50 ">
+  <div class="container">
+    <div class="owl-carousel owl-theme owl-service" id="owl-service">
+      <div class="item" style="cursor: pointer !important;padding:  2%" *ngFor="let item of items">
+        <div class="row justify-content-center align-items-center ">
+          <div class="col-lg-6 col-12 mb-5  m-auto">
+            <img class="w-100" src="{{HOST_IMG}}{{item.thumbnail}}">
+          </div>
+          <div class="col-12 col-lg-6 text-center m-auto mt-5  mb-5">
+            <h1 class="my-5 mx-auto">{{item.name}}</h1>
+            <div class="text-left mt-5">
+              <div [innerHTML]="item.description"></div>
+            </div>
+            
+            <a onclick="clickNavigation('/reservation-form')" (click)="clickRouter(item.name)" [routerLink]="['/reservation-form']"><button class="btn-main mb-50 mt-5 ">Book now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

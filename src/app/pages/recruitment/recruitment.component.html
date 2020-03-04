@@ -1,0 +1,126 @@
+<div class="aboutus-carrer-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/Career-Opportunity.png" class="title-img" alt="">
+    <h1 class="page-title">Recruitment</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/tuyen-dung')" [routerLink]="['/tuyen-dung']">Career</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <app-recruitment-first></app-recruitment-first>
+  <app-recruitment-benefits></app-recruitment-benefits>
+  <!-- <app-recruitment-join-us></app-recruitment-join-us> -->
+
+  <div class="aboutus-career-joinus">
+    <div class="container ml-auto mx-auto text-center pt-50">
+      <img src="../../../assets/images/title/Join-us.png"  class="title-img" alt="">
+      <h1 class="page-title">Available Positions</h1>
+
+      <div class="row tags mt-5 mb-5">
+        <div class="col-lg-4 col-6 mb-4" *ngFor="let item of listJobs" (click)="selectedClass(item)">
+          <span [class.active]="item === selected">{{item.name}}</span>
+        </div>
+        <!-- <div class="col-lg-4 col-6 mb-4"><span>PURCHASING</span></div>
+        <div class="col-lg-4 col-6 mb-4"><span>ACCOUNTING</span></div>
+        <div class="col-lg-4 col-6 mb-4"><span>BRAND & MARKETING</span></div>
+        <div class="col-lg-4 col-6 mb-4"><span class="active">FINANCE</span></div>
+        <div class="col-lg-4 col-6 mb-4"><span class="">WHOLESALE</span></div> -->
+      </div>
+
+      <div class="row main mt-5 mb-5">
+        <div class="col-lg-3 col-12 left">
+          <ul class="tabs">
+            <!-- <li class="active">POSITION 1</li>
+            <li>POSITION 2</li>
+            <li>POSITION 3</li>
+            <li>POSITION 4</li> -->
+            <li *ngFor="let item of listPosition" [class.active]="selectedPosition === item.id" (click)="getPositionDetail(item.id)">{{item.name}}</li>
+          </ul>
+        </div>
+        <div class="col-lg-9 col-12 m-auto text-left mb-5 mt-3 right" *ngIf="positionDetail">
+          <div class="item">
+            <div class="infomation">
+              <div class="row mt-3">
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-4 name">{{'page-recruitment.jobInfo.id' | translate}}</div>
+                      <div class="col-8 des">{{positionDetail.jobNumber}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-4 name">{{'page-recruitment.jobInfo.datePosted' | translate}}</div>
+                      <div class="col-8 des">{{positionDetail.datePosted}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-4 name">{{'page-recruitment.jobInfo.age' | translate}}</div>
+                      <div class="col-8 des">{{positionDetail.travel}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-4 name">{{'page-recruitment.jobInfo.profession' | translate}}</div>
+                      <div class="col-8 des">{{positionDetail.profession}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-4 name">{{'page-recruitment.jobInfo.roleType' | translate}}</div>
+                      <div class="col-8 des">{{positionDetail.roleType}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-3">
+                  <div class="item-infomation m-auto">
+                    <div class="row">
+                      <div class="col-5 name">{{'page-recruitment.jobInfo.employmentType' | translate}}</div>
+                      <div class="col-7 des">{{positionDetail.employmentType}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="description mb-3 mt-3">
+                <div [innerHTML]="description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mx-auto mt-3 check" *ngIf="show">
+        <input style="margin-right: 10px" type="checkbox" [(ngModel)]="checked" name="checked">{{'page-recruitment.readDescription' | translate}}
+        <br>
+      </p>
+    </div>
+  </div>
+  <ng-container *ngIf="checked">
+    <app-recruitment-form></app-recruitment-form>
+  </ng-container>
+
+
+
+
+
+
+
+
+
+
+</div>

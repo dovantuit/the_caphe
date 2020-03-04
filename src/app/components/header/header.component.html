@@ -1,0 +1,152 @@
+<nav class="navbar navbar-expand-lg bg-faded navbar-light custom animated">
+  <div class="row lang-row" style="z-index: 9999999">
+    <div style="position:fixed; left: 75%;top: 10%">
+      <div class="dropdown" >
+        <button class="btn dropdown-toggle disabled" data-toggle="collapse" data-target="#dropdownLang"
+          aria-expanded="false" aria-controls="dropdownLang" *ngIf="language==='en'" >
+          <span><img style="height:10px;" src="../../../assets/images/flag_en.png"></span>
+          <span> English</span>
+        </button>
+        <button class="btn dropdown-toggle disabled" data-toggle="collapse" data-target="#dropdownLang"
+          aria-expanded="false" aria-controls="dropdownLang" *ngIf="language==='vi'" >
+          <span><img style="height:10px;" src="../../../assets/images/flag_vi.png"></span>
+          <span> Vietnamese</span>
+        </button>
+        <div class="dropdown-menu langlang" aria-labelledby="dropdownLang" name="Language" id="dropdownLang" >
+          <button class="dropdown-item" value="en" (click)="changeLanguage('en')">English</button>
+          <button class="dropdown-item" value="vi" (click)="changeLanguage('vi')">Vietnamese</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/trang-chu']">
+      <div class="logo"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse header-router" id="collapsibleNavbar">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <!-- <a class="nav-link" [routerLink]="['/ve-chung-toi']" routerLinkActive="active">ABOUT US</a> -->
+          <a class="nav-link" onclick="clickNavigation('/about-us')" [routerLink]="['/ve-chung-toi']"
+            routerLinkActive="active">{{'navbar.about-us' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/san-pham')" [routerLink]="['/san-pham/ca-phe-hat']"
+            routerLinkActive="active">{{'navbar.product' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']"
+            routerLinkActive="active">{{'navbar.coffee-culture' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/dich-vu')" [routerLink]="['/dich-vu']"
+            routerLinkActive="active">{{'navbar.services' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/doanh-nghiep/ban-si')" [routerLink]="['/doanh-nghiep/ban-si']"
+            routerLinkActive="active">{{'navbar.business' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/su-kien')" [routerLink]="['/su-kien']"
+            routerLinkActive="active">{{'navbar.events' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="clickNavigation('/lien-he')" [routerLink]="['/lien-he']"
+            routerLinkActive="active">{{'navbar.contact' | translate}}</a>
+        </li>
+        <li class="nav-item" *ngIf="user.userId === ''">
+          <a class="nav-link" onclick="clickNavigation('/login')" href="#" data-toggle="modal"
+            data-target="#exampleModalCenter"><i class="fas fa-user"></i>
+            Login</a>
+        </li>
+        <li class="nav-item nav_lang" >
+          <div class="dropdown border-top w-100" >
+            <button class="btn dropdown-toggle disabled" data-toggle="collapse" data-target="#dropdownLang"
+              aria-expanded="false" aria-controls="dropdownLang" *ngIf="language==='en'" >
+              <span><img style="height:10px;margin-right: 10px" src="../../../assets/images/flag_en.png"></span>
+              <span class="mobile-title"> English</span>
+            </button>
+            <button class="btn dropdown-toggle disabled" data-toggle="collapse" data-target="#dropdownLang"
+              aria-expanded="false" aria-controls="dropdownLang" *ngIf="language==='vi'" >
+              <span><img style="height:10px; margin-right: 10px" src="../../../assets/images/flag_vi.png"></span>
+              <span class="mobile-title"> Vietnamese</span>
+            </button>
+            <div class="collapse" id="dropdownLang" aria-labelledby="dropdownLang" >
+              <a class="dropdown-item" value="en" (click)="changeLanguage('en')">English</a>
+              <a class="dropdown-item" value="vi" (click)="changeLanguage('vi')">Vietnamese</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown" *ngIf="user.userId">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownLogin" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Welcome, {{user.username}}</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownLogin">
+            <a class="dropdown-item" onclick="clickNavigation('/thong-tin-tai-khoan')"
+              [routerLink]="['/thong-tin-tai-khoan']">{{'loginInfo.info' | translate}}</a>
+            <a class="dropdown-item" onclick="clickNavigation('/lich-su-mua-hang')"
+              [routerLink]="['/lich-su-mua-hang']">{{'loginInfo.history' | translate}}</a>
+            <a class="dropdown-item" (click)="logOut()" data-toggle="modal" data-target="#modalLogout" href="#">{{'loginInfo.logOut' | translate}}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+
+<div class="back-to-top">
+  <a href="" class="fa fa-chevron-up"> </a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-group" ngsubmi>
+          <label for="">User name</label>
+          <input type="text" class="form-control" name="username" id="" [(ngModel)]="username">
+          <label for="">Password</label>
+          <input type="password" class="form-control" name="password" id="" [(ngModel)]="password">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 
+<div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Bạn có muốn đăng xuất không?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+      <button type="button" (click)="logOut()"  class="btn btn-primary">Có</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+    </div>
+  </div>
+</div>
+</div> -->

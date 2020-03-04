@@ -1,0 +1,61 @@
+<div class="share-with-us-container mb-50">
+  <div class="container ml-auto mx-auto text-center pbt-50">
+    <img src="../../../assets/images/title/Share-with-us.png" class="title-img" alt="">
+    <h1 class="page-title">Share with Us</h1>
+    <div aria-label="breadcrumb page-breadcrumb">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+        </li>
+        <li class="breadcrumb-item ">
+          <a onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">Coffee Culture</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <a onclick="clickNavigation('/share-with-us')" [routerLink]="['/share-with-us']">Share with Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container title text-center">
+    {{'page-sharWithUs.description' | translate}}
+  </div>
+  <div class="container">
+    <div class="owl-carousel owl-theme mt-5 owl-share" id="owl-share">
+      <div class="item" *ngFor="let item of share">
+        <div class="content ">
+          <h1 class="mb-100 text-center text-uppercase font-weight-bold">{{share.name}}</h1>
+          <!-- <div class="image mb-50">
+            <img class="w-100" src="../../../assets//images/7/4.png" alt="">
+          </div>
+          <div class="text mb-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam delectus adipisci ab omnis iste
+            voluptates nisi,
+            blanditiis totam saepe impedit dolores reprehenderit molestias nemo quaerat illo modi dolore? Similique.
+          </div> -->
+          <div [innerHTML]="item.description" class="mb-50"></div>
+          <div class="comment">
+            <div class="row">
+              <div class="col-lg-2 col-4">
+                <img class="img-avatar w-100" src="{{HOST_IMG}}{{item.authors[0].imgUrl}}" alt="">
+              </div>
+              <div class="col-lg-10 col-8">
+                <h4 class="name mb-3">{{item.authors[0].name}}</h4>
+                <div class="info mb-2">
+                  Position:
+                  <span>{{item.authors[0].position}}</span>
+                  <br> Company: {{item.authors[0].company}}
+                  <p class="ml-2">{{item.authors[0].comment}}</p>
+                  <!-- <p class="ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fuga provident, in
+                    tempore sit nisi
+                    labore?</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

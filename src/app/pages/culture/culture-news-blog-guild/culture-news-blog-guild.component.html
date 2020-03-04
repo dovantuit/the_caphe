@@ -1,0 +1,73 @@
+<div class="culture-guild-container">
+  <div class="container">
+    <div class="ml-auto mx-auto text-center pbt-50">
+      <img src="../../../../assets/images/title/Unique-Method.png" class="title-img" alt="">
+      <h1 class="page-title">Brew Guide</h1>
+      <div aria-label="breadcrumb page-breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item ">
+            <a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a>
+          </li>
+          <li class="breadcrumb-item ">
+            <a onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">Coffee Culture</a>
+          </li>
+          <li class="breadcrumb-item active">
+            <a onclick="clickNavigation('/huong-dan')" [routerLink]="['/huong-dan']">Brew Guide</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="title text-center mb-50">
+      <p class="w-50 m-auto">  {{'page-brewBar.description' | translate}}</p>
+    </div>
+    <div class="row main" #main>
+      <div class="col-lg-8 col-12 mb-5">
+        <iframe width="100%" height="450px" [src]="youtubeUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="text mt-5">
+          <h3 class="title mb-5">{{mainData.name}}</h3>
+          <p [innerHTML]="mainData.description" class="mb-4"></p>
+          <ul class="infomation pb-5 text-left">
+            <!-- <li>
+              <div class="row">
+                <div class="col-4 name">Category:</div>
+                <div class="col-8">{{mainData.category}}</div>
+              </div>
+            </li> -->
+            <li>
+              <div class="row">
+                <div class="col-4 name">{{'page-brewBar.date' | translate}}</div>
+                <div class="col-8">{{mainData.createdDate}}</div>
+                <!-- April 2,2018  -->
+              </div>
+            </li>
+            <!-- <li>
+              <div class="row">
+                <div class="col-4 name">Tags:</div>
+                <div class="col-8">
+                 <span style="margin-right: 5px" *ngFor="let tag of mainData.tags ; let i=index">{{tag.value}}
+                    <span *ngIf="i != mainData.tags.length -1">,</span>
+                  </span>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="more text-center pbt-50">
+      <h3 class="title mb-5">{{'page-brewBar.moreMethod' | translate}}</h3>
+
+<div class="row">
+  
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-4" *ngFor="let item of data" (click)="setGuildId(item.id)" style="cursor: pointer">
+    <img class="w-100" src="{{HOST_IMG}}{{item.thumbnail}}" alt="">
+    <h5 class="name mt-3">{{item.name}}</h5>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>

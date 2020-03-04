@@ -1,0 +1,43 @@
+<div class="culture-recipres-detail-container  mb-50">
+  <div class="container">
+    <div class="ml-auto mx-auto text-center pbt-50">
+        <img src="../../../../assets/images/title/Recipe.png" class="title-img m-auto" alt="">
+      <h1 class="page-title">Recipe</h1>
+      <div aria-label="breadcrumb page-breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item "><a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a></li>
+          <li class="breadcrumb-item "><a onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">Coffee Culture</a></li>
+          <li class="breadcrumb-item active"><a onclick="clickNavigation('/cong-thuc')" [routerLink]="['/cong-thuc']">Recipe</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-detail mb-4" *ngIf="data.recipeInfo">
+      <div class="row mb-3 title-post">
+        <div class="col-xs-2 col-lg-1 col-2 col-md-1 text-center date">
+          <div class="day">{{date[2]}}</div>
+          <div class="month">{{convertMonth(data.createdDate)}}</div>
+        </div>
+        <div class="col-xs-10 col-lg-11 col-10 col-md-11">
+          <div class="title">{{data.name}}</div>
+          <hr>
+          <div class="row author mt-1">
+            <div class="col-lg-4 col-6"> {{'page-recipe-detail.postedBy' | translate}} {{data.authors[0].name}}</div>
+            <!-- <div class="col-lg-2 col-3">26</div> -->
+          </div>
+        </div>
+      </div>
+      <app-culture-news-blog-recipes-detail-infomation [data]="data"  [recipeInfo]="data.recipeInfo[0]"></app-culture-news-blog-recipes-detail-infomation>
+      <app-culture-news-blog-recipes-detail-main-content [recipeNutrition]="data.recipeNutrition" [recipeInfo]="data.recipeInfo[0]"></app-culture-news-blog-recipes-detail-main-content>
+      <hr class="mt-3 ml-5 mb-3 d-lg-block d-none">
+      <app-culture-news-blog-recipes-detail-desciption [recipeInfo]="data.recipeInfo[0]" [recipeNutrition]="data.recipeNutrition"></app-culture-news-blog-recipes-detail-desciption>
+      <hr class="mt-3 hr-description">
+      <div class="footer-description">
+        <i class="fa fa-tag mr-2"></i> <span style="margin-right: 5px" *ngFor="let tag of data.tags ; let i=index">{{tag.value}} 
+            <span *ngIf="i != data.tags.length -1">,</span></span>
+      </div>
+    </div>
+    <app-culture-news-blog-recipes-detail-carousel></app-culture-news-blog-recipes-detail-carousel>
+    <app-culture-news-blog-recipes-detail-comments></app-culture-news-blog-recipes-detail-comments>
+    <app-culture-news-blog-recipes-detail-leave-message ></app-culture-news-blog-recipes-detail-leave-message>
+  </div>
+</div>

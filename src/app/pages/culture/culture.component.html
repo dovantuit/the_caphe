@@ -1,0 +1,81 @@
+<div class="culture-container mb-50">
+  <div class="container">
+    <div class="ml-auto mx-auto text-center pbt-50">
+      <img src="../../../assets/images/title/Coffee-Culture.png" class="title-img" alt="">
+      <h1 class="page-title">Coffee Culture</h1>
+      <div aria-label="breadcrumb page-breadcrumb">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item "><a onclick="clickNavigation('/trang-chu')" [routerLink]="['/trang-chu']">Home</a></li>
+          <li class="breadcrumb-item active"><a onclick="clickNavigation('/van-hoa-ca-phe')" [routerLink]="['/van-hoa-ca-phe']">Coffee Culture</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main pbt-50">
+      <div class="row">
+        <div class="col-lg-6 col-12 text-center d-block d-lg-none mb-5">
+          <div class="title mb-5">Knowledge</div>
+          <p class="mb-5 ">{{ 'page-culture.knowledge.description1' | translate}}</p>
+          <button class="btn-read-more mb-5" >Read more <i class="fa fa-angle-double-right"
+              aria-hidden="true"></i></button>
+        </div>
+        <div class="col-lg-6 col-12 pb-5">
+          <img class="w-100" src="../../../assets/images/vanhoacaphe/Knowledge.jpg" alt="">
+        </div>
+        <div class="col-lg-6 col-12 text-center d-none d-lg-block">
+          <div class="title">Knowledge</div>
+          <p>{{ 'page-culture.knowledge.description1' | translate}}</p>
+          <button class="btn-read-more">Read more <i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="list-culture pt-lg-5 pb-lg-5">
+      <div class="row">
+        <div class="col-lg-4 col-12 text-center  mb-50 pb-5">
+          <div class="item pb-5" onclick="clickNavigation('/share-with-us')"  [routerLink]="[ '/share-with-us']"> 
+             <img class="w-100" src="../../../assets/images/vanhoacaphe/sharewithus.png" alt="">
+            <p class="mb-lg-5 mt-3 mx-auto">{{ 'page-culture.shareWithUs.title1' | translate}}</p>
+            <button class="btn-culture" onclick="clickNavigation('/share-with-us')" [routerLink]="[ '/share-with-us']">SHARE WITH US</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 text-center mb-50 pb-5">
+          <div class="item pb-5" onclick="clickNavigation('/cong-thuc')" [routerLink]="[ '/cong-thuc']"> <img class="w-100" src="../../../assets/images/4/4.png" alt="">
+            <p class="mb-lg-5 mt-3 mx-auto">{{ 'page-culture.recipe.description' | translate}}</p>
+            <button class="btn-culture" onclick="clickNavigation('/cong-thuc')" [routerLink]="[ '/cong-thuc']">RECIPE</button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 text-center mb-50 pb-5">
+          <div class="item pb-5" onclick="clickNavigation('/tin-tuc')" [routerLink]="[ '/tin-tuc']"> 
+            <img class="w-100"src="../../../assets/images/vanhoacaphe/Blog.jpg" alt="">
+            <p class="mb-lg-5 mt-3 mx-auto">{{ 'page-culture.blog.description' | translate}}</p>
+            <button class="btn-culture" onclick="clickNavigation('/tin-tuc')" [routerLink]="[ '/tin-tuc']">BLOG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-culture" onclick="clickNavigation('/huong-dan')" [routerLink]="[ '/huong-dan']" style="cursor: pointer !important">
+      <div class="row" >
+        <div class="col-lg-6 col-12 mb-5">
+          <img class="w-100 " src="../../../assets/images/4/6.png" alt="">
+        </div>
+        <div class="over w-75 d-none d-lg-block">
+          <div class="text float-right  text-center">
+            <div class="title mb-3">Brew Guide</div>
+            <p class="mb-5 text-justify">{{ 'page-culture.brewBar.description1' | translate}}
+            </p>
+          <button class="btn-read-more mb-5" onclick="clickNavigation('/huong-dan')" [routerLink]="[ '/huong-dan']" >Explore <i class="fa fa-angle-double-right"
+            aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-block d-lg-none mt-3">
+          <div class="over text-center p-4">
+            <div class="title mb-5">Brew Guide</div>
+            <p class="mb-5 text-justify mb-5">{{ 'page-culture.brewBar.description1' | translate}}
+            </p>
+            <button class="btn-read-more mb-3" style="z-index: 99999" onclick="clickNavigation('/huong-dan')"  [routerLink]="[ '/huong-dan']" >Explore <i class="fa fa-angle-double-right"
+                aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

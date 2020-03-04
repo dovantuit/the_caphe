@@ -1,0 +1,36 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.aboutus-stories{
+    box-shadow: 0 0 30px #888;
+    .vision-img{
+        width: 24vw !important;
+        @include responsive(SM){
+            width: 60vw !important;
+        }
+    }
+    
+    .title{
+        @include center;
+        transform: translate(0%,-50%);
+        left: 0;
+        @include responsive(SM){
+            position: relative;
+        }
+        .about-title{
+            @include font-thehill($main-font,2.5em,'',bold);
+        }
+    }
+
+    .col-lg-6{
+        .img-circle{
+            height: 100px; 
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+    
+
+   
+}

@@ -1,0 +1,75 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host {
+    .mobile-title {
+        font-family: 'Playfair Display SC' !important;
+        display: inline-block !important;
+    }
+
+    .dropdown-item {
+        white-space: unset;
+    }
+
+    .row {
+
+        padding-top: 20px;
+        @include font-thehill($thin-font, 1em, $main-bg-color, bold);
+
+        .col-lg-3,
+        .col-lg-2,
+        .col-lg-4 {
+            padding-left: 20px;
+
+            .wrapper {
+                display: inline-block;
+
+                .title {
+                    @include font-thehill($main-font, 1em, $main-bg-color, bold);
+                    margin-bottom: 10px;
+                }
+
+                ul {
+
+                    li,
+                    a {
+                        @include font-thehill($thin-font, 14px, $main-bg-color, 100)
+                    }
+                }
+            }
+        }
+
+
+        .col-lg-3:last-child,
+        .col-lg-2:last-child,
+        .col-lg-4:last-child {
+            padding-left: 20px;
+
+            .tem {
+                width: 60%;
+                height: 100px;
+                margin-left: -20px;
+                text-align: center;
+
+                img {
+                    width: 50%;
+                    margin-left: 5%;
+                    margin-bottom: 35px;
+                }
+
+            }
+        }
+
+        .tem {
+            width: 100%;
+            height: 100px;
+            text-align: right;
+
+            @include responsive(XS) {
+                margin-right: 10px !important;
+            }
+        }
+
+
+    }
+}

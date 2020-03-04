@@ -1,0 +1,37 @@
+@import "../../../../styles/responsive";
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+:host{
+    .row-input{
+        font-size: 13px;
+        .title{
+         margin-bottom: 0;
+          @include font-thehill($main-font, 3em, '', 600)
+        }
+        p{
+          margin-bottom: 0;
+          @include font-thehill($thin-font, 13px, grey, '')
+        }
+            
+               
+                    .form-message{
+                        .list-check{
+                            color:grey;
+                            .form-check{
+                                margin-left: 12%;
+                                @include responsive(SM){
+                                    margin-left: 0;
+                                }
+                            }
+                          }
+                        @include responsive(SM){
+                        padding-left: 5%;
+                    }
+                }
+              
+            
+      }
+
+     
+}

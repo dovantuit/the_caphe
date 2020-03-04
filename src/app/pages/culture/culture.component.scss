@@ -1,0 +1,85 @@
+@import "../../../styles/responsive";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.culture-container {
+  .btn-read-more {
+    border: none;
+    background: transparent;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+    border-bottom: 1px solid white;
+    i {
+      margin-left: 10px;
+    }
+  }
+
+  .main {
+    .title {
+      font-style: italic;
+      @include font-thehill($main-font, 50px, "", bold);
+    }
+  }
+
+  .list-culture {
+    .item {
+      @include transition(0.5s);
+      cursor: pointer;
+      &.active {
+        box-shadow: -8px 10px 8px 3px $slategray;
+      }
+
+      &:hover {
+        box-shadow: -8px 10px 8px 3px $slategray;
+      }
+      img{
+        height: 250px;
+      }
+
+      p {
+        width: 85%;
+        @include font-thehill($thin-font, 14px, "", "");
+      }
+      .btn-culture {
+        font-weight: bold;
+        background: transparent;
+        border: 1px solid black;
+        padding: 8px 25px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .image-culture {
+    position: relative;
+    &:focus {
+      outline: none;
+    }
+    .over {
+      position: absolute;
+      color: white;
+      top: -10%;
+      background: black;
+      z-index: -2;
+      right: 0;
+      @include responsive(MD) {
+        position: relative;
+      }
+      @include responsive(MD) {
+        top: -3%;
+      }
+      .title {
+        @include font-thehill($main-font, 30px, "", bold);
+      }
+      .text {
+        width: 70%;
+        padding: 5% 5% 0% 5%;
+        @include responsive(MD) {
+          padding: 2% 2% 0% 2%;
+        }
+      }
+    }
+  }
+}

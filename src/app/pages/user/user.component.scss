@@ -1,0 +1,28 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/responsive";
+
+:host{
+  .user-container{
+    .main{
+      position: relative;
+      .card{
+        padding: 5% 0;
+        z-index: 1;
+        margin: auto;
+        .form-message{
+          width: 60%;
+          padding-left: 0 !important;
+          margin: auto;
+          @include responsive(SM){
+            width: 100%;
+          }
+        }
+        
+      }
+    }
+   
+  }
+}
+
+  

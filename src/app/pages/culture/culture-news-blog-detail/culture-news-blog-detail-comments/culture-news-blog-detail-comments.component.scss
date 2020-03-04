@@ -1,0 +1,68 @@
+@import "../../../../../styles/responsive";
+@import "../../../../../styles/mixins";
+@import "../../../../../styles/variables";
+
+    .comments{
+        .title{
+            text-transform: uppercase;
+            @include font-thehill($main-font,'','',bold);
+        }
+        .list-comment{
+            padding-left: 5%;
+            @include responsive(SM){
+                padding-left: 0;
+            }
+            .comment-item,.reply-item{
+                .name{
+                    .datetime{
+                        &::before{
+                            height: 2px;
+                            content: "|";
+                            margin: 0 15px;
+                        }
+                        @include font-thehill($thin-font,14px,grey,'');
+                    }
+                    @include font-thehill($main-font,'','',bold);
+                }
+    
+                .content{
+                    @include font-thehill($thin-font,15px,'','');
+                }
+                .btn-reply{
+                    cursor: pointer;
+                    @include font-thehill($thin-font,13px,black,'');
+                    i{
+                        color:grey;
+                    }
+                }
+
+                .info{
+                    @include responsive(MD){
+                        padding-top: 2%;
+                    }
+                }
+    
+                
+    
+            }
+    
+            .row.reply-item{
+                &:nth-child(1){
+                    margin-top: -3%;
+                }
+            }
+        }   
+    }
+
+    .close{
+        position: absolute;
+        right: 1%;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .modal-title{
+        @include font-thehill($main-font,25px,'',bold);
+        text-align: center;
+        text-transform: uppercase;
+    }

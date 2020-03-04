@@ -1,0 +1,72 @@
+<div class="comments mt-lg-5 mb-100">
+    <h4 class="title">Comments</h4>
+    <div class="list-comment mt-lg-5 mb-lg-5 " *ngFor="let item of comment">
+        <div class="row comment-item" *ngIf="item.status">
+            <div class="col-lg-2 col-3 image">
+                <img [src]="item.avatar ? item.avatar : '../../../../../assets/images/6/5.png'" class="img-avatar"
+                    alt="">
+            </div>
+            <div class="col-lg-10 col-9 info m-auto">
+                <h6 class="name mr-2">{{item.name}}
+                    <span class="datetime">{{item.createdDate}}</span>
+                </h6>
+                <p class="content">{{item.comment}}</p>
+                <a class="btn-reply float-right mr-3" (click)="getIDReply(item.id)" data-toggle="modal"
+                    data-target="#modelReply">
+                    <i class="fas fa-reply mr-2"></i> Reply</a>
+            </div>
+        </div>
+        <ng-container *ngIf="item.replies">
+            <div class="row reply-item" *ngFor="let reply of item.replies">
+                <div class="col-lg-10 offset-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-3 image">
+                            <img [src]="reply.avatar ? reply.avatar : '../../../../../assets/images/6/6.png'"
+                                class="img-avatar" alt="">
+                        </div>
+                        <div class="col-lg-10 col-9 info m-auto">
+                            <h6 class="name mr-2">{{reply.userName}}
+                                <span class="datetime">{{reply.createdDate | date : 'yyyy-MM-dd'}}</span>
+                            </h6>
+                            <p class="content">{{reply.comment}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+
+    <div class="list-comment mt-lg-5 mb-lg-5" *ngIf="comment.length == 0">
+        Chưa có comment nào
+    </div>
+</div>
+
+<div class="modal fade" id="modelReply" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h5 class="modal-title mt-3">Leave a comment</h5>
+            <button type="button" class="close" data-dismiss="modal" #openModal aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="form-message mt-5 mb-3">
+                        <form class="form-group">
+                            <div class="row">
+                                <input type="text" [(ngModel)]="userName" name="userName"
+                                    class="form-control mb-3" placeholder="Name *">
+                                <!-- <input type="text" [(ngModel)]="reply.email" name="contactInfo.lastname" class="form-control mb-3" placeholder="Email *"> -->
+                                <textarea name="" [(ngModel)]="userComment" name="userComment" id=""
+                                    class="form-control" cols="30" rows="4" placeholder="Comment *"></textarea>
+                            </div>
+                            <button class="btn-main mb-50 mt-5 float-right" #openModal
+                                (click)="postReply()">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

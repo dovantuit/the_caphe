@@ -1,0 +1,11 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+:host {
+
+    .main-contain {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+}

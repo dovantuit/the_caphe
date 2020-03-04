@@ -1,0 +1,222 @@
+<div class="products-main mt-lg-5" #productsMain>
+  <div class="container" style=" box-shadow: 0 0 30px #888; padding:3%" *ngIf="displayItem">
+    <div class="row">
+      <div class="col-lg-6 col-12 mb-lg-5">
+        <img class="w-100 img-main" src="{{HOST_IMG}}{{imgUrl}}" alt="">
+        <div class="group-img mt-3">
+          <div class="row">
+            <div class="col-lg-3 col-3" *ngFor="let item of groupImg">
+              <img class="w-100" (click)="changeImg(item.imgUrl)" src="{{HOST_IMG}}{{item.imgUrl}}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 m-auto">
+        <div class="text m-auto">
+          <h3 class="mb-5">{{displayItem.name}}</h3>
+          <p *ngIf="productType === 1">{{displayItem.productInfo[0].shortDescription}}</p>
+          <p *ngIf="productType !== 1" class="mb-lg-3" [innerHTML]="displayItem.productInfo[0].description">
+            <div class="infomation ml-5">
+              <div class="row" *ngIf="displayItem.productInfo[0].weight">
+                <div class="col-6 col-lg-5">
+                  <div *ngIf="productType === 1">
+                    {{'page-products.productInfo.weight' | translate}}
+                  </div>
+                  <div *ngIf="productType !== 1">
+                    {{'page-products.productInfo.quantity' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].weight}}</span>
+                </div>
+              </div>
+              <div class="row" *ngIf="displayItem.productInfo[0].quantity">
+                <div class="col-6 col-lg-5">
+                  <div>
+                    {{'page-products.productInfo.quantity' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].quantity}}</span>
+                </div>
+              </div>
+              <div class="row" *ngIf="displayItem.productInfo[0].expiredDate">
+                <div class="col-6 col-lg-5 ">
+                  <div>
+                    {{'page-products.productInfo.expiry' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].expiredDate}}</span>
+                </div>
+              </div>
+              <div class="row" *ngIf="displayItem.productInfo[0].price">
+                <div class="col-6 col-lg-5 ">
+                  <div>
+                    {{'page-products.productInfo.price' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].price}}</span>
+                </div>
+              </div>
+              <div class="row" *ngIf="displayItem.productInfo[0].brand">
+                <div class="col-6 col-lg-5 ">
+                  <div>
+                    {{'page-products.productInfo.brand' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].brand}}</span>
+                </div>
+              </div>
+              <div class="row" *ngIf="displayItem.productInfo[0].origin">
+                <div class="col-6 col-lg-5 ">
+                  <div>
+                    {{'page-products.productInfo.origin' | translate}}
+                  </div>
+                </div>
+                <div class="col-6 col-lg-5 ">
+                  <span>{{displayItem.productInfo[0].origin}}</span>
+                </div>
+              </div>
+              <div class="row text-center" *ngIf="user.userId">
+                <div class="col-12">
+                  <button class="btn-main mb-50 mt-5" data-toggle="modal" data-target="#exampleModal">Order now</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container products-description mt-5" *ngIf="displayItem ">
+  <table class="table-product-description table " style="width: 100%;margin: auto" *ngIf="productType === 1">
+    <thead class="thead-inverse">
+      <tr>
+        <th style="min-width: 50%;">{{'page-products.product.description' | translate}}:</th>
+        <th style="min-width: 50%;">{{'page-products.product.ingredients' | translate}}:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="mb-lg-5">
+        <td>
+          <p class="mb-lg-3" [innerHTML]="displayItem.productInfo[0].description">
+          </p>
+        </td>
+        <td>
+          <ul class="">
+            <li *ngFor="let item of recipeNutrition">
+              <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-4">
+                  <div class="name">{{item.name}}</div>
+                </div>
+                <div class="col-1">
+                  <div class="percent">{{item.percent}}%</div>
+                </div>
+                <div class="col-6">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                      aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width': item.percent +'%'}">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- <table class="table-product-description table " style="width: 100%;margin: auto;" *ngIf="productType !== 1">
+    <thead class="thead-inverse">
+      <tr >
+        <th style="min-width: 50%;border-right: none !important">{{'page-products.product.description' | translate}}:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="mb-lg-5">
+        <td style="border-right: none !important">
+          <p class="mb-lg-3" [innerHTML]="displayItem.productInfo[0].description">
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+  <ul class="nav nav-tabs d-lg-none nav-products-description mt-5" *ngIf="productType===1">
+    <li>
+      <a class="active" data-toggle="tab" href="#description">{{'page-products.product.description' | translate}}</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#ingredients">{{'page-products.product.ingredients' | translate}}</a>
+    </li>
+
+  </ul>
+
+  <div class="tab-content mb-3 d-lg-none" *ngIf="productType===1">
+    <div id="ingredients" class="tab-pane fade">
+      <ul class="mt-5">
+        <li *ngFor="let item of recipeNutrition">
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-4">
+              <div class="name">{{item.name}}</div>
+            </div>
+            <div class="col-2">
+              <div class="percent">{{item.percent}}%</div>
+            </div>
+            <div class="col-5">
+              <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100" [ngStyle]="{'width': item.percent +'%'}">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="description" class="tab-pane fade active show">
+      <p class="mb-5 mt-5" [innerHTML]="displayItem.productInfo[0].description"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" #openModal id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form (submit)="createTransaction(formOrder)" #formOrder="ngForm">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Khối lượng</label>
+              <input type="text" class="form-control" required name="quantity" id="" [(ngModel)]="quantity">
+              <div class="validation" *ngIf="formOrder.controls.quantity?.errors?.required && isSubmit">
+                {{'validation' | translate}}</div>
+              <label for="">Message</label>
+              <textarea name="comment" id="" cols="" rows="10" class="form-control" [(ngModel)]="comment"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="createTransaction(formOrder)">Gửi yêu cầu</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

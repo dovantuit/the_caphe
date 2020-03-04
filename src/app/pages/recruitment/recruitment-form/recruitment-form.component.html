@@ -1,0 +1,35 @@
+<div class="mt-5 container">
+  <!-- <p class="text-center mx-auto mb-3 check note">
+     {{'page-recruitment.readDescription2' | translate}}
+    </p> -->
+<form class="form-group form-message m-auto">
+  <div class="row">
+    <div class="col-lg-6 col-12 mb-lg-5">
+      <input required type="text" class="form-control mb-5" placeholder="{{'form.full-name' | translate}}" [(ngModel)]="firstName" name="firstName">
+      <input required type="text" class="form-control mb-5" placeholder="{{'form.address' | translate}}" [(ngModel)]="address" name="address">
+      <input required type="text" class="form-control mb-5" placeholder="{{'form.email' | translate}}" [(ngModel)]="email" name="email">
+      <input required type="text" class="form-control mb-5" placeholder="{{'form.phone' | translate}}" [(ngModel)]="phoneNumber" name="phoneNumber">
+    </div>
+    <div class="col-lg-6 col-12">
+      <div class="row content">
+        <div class="col-lg-3 col-3 m-auto ">
+          <label for="" style="color: grey">CV *</label>
+        </div>
+        <div class="col-lg-9 col-9 input-file">
+          <input type="file" class="form-control file" size="50" name="myFile" (change)="getCV($event)" [(ngModel)]="fileName" name="fileName">
+          <span style="color: grey;font-size: 13px">{{'page-recruitment.acceptCVFile' | translate}}</span>
+        </div>
+      </div>
+      <textarea required id="" class="form-control" cols="30" rows="4" placeholder="{{'page-recruitment.coverLetter' | translate}}" [(ngModel)]="comment" name="comment"></textarea>
+    </div>
+    <!-- <div class="col-lg-6 col-12 offset-lg-3">
+        <p class="text-center mx-auto mt-3 check">
+            <input type="checkbox" name="vehicle1" value="Bike"> I have read and understood Recruittee's privacy policy<br>
+          </p>
+    </div> -->
+    <div class="col-lg-12 col-12">
+      <button class="btn-main mb-50 mt-5 float-right" (click)="apply()">APPLY</button>
+    </div>
+  </div>
+</form>
+</div>
